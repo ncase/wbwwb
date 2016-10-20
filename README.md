@@ -1,7 +1,6 @@
-###WE BECOME WHAT WE BEHOLD    
-*a game about news cycles, vicious cycles, infinite cycles*
+![banner](https://i.imgur.com/f6FcrhT.png)
 
-![looping animation](https://i.imgur.com/CTANpQP.gif)
+*a game about news cycles, vicious cycles, infinite cycles*
 
 **[PLAY ON ITCH.IO](https://ncase.itch.io/wbwwb)**
 
