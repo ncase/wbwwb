@@ -1,0 +1,179 @@
+﻿{"frames": {
+
+"hangry0000":
+{
+	"frame": {"x":0,"y":0,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0001":
+{
+	"frame": {"x":150,"y":0,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0002":
+{
+	"frame": {"x":300,"y":0,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0003":
+{
+	"frame": {"x":0,"y":140,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0004":
+{
+	"frame": {"x":150,"y":140,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0005":
+{
+	"frame": {"x":300,"y":140,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0006":
+{
+	"frame": {"x":0,"y":280,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0007":
+{
+	"frame": {"x":150,"y":280,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0008":
+{
+	"frame": {"x":300,"y":280,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0009":
+{
+	"frame": {"x":0,"y":420,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0010":
+{
+	"frame": {"x":150,"y":420,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0011":
+{
+	"frame": {"x":300,"y":420,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0012":
+{
+	"frame": {"x":0,"y":560,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0013":
+{
+	"frame": {"x":150,"y":560,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0014":
+{
+	"frame": {"x":300,"y":560,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0015":
+{
+	"frame": {"x":0,"y":700,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0016":
+{
+	"frame": {"x":150,"y":700,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0017":
+{
+	"frame": {"x":300,"y":700,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0018":
+{
+	"frame": {"x":0,"y":840,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0019":
+{
+	"frame": {"x":150,"y":840,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+},
+"hangry0020":
+{
+	"frame": {"x":300,"y":840,"w":150,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":140},
+	"sourceSize": {"w":150,"h":140}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "15.2.0.66",
+	"image": "hangry.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":1024},
+	"scale": "1"
+}
+}

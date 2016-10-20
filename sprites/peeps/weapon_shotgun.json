@@ -1,0 +1,139 @@
+﻿{"frames": {
+
+"weapon_shotgun0000":
+{
+	"frame": {"x":0,"y":0,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0001":
+{
+	"frame": {"x":300,"y":0,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0002":
+{
+	"frame": {"x":600,"y":0,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0003":
+{
+	"frame": {"x":0,"y":140,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0004":
+{
+	"frame": {"x":300,"y":140,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0005":
+{
+	"frame": {"x":600,"y":140,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0006":
+{
+	"frame": {"x":0,"y":280,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0007":
+{
+	"frame": {"x":300,"y":280,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0008":
+{
+	"frame": {"x":600,"y":280,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0009":
+{
+	"frame": {"x":0,"y":420,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0010":
+{
+	"frame": {"x":300,"y":420,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0011":
+{
+	"frame": {"x":600,"y":420,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0012":
+{
+	"frame": {"x":0,"y":560,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0013":
+{
+	"frame": {"x":300,"y":560,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0014":
+{
+	"frame": {"x":600,"y":560,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+},
+"weapon_shotgun0015":
+{
+	"frame": {"x":0,"y":700,"w":300,"h":140},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":140},
+	"sourceSize": {"w":300,"h":140}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "15.2.0.66",
+	"image": "weapon_shotgun.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

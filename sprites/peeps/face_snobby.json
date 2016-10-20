@@ -1,0 +1,251 @@
+﻿{"frames": {
+
+"face_snobby0000":
+{
+	"frame": {"x":0,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0001":
+{
+	"frame": {"x":120,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0002":
+{
+	"frame": {"x":240,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0003":
+{
+	"frame": {"x":360,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0004":
+{
+	"frame": {"x":480,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0005":
+{
+	"frame": {"x":600,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0006":
+{
+	"frame": {"x":720,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0007":
+{
+	"frame": {"x":840,"y":0,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0008":
+{
+	"frame": {"x":0,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0009":
+{
+	"frame": {"x":120,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0010":
+{
+	"frame": {"x":240,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0011":
+{
+	"frame": {"x":360,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0012":
+{
+	"frame": {"x":480,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0013":
+{
+	"frame": {"x":600,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0014":
+{
+	"frame": {"x":720,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0015":
+{
+	"frame": {"x":840,"y":141,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0016":
+{
+	"frame": {"x":0,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0017":
+{
+	"frame": {"x":120,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0018":
+{
+	"frame": {"x":240,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0019":
+{
+	"frame": {"x":360,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0020":
+{
+	"frame": {"x":480,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0021":
+{
+	"frame": {"x":600,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0022":
+{
+	"frame": {"x":720,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0023":
+{
+	"frame": {"x":840,"y":282,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0024":
+{
+	"frame": {"x":0,"y":423,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0025":
+{
+	"frame": {"x":120,"y":423,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0026":
+{
+	"frame": {"x":240,"y":423,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0027":
+{
+	"frame": {"x":360,"y":423,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0028":
+{
+	"frame": {"x":480,"y":423,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+},
+"face_snobby0029":
+{
+	"frame": {"x":600,"y":423,"w":120,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":141},
+	"sourceSize": {"w":120,"h":141}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "15.2.0.66",
+	"image": "face_snobby.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

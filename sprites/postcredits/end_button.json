@@ -1,0 +1,51 @@
+﻿{"frames": {
+
+"end_button0000":
+{
+	"frame": {"x":0,"y":0,"w":207,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":207,"h":57},
+	"sourceSize": {"w":207,"h":57}
+},
+"end_button0001":
+{
+	"frame": {"x":0,"y":57,"w":207,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":207,"h":57},
+	"sourceSize": {"w":207,"h":57}
+},
+"end_button0002":
+{
+	"frame": {"x":0,"y":114,"w":207,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":207,"h":57},
+	"sourceSize": {"w":207,"h":57}
+},
+"end_button0003":
+{
+	"frame": {"x":0,"y":171,"w":207,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":207,"h":57},
+	"sourceSize": {"w":207,"h":57}
+},
+"end_button0004":
+{
+	"frame": {"x":0,"y":228,"w":207,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":207,"h":57},
+	"sourceSize": {"w":207,"h":57}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "15.2.0.66",
+	"image": "end_button.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":512},
+	"scale": "1"
+}
+}
