@@ -406,7 +406,7 @@ function _chyAngry(d){
             var angryRatio = angriesAfterwards/(peeps.length-1);
 
             if(angryRatio>=1){
-                d.chyron = "EVERYONE HATES EVERYONE!!1!";
+                d.chyron = "EVERYONE HATES EVERYONE!!!!";
             }else if(angryRatio>=0.75){
                 d.chyron = "ALMOST EVERYONE HATES EVERYONE...";
             }else{
