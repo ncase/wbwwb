@@ -4,6 +4,13 @@ Game.addToManifest({
 	preload_play: "sprites/misc/preload_play.json"
 }, true);
 
+// German trnaslation for preloader text:
+//
+// Spielzeit: 5 Minuten
+//
+// Warnung: Das folgende Programm
+// kann Szenen 
+
 function Scene_Preloader(){
 	
 	var self = this;

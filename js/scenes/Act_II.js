@@ -357,15 +357,7 @@ function Stage_Angry_Escalation(self, HACK){
 ////////////////////////////////////////////////
 
 var _manifestoIndex = -1;
-var _manifesto = [
-    //"as if you viewers want GOOD news",
-    "who tunes in to watch *people get along?*",
-    "peace is boring. violence goes viral.",
-    //"peace is boring. conflict gets clicks.",
-    "and every story needs a conflict, so...",
-    //"...GIVE THE AUDIENCE WHAT THEY WANT.",
-    "GIVE THE AUDIENCE WHAT THEY WANT."
-];
+var _manifesto = textStrings["manifesto"];
 function _spoutManifesto(){
     if(_manifestoIndex<_manifesto.length-1){
         _manifestoIndex++;
