@@ -34,7 +34,7 @@ function Stage_Hat(self){
                 if(caught.hat){
                     p.audience = 3;
                     p.caughtHat = caught.hat;
-                    d.chyron = "OOH NICE HAT";
+                    d.chyron = textStrings["niceHat"];
                     return true;
                 }
                 return false;
@@ -117,11 +117,11 @@ function _chyLovers(d){
     });
     if(caught.lover){
         if(caught.lover.isEmbarrassed){
-            d.chyron = "yeah git on outta here";
+            d.chyron = textStrings["outtaHere"];
         }else{
             p.caughtLovers = true;
             p.forceChyron = true;
-            d.chyron = "GROSS, GO GET A ROOM";
+            d.chyron = textStrings["getARoom"];
         }
         return true;
     }
@@ -135,7 +135,7 @@ function _chyHats(d){
     if(caught.hat){
         p.audience = 1;
         p.caughtHat = true;
-        d.chyron = "nvm hats aren't cool anymore";
+        d.chyron = textStrings["notCoolAnymore"];
         return true;
     }
     return false;
@@ -143,7 +143,7 @@ function _chyHats(d){
 function _chyPeeps(d){
     var p = d.photoData;
     if(d.scene.camera.isOverTV(true)){
-        d.chyron = "A TV... ON TV!";
+        d.chyron = textStrings["tvOnTv"];
     }else{
         var caught = d.caught({
             peeps: {_CLASS_:"NormalPeep", returnAll:true},
@@ -152,19 +152,19 @@ function _chyPeeps(d){
         if(caught.crickets.length>0){
             p.CAUGHT_A_CRICKET = true;
             if(caught.crickets.length==1){
-                d.chyron = "LIL' CRICKY <3";
+                d.chyron = textStrings["cricky"];
             }else{
-                d.chyron = "okay that's too many crickets";
+                d.chyron = textStrings["tooManyCrickets"];
             }
         }else if(caught.peeps.length>0){
             if(caught.peeps.length==1){
-                d.chyron = "just a normal peep";
+                d.chyron = textStrings["normalPeep"];
             }else{
-                d.chyron = "just some normal peeps";
+                d.chyron = textStrings["normalPeeps"];
             }
         }else{
             p.ITS_NOTHING = true;
-            d.chyron = "WOWWEE, IT'S NOTHING";
+            d.chyron = textStrings["wowNothing"];
         }
     }
     return true;
