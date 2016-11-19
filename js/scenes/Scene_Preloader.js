@@ -84,7 +84,7 @@ function Scene_Preloader(){
 		bar.mouseout = function(){
 			bar.gotoAndStop(1);
 		};
-		bar.mousedown = function(){
+		bar.mousedown = bar.touchend = function(){
 			Game.sounds.squeak.play();
 			setTimeout(function(){
 				Game.sceneManager.gotoScene("Quote");

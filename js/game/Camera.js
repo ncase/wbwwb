@@ -79,12 +79,12 @@ function Camera(scene, options){
 
     // Controls!
     self.frozen = false;
-    Game.stage.mousemove = function(mouseData){
+    Game.stage.mousemove = Game.stage.touchstart = Game.stage.touchmove = function(mouseData){
 	    var pos = mouseData.data.global;
 	    self.x = pos.x;
 	    self.y = pos.y;
 	};
-	Game.stage.mousedown = function(mouseData){
+	Game.stage.mousedown = Game.stage.touchend = function(mouseData){
 
 		// ONLY ONCE. FREEZE.
 		if(self.frozen) return;
