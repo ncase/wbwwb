@@ -43,7 +43,7 @@ function Scene_Post_Post_Credits(){
 
 		// INTERACTIVITY!
 		button.interactive = true;
-		button.mouseover = function(){
+		button.mouseover = button.touchstart = function(){
 			isHovering = true;
 			bg.gotoAndStop(1);
 			Tween_get(button.scale).to({x:1.05, y:1.05}, _s(0.2));
@@ -53,7 +53,7 @@ function Scene_Post_Post_Credits(){
 			bg.gotoAndStop(0);
 			Tween_get(button.scale).to({x:1, y:1}, _s(0.2));
 		};
-		button.mousedown = function(){
+		button.mousedown = button.touchend = function(){
 			isHovering = false;
 			Game.sounds.squeak.play();
 			callback();
@@ -81,7 +81,7 @@ function Scene_Post_Post_Credits(){
 
 		// INTERACTIVITY!
 		button.interactive = true;
-		button.mouseover = function(){
+		button.mouseover = button.touchstart = function(){
 			isHovering = true;
 			Tween_get(button.scale).to({x:1.2, y:1.2}, _s(0.2));
 		};
@@ -89,7 +89,7 @@ function Scene_Post_Post_Credits(){
 			isHovering = false;
 			Tween_get(button.scale).to({x:1, y:1}, _s(0.2));
 		};
-		button.mousedown = function(){
+		button.mousedown = button.touchend = function(){
 			isHovering = false;
 			Game.sounds.squeak.play();
 			callback();
