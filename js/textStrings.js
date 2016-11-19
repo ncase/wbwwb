@@ -48,7 +48,7 @@ var textStrings_EN = {
        "and every story needs a conflict, so..."  ,
        //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
        "GIVE THE AUDIENCE WHAT THEY WANT."
-    ]
+    ] ,
     
     // -- Strings currently in graphics resources --
     
@@ -141,7 +141,7 @@ var textStrings_DE = {
     // Act 3
     "ellipsis"             : ". . ."                                                             ,
     "coolNoMore"           : "H\xFCte sind out. Hast du's immer noch nicht geh\xF6rt?"           ,
-    "beScared"             : "HAB ANGST! SEI W\xDCTENTD!"                                        ,
+    "beScared"             : "HABT ANGST! SEID W\xDCTEND!"                                        ,
     
     // MANIFESTO
     "manifesto" : [
@@ -152,7 +152,7 @@ var textStrings_DE = {
        "Jede gute Story braucht einen Konflikt, also..."        ,
        //"...GIB DEM PUBLIKUM WAS ES WILL!"                       ,
        "GIB DEM PUBLIKUM WAS ES WILL!"
-    ]
+    ] ,
     
     // -- Strings currently in graphics resources --
     
@@ -208,4 +208,4 @@ var textStrings_DE = {
     "misatrributed"      : "(falsch zugeschrieben)" ,
 };
 
-var textStrings = textStrings_DE
+var textStrings = textStrings_EN

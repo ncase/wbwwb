@@ -127,7 +127,7 @@ function Stage_Nervous(self, HACK){
                             p.audienceCircles = 0;
                             p.audienceSquares = 1;
                             p.caughtNervous = caught.nervous;
-                            d.chyron = textStrings["cirleFearsSquares"];
+                            d.chyron = textStrings["circleFearsSquares"];
                         }else{
                             d.chyron = textStrings["whoScaresThem"];
                         }
