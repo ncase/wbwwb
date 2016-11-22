@@ -158,7 +158,7 @@ var textStrings_DE = {
     
     // (bg_preload.png) Preload screen
     "playingTime"        : "Spielzeit: 5 Minuten" ,
-    "warning"            : "Warnung: the following program\ncontains scenes of snobbery,\nrudeness & mass murder.\nviewer discretion is advised." ,
+    "warning"            : "Warnung: die folgende Sendung\nenth\xE4lt Darstellungen von Arroganz,\nBeleidigungen & Gewalt.\nund ist nicht f\xFCr Kinder geeignet." ,
     
     // (cam-instructions.png) Camera Instructions
     "pointAndClick"      : "POINT & CLICK" , // I'd leave that in English, even for the German translation. /stefan
