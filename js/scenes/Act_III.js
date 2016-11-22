@@ -78,14 +78,14 @@ function Stage_Evil(self, HACK){
             d.tryChyron(function(d){
                 var p = d.photoData;
                 if(murderer.hasGunOut){
-                    d.chyron = ". . .";
+                    d.chyron = textStrings["ellipsis"];
                     return true;
                 }else{
                     var caught = d.caught({
                         evil: {_CLASS_:"EvilHatPeep"}
                     });
                     if(caught.evil){
-                        d.chyron = "hats ain't cool no more, haven't you heard?";
+                        d.chyron = textStrings["coolNoMore"];
                         return true;
                     }
                     return false;
@@ -210,7 +210,7 @@ function Stage_Panic(self){
     self.director.callbacks = {
         takePhoto: function(d){
             var p = d.photoData;
-            d.chyron = "BE SCARED. BE ANGRY.";
+            d.chyron = textStrings["beScared"];
             p.forceChyron = true;
             p.noChyronSound = true;
         },

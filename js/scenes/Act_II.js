@@ -37,10 +37,10 @@ function Stage_Screamer(self){
                         p.audienceCircles = 1;
                         p.audienceSquares = 0;
                         p.caughtCrazy = caught.crazy;
-                        d.chyron = "CRAZED SQUARE ATTACKS";
+                        d.chyron = textStrings["crazySquareAttacks"];
                     }else{
-                        if(caught.shocked) d.chyron = "oooooh just missed it";
-                        else d.chyron = "(ya gotta catch 'em doing *something* interesting...)";
+                        if(caught.shocked) d.chyron = textStrings["justMissed"];
+                        else d.chyron = textStrings["somethingInteresting"];
                     }
                     return true;
                 }
@@ -53,7 +53,7 @@ function Stage_Screamer(self){
                 var caught = d.caught({
                     shocked: {_CLASS_:"NormalPeep", shocked:true}
                 });
-                if(caught.shocked) d.chyron = "(ya gotta catch who's screaming at 'em)";
+                if(caught.shocked) d.chyron = textStrings["whoIsScreaming"];
                 return caught.shocked;
             })
             .otherwise(_chyPeeps);
@@ -127,13 +127,13 @@ function Stage_Nervous(self, HACK){
                             p.audienceCircles = 0;
                             p.audienceSquares = 1;
                             p.caughtNervous = caught.nervous;
-                            d.chyron = "CIRCLE FEARS SQUARES";
+                            d.chyron = textStrings["circleFearsSquares"];
                         }else{
-                            d.chyron = "(ya gotta also catch *who* they're scared by)";
+                            d.chyron = textStrings["whoScaresThem"];
                         }
                     }else{
-                        d.chyron = "(ya gotta catch 'em doing *something* interesting...)";
-                        // d.chyron = "(ya gotta catch 'em *being* scared by a square)";
+                        d.chyron = textStrings["somethingInteresting"];
+                        // d.chyron = textStrings["areTheyScared"];
                     }
                     return true;
                 }
@@ -203,10 +203,10 @@ function Stage_Snobby(self, HACK){
                         p.audienceCircles = 1;
                         p.audienceSquares = 0;
                         p.caughtSnobby = caught.snobby;
-                        d.chyron = "SQUARES SNUB CIRCLES";
+                        d.chyron = textStrings["squaresSnubCircles"];
                     }else{
-                        //d.chyron = "(ya gotta catch 'em *while* snubbing a circle)";
-                        d.chyron = "(ya gotta catch 'em doing *something* interesting...)";
+                        //d.chyron = textStrings["areTheySnubbed"];
+                        d.chyron = textStrings["somethingInteresting"];
                     }
                     return true;
                 }
@@ -357,15 +357,7 @@ function Stage_Angry_Escalation(self, HACK){
 ////////////////////////////////////////////////
 
 var _manifestoIndex = -1;
-var _manifesto = [
-    //"as if you viewers want GOOD news",
-    "who tunes in to watch *people get along?*",
-    "peace is boring. violence goes viral.",
-    //"peace is boring. conflict gets clicks.",
-    "and every story needs a conflict, so...",
-    //"...GIVE THE AUDIENCE WHAT THEY WANT.",
-    "GIVE THE AUDIENCE WHAT THEY WANT."
-];
+var _manifesto = textStrings["manifesto"];
 function _spoutManifesto(){
     if(_manifestoIndex<_manifesto.length-1){
         _manifestoIndex++;
@@ -406,9 +398,9 @@ function _chyAngry(d){
             var angryRatio = angriesAfterwards/(peeps.length-1);
 
             if(angryRatio>=1){
-                d.chyron = "EVERYONE HATES EVERYONE!!1!";
+                d.chyron = textStrings["everyoneHates"];
             }else if(angryRatio>=0.75){
-                d.chyron = "ALMOST EVERYONE HATES EVERYONE...";
+                d.chyron = textStrings["almostEveryoneHates"];
             }else{
 
                 // Who was caught angry & shouting?
@@ -416,19 +408,19 @@ function _chyAngry(d){
                 if(caught.angrySquareShouting.length>0) p.caughtAngrySquare=true;
 
                 if(caught.angryCircleShouting.length==0){
-                    d.chyron = "SQUARES HATE CIRCLES"; // must be a square
+                    d.chyron = textStrings["squaresHateCircles"]; // must be a square
                 }else{
-                    d.chyron = "CIRCLES HATE SQUARES"; // must be a circle, or both
+                    d.chyron = textStrings["circlesHateSquares"]; // must be a circle, or both
                 }
 
             }
             
         }else{
             if(caught.shocked){
-                d.chyron = "oooooh just missed it";
+                d.chyron = textStrings["justMissed"];
             }else{
-                // d.chyron = "(ya gotta catch 'em *yelling* at others)";
-                d.chyron = "(ya gotta catch 'em doing *something* interesting...)";
+                // d.chyron = textStrings["areTheyYelling"];
+                d.chyron = textStrings["areTheyYelling"];
             }
         }
         return true;
@@ -445,7 +437,7 @@ function _chyHelping(d){
         if(caught.helping.hasHelped){
             d.chyron = _spoutManifesto();
         }else{
-            d.chyron = "what are these nerds doing now";
+            d.chyron = textStrings["nerdsNow"];
         }
         return true;
     }
@@ -483,7 +475,7 @@ function _chyShocked(d){
     var caught = d.caught({
         shocked: {_CLASS_:"NormalPeep", shocked:true}
     });
-    if(caught.shocked) d.chyron = "why's this peep shocked?";
+    if(caught.shocked) d.chyron = textStrings["schockedPeep"];
     return caught.shocked;
 }
 
@@ -545,7 +537,7 @@ function Stage_Whatever(self){
     // Director
     self.director.callbacks = {
         takePhoto: function(d){
-            d.chyron = "whatever";
+            d.chyron = textStrings["whatever"];
         },
         movePhoto: function(d){
             d.audience_movePhoto();
