@@ -49,15 +49,51 @@ function Scene_Credits(){
     playtestersText.y = Game.height / 2 - 140;
     c[2].addChild(playtestersText);
     
-    var supportersText = new PIXI.Text(textStrings["patreonSupporters"], {font: "44px Times", fill:"#AAAAAA", align: "left"});
-    supportersText.anchor.x = 0.0;
-    supportersText.anchor.y = 0.5;
-    supportersText.x = Game.width / 2 - 0;
-    supportersText.y = Game.height / 2 - 0;
-    c[3].addChild(supportersText);
-//    c[4].addChild(supportersText);
-//    c[5].addChild(supportersText);
-//    c[6].addChild(supportersText);
+    // @TODO: Yes, I feel physical pain hacking this in the way I did in the following lines,
+    // but I don't know PIXI enough to do this properly... /sl
+    
+    var supportersText1 = new PIXI.Text(textStrings["patreonSupporters"], {font: "45px Times", fill:"#FFFFFF", align: "left"});
+    supportersText1.anchor.x = 0.0;
+    supportersText1.anchor.y = 0.5;
+    supportersText1.x = 63;
+    supportersText1.y = 111;
+    c[3].addChild(supportersText1);
+    
+    var supportersText2 = new PIXI.Text(textStrings["patreonSupporters"], {font: "45px Times", fill:"#FFFFFF", align: "left"});
+    supportersText2.anchor.x = 0.0;
+    supportersText2.anchor.y = 0.5;
+    supportersText2.x = 63;
+    supportersText2.y = 111;
+    c[4].addChild(supportersText2);
+    
+    var supportersText3 = new PIXI.Text(textStrings["patreonSupporters"], {font: "45px Times", fill:"#FFFFFF", align: "left"});
+    supportersText3.anchor.x = 0.0;
+    supportersText3.anchor.y = 0.5;
+    supportersText3.x = 63;
+    supportersText3.y = 111;
+    c[5].addChild(supportersText3);
+    
+    var supportersText4 = new PIXI.Text(textStrings["patreonSupporters"], {font: "45px Times", fill:"#FFFFFF", align: "left"});
+    supportersText4.anchor.x = 0.0;
+    supportersText4.anchor.y = 0.5;
+    supportersText4.x = 63;
+    supportersText4.y = 111;
+    c[6].addChild(supportersText4);
+    
+    // thankYouText comes before finallyText so finallyText can be aligned based on thankYouText. /sl
+    var thankYouText = new PIXI.Text(textStrings["thankYouForPlaying"], {font: "55px Times", fill:"#FFFFFF", align: "center"});
+    thankYouText.anchor.x = 0.5;
+    thankYouText.anchor.y = 0.5;
+    thankYouText.x = Game.width / 2 + 10;
+    thankYouText.y = Game.height / 2 + 25;
+    c[8].addChild(thankYouText);
+    
+    var finallyText = new PIXI.Text(textStrings["lastButNotLeast"], {font: "37px Times", fill:"#FFFFFF", align: "left"});
+    finallyText.anchor.x = 0.0;
+    finallyText.anchor.y = 0.5;
+    finallyText.x = thankYouText.getBounds().x;
+    finallyText.y = Game.height / 2 - 30;
+    c[7].addChild(finallyText);
     
 	// TWEEN ANIM
 	Tween_get(c[1]).wait(_s(BEAT*4)) // 0. Wait 4 beats before credits...
