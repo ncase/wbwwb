@@ -29,7 +29,14 @@ function Scene_Quote(){
     q2TitleText.y = Game.height / 2 - 60;
     q2.addChild(q2TitleText);
     
-    var q2QuoteText = new PIXI.Text(textStrings["WSOTATOTSU"], {font:"39px Times", fill:"#FFFFFF", align:"center"});
+    // dynamic fontsize for quote
+    var quoteString = textStrings["WSOTATOTSU"]
+    var fontsize=39, max=47;
+    if(quoteString.length>max){ // more than [max] chars...
+        fontsize = Math.floor(max*fontsize/quoteString.length);
+    }
+
+    var q2QuoteText = new PIXI.Text(textStrings["WSOTATOTSU"], {font:fontsize+"px Times", fill:"#FFFFFF", align:"center"});
     q2QuoteText.anchor.x = 0.5;
     q2QuoteText.anchor.y = 0.5;
     q2QuoteText.x = Game.width / 2 + 6;
