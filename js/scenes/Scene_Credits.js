@@ -21,11 +21,44 @@ function Scene_Credits(){
 	Game.stage.addChild(cont);
 	var c = {};
 	for(var i=1; i<=8; i++){
-		c[i] = MakeSprite("credits000"+i);
-		c[i].alpha = 0;
+        c[i] = new PIXI.Container();
+        c[i].addChild(MakeSprite("credits000"+i));
+        c[i].alpha = 0;
 		cont.addChild(c[i]);
 	}
-
+    
+    // add text
+    var createdByText = new PIXI.Text(textStrings["createdBy"], {font: "46px Times", fill:"#FFFFFF", align: "left"});
+    createdByText.anchor.x = 0.0;
+    createdByText.anchor.y = 0.5;
+    createdByText.x = Game.width / 2 - 240;
+    createdByText.y = Game.height / 2 - 41;
+    c[1].addChild(createdByText);
+    
+    var authorText = new PIXI.Text(textStrings["NickyCase"], {font: "86px Times", fill:"#FFFFFF", align: "left"});
+    authorText.anchor.x = 0.0;
+    authorText.anchor.y = 0.5;
+    authorText.x = Game.width / 2 - 240;
+    authorText.y = Game.height / 2 + 29;
+    c[1].addChild(authorText);
+    
+    var playtestersText = new PIXI.Text(textStrings["manyThanks"], {font: "44px Times", fill:"#FFFFFF", align: "right"});
+    playtestersText.anchor.x = 1.0;
+    playtestersText.anchor.y = 0.5;
+    playtestersText.x = Game.width / 2 + 262;
+    playtestersText.y = Game.height / 2 - 140;
+    c[2].addChild(playtestersText);
+    
+    var supportersText = new PIXI.Text(textStrings["patreonSupporters"], {font: "44px Times", fill:"#AAAAAA", align: "left"});
+    supportersText.anchor.x = 0.0;
+    supportersText.anchor.y = 0.5;
+    supportersText.x = Game.width / 2 - 0;
+    supportersText.y = Game.height / 2 - 0;
+    c[3].addChild(supportersText);
+//    c[4].addChild(supportersText);
+//    c[5].addChild(supportersText);
+//    c[6].addChild(supportersText);
+    
 	// TWEEN ANIM
 	Tween_get(c[1]).wait(_s(BEAT*4)) // 0. Wait 4 beats before credits...
 	.to({alpha:1}, _s(BEAT), Ease.quadInOut) // 1. CREATED BY!
