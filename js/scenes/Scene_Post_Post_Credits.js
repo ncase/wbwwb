@@ -108,12 +108,12 @@ function Scene_Post_Post_Credits(){
 	});
 
 	// CURSOR
-    var cursor = new Cursor(self);
-    var g = cursor.graphics;
-    cont.addChild(g);
-    g.scale.x = g.scale.y = 0.5;
-    g.x = Game.width/2;
-    g.y = Game.height/2;
+	var cursor = new Cursor(self);
+	var g = cursor.graphics;
+	cont.addChild(g);
+	g.scale.x = g.scale.y = 0.5;
+	g.x = Game.width/2;
+	g.y = Game.height/2;
 
 	// TWEEN ANIM
 	Tween_get(cont)

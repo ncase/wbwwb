@@ -1,5 +1,5 @@
 Game.addToManifest({
-    laptop: "sprites/laptop.png"
+	laptop: "sprites/laptop.png"
 });
 
 /*************
@@ -29,16 +29,16 @@ function ScreenZoomOut(scene){
 		self.laptop = MakeSprite("laptop");
 		self.laptop.x = -offsetX;
 		self.laptop.y = -offsetY;
-    	scene.graphics.addChild(self.laptop);
+		scene.graphics.addChild(self.laptop);
 
-    	self.update();
+		self.update();
 
 	};
 
 	self.fixLaptop = function(){
 		if(!self.started) return;
-        self.laptop.x = -offsetX - scene.offX/scene.scale;
-        self.laptop.y = -offsetY - scene.offY/scene.scale;
+		self.laptop.x = -offsetX - scene.offX/scene.scale;
+		self.laptop.y = -offsetY - scene.offY/scene.scale;
 	};
 
 	self.onComplete = null;

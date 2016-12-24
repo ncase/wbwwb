@@ -13,9 +13,9 @@ function Cursor(scene){
 
 	self.click = false;
 	Game.stage.mousemove = function(mouseData){
-	    var pos = mouseData.data.global;
-	    mc.x = pos.x+1;
-	    mc.y = pos.y+1;
+		var pos = mouseData.data.global;
+		mc.x = pos.x+1;
+		mc.y = pos.y+1;
 	};
 	Game.stage.mousedown = function(mouseData){
 		self.click = true;

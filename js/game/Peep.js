@@ -26,29 +26,29 @@ function Peep(scene){
 	};
 
 	// Graphics: Layers to this peep.
-    var g = new PIXI.Container();
-    self.graphics = g;
+	var g = new PIXI.Container();
+	self.graphics = g;
 
-    // Hop! And bounce INDEPENDENT of anim. Bouncy math!
+	// Hop! And bounce INDEPENDENT of anim. Bouncy math!
 
-    self.hop = Math.random();
-    self._lastHop = self.hop;
+	self.hop = Math.random();
+	self._lastHop = self.hop;
 
-    self.speed = 1 + Math.random()*0.5;
-    self.direction = Math.random()*Math.PI*2;
-    self.vel = {x:0,y:0};
-    self.flip = 1;
+	self.speed = 1 + Math.random()*0.5;
+	self.direction = Math.random()*Math.PI*2;
+	self.vel = {x:0,y:0};
+	self.flip = 1;
 
-    self.isWalking = true;
-    self.loop = true;
+	self.isWalking = true;
+	self.loop = true;
 
-    self.bounce = 1;
-    self.bounceVel = 0;
-    self.bounceAcc = 0.2;
-    self.bounceDamp = 0.6;
+	self.bounce = 1;
+	self.bounceVel = 0;
+	self.bounceAcc = 0.2;
+	self.bounceDamp = 0.6;
 
-    self.goThroughSpots = false;
-    //self.allowToStay = false;
+	self.goThroughSpots = false;
+	//self.allowToStay = false;
 
 	self.update = function(){
 
@@ -58,7 +58,7 @@ function Peep(scene){
 
 		// Walk velocity
 		var vx, vy;
-    	if(self.isWalking){
+		if(self.isWalking){
 			var vx = Math.cos(self.direction)*self.speed;
 			var vy = Math.sin(self.direction)*self.speed;
 		}else{
@@ -98,17 +98,17 @@ function Peep(scene){
 			});
 		}
 
-		/*if(scene.director.isWatchingTV && !self.allowToStay){
-			// TV Rect Bounds
-	        var gx = Game.width/2;
-	        var gy = Game.height/2;
-	        var cw = (440)/2;
-	        var ch = (220)/2;
-	        var rect = {
-	            l:gx-cw, r:gx+cw,
-	            t:gy-ch, b:gy+ch+80
-	        };
-	        if(self.x>rect.l && self.x<rect.r && self.y>rect.t && self.y<rect.b){
+			/*if(scene.director.isWatchingTV && !self.allowToStay){
+		// TV Rect Bounds
+					var gx = Game.width/2;
+					var gy = Game.height/2;
+					var cw = (440)/2;
+					var ch = (220)/2;
+					var rect = {
+							l:gx-cw, r:gx+cw,
+							t:gy-ch, b:gy+ch+80
+					};
+					if(self.x>rect.l && self.x<rect.r && self.y>rect.t && self.y<rect.b){
 				if(self.x<gx) self.x=rect.l;
 				if(self.x>gx) self.x=rect.r;
 				if(self.y<gy) self.y=rect.t;
@@ -139,16 +139,16 @@ function Peep(scene){
 
 		// Position
 		g.x = self.x;
-    	g.y = self.y;
+		g.y = self.y;
 
-    	// Walking
-    	if(self.isWalking){
-    		self.walkAnim();
-    	}else{
-    		self.standAnim();
-    	}
+		// Walking
+		if(self.isWalking){
+			self.walkAnim();
+		}else{
+			self.standAnim();
+		}
 
-    	// Bounce
+		// Bounce
 		self.bounceVel += (1-self.bounce)*self.bounceAcc;
 		self.bounce += self.bounceVel;
 		self.bounceVel *= self.bounceDamp;
@@ -175,20 +175,20 @@ function Peep(scene){
 		self.flip = (self.vel.x<0) ? -1 : 1;
 
 		// Sway back & forth
-    	var t = self.hop*Math.PI*2;
-    	g.rotation = Math.sin(t)*0.1;
-    	g.pivot.y = Math.abs(Math.sin(t))*10;
+		var t = self.hop*Math.PI*2;
+		g.rotation = Math.sin(t)*0.1;
+		g.pivot.y = Math.abs(Math.sin(t))*10;
 
-    	// Squash at the bottom of your cycle
-    	if(self._lastHop<0.5 && self.hop>=0.5) self.bounce = 1.2;
-    	if(self._lastHop>0.9 && self.hop<=0.1) self.bounce = 1.2;
+		// Squash at the bottom of your cycle
+		if(self._lastHop<0.5 && self.hop>=0.5) self.bounce = 1.2;
+		if(self._lastHop>0.9 && self.hop<=0.1) self.bounce = 1.2;
 
 	};
 
 	// Can be overridden
 	self.standAnim = function(){
 		g.rotation = 0;
-    	g.pivot.y = 0;
+		g.pivot.y = 0;
 	};
 
 
@@ -202,29 +202,29 @@ function Peep(scene){
 		var touching = [];
 		var peeps = scene.world.peeps;
 		for(var i=0;i<peeps.length;i++){
-            var other = peeps[i];
-            if(other==self) continue;
-            var dx = other.x-self.x;
-            var dy = (other.y-self.y)*2; // height is half of width, w/e
-            var dist = dx*dx+dy*dy;
-            if(dist<radius*radius){
+			var other = peeps[i];
+			if(other==self) continue;
+			var dx = other.x-self.x;
+			var dy = (other.y-self.y)*2; // height is half of width, w/e
+			var dist = dx*dx+dy*dy;
+			if(dist<radius*radius){
 
-            	// One Sided?
-            	if(oneSided){
-            		if(self.flip>0 && other.x>self.x) touching.push(other);
-            		if(self.flip<0 && other.x<self.x) touching.push(other);
-            	}else{
-            		touching.push(other);
-            	}
+				// One Sided?
+				if(oneSided){
+					if(self.flip>0 && other.x>self.x) touching.push(other);
+					if(self.flip<0 && other.x<self.x) touching.push(other);
+				}else{
+					touching.push(other);
+				}
 
-            }
-        }
+			}
+		}
 
 		// Filter?...
 		if(filterFunc){
 			touching = touching.filter(filterFunc);
 		}
-        return touching;
+		return touching;
 
 	};
 
@@ -235,7 +235,7 @@ function Peep(scene){
 		if(self.y>rect.b && self.vel.y>0) self.direction += turn;
 	};
 
-	/*self.stayOutsideRect = function(rect, turn){
+		/*self.stayOutsideRect = function(rect, turn){
 		if(self.x>rect.l && self.vel.x>0) self.direction += turn;
 		if(self.x<rect.r && self.vel.x<0) self.direction += turn;
 		if(self.y>rect.t && self.vel.y>0) self.direction += turn;
@@ -279,9 +279,9 @@ function Peep(scene){
 
 		self.isWalking = true;
 		self.speed = 1 + Math.random()*0.5;
-    	self.direction = Math.random()*Math.PI*2;
+		self.direction = Math.random()*Math.PI*2;
 
-    	// CALLBACK
+		// CALLBACK
 		self.callback("startWalking");
 
 	};

@@ -1,5 +1,5 @@
 Game.addToManifest({
-    gore_bodies: "sprites/peeps/gore_bodies.json"
+	gore_bodies: "sprites/peeps/gore_bodies.json"
 });
 
 /**************************************
@@ -16,9 +16,9 @@ function DeadBody(scene){
 
 	// Graphics: Layers to this peep.
 	self.DRAWING_SCALE = 0.65;
-    var g = new PIXI.Container();
-    self.graphics = g;
-    self.mc = MakeMovieClip("gore_bodies");
+	var g = new PIXI.Container();
+	self.graphics = g;
+	self.mc = MakeMovieClip("gore_bodies");
 	self.mc.anchor.x = 132/160;
 	self.mc.anchor.y = 91/120;
 	self.mc.scale.x = self.mc.scale.y = self.DRAWING_SCALE;
@@ -54,13 +54,13 @@ function DeadBody(scene){
 		self.vz = Math.sin(self.direction)*self.velocity;
 
 		// BLOOD FOR THE BLOOD GOD
-	    var blood = new Blood(scene);
-	    blood.init({
-	        x: self.x,
-	        y: self.y,
-	        scale: 1
-	    });
-	    scene.world.addBG(blood);
+		var blood = new Blood(scene);
+		blood.init({
+			x: self.x,
+			y: self.y,
+			scale: 1
+		});
+		scene.world.addBG(blood);
 
 	};
 
@@ -81,15 +81,15 @@ function DeadBody(scene){
 
 				// BLOOD FOR THE BLOOD GOD
 				var blood = new Blood(scene);
-                blood.init({
-                    x: self.x,
-                    y: self.y,
-                    scale: 0.5 + Math.abs(self.vz)*0.1
-                });
-                scene.world.addBG(blood);
+				blood.init({
+					x: self.x,
+					y: self.y,
+					scale: 0.5 + Math.abs(self.vz)*0.1
+				});
+				scene.world.addBG(blood);
 
-                // Bounce
-                self.vz *= -0.3;
+				// Bounce
+				self.vz *= -0.3;
 
 			}else{
 				self.vz = 0;

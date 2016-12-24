@@ -74,17 +74,17 @@ function Cricket(scene){
 	self.hopAwayTimeout = -1;
 	self.watchTV = function(){
 
-        // 1) Stop & look
+		// 1) Stop & look
 		var tv = scene.tv;
 		self.x = tv.x + 100;
 		self.y = tv.y;
 		self.flip = -1;
-        var WAIT = Director.ZOOM_OUT_1_TIME + Director.SEE_VIEWERS_TIME + 2.3;
+		var WAIT = Director.ZOOM_OUT_1_TIME + Director.SEE_VIEWERS_TIME + 2.3;
 
-        // 2) And go on.
+		// 2) And go on.
 		self.hopAwayTimeout = _s(WAIT);
 
-    };
+	};
 
 	/////////////
 	// THE END //

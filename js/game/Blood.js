@@ -1,5 +1,5 @@
 Game.addToManifest({
-    blood: "sprites/peeps/blood.json"
+	blood: "sprites/peeps/blood.json"
 });
 
 /**************************************
@@ -15,9 +15,9 @@ function Blood(scene){
 
 	// Graphics: Layers to this peep.
 	self.DRAWING_SCALE = 0.65;
-    var g = new PIXI.Container();
-    self.graphics = g;
-    self.mc = MakeMovieClip("blood");
+	var g = new PIXI.Container();
+	self.graphics = g;
+	self.mc = MakeMovieClip("blood");
 	self.mc.anchor.x = 0.5;
 	self.mc.anchor.y = 0.5;
 	self.mc.gotoAndStop(Math.floor(Math.random()*3));

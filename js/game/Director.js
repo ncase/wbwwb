@@ -75,81 +75,81 @@ function Director(scene){
 		var data = self.photoData;
 		if(self.noSounds) return;
 		if(data.audience>0 || data.audienceCircles>0 || data.audienceSquares>0){
-            Game.sounds.breaking_news.play();
-        }
-        if(data.forceChyron){
-        	Game.sounds.breaking_news.play();
-        }
+			Game.sounds.breaking_news.play();
+		}
+		if(data.forceChyron){
+			Game.sounds.breaking_news.play();
+		}
 	};
 
 	self.audience_cutToTV = function(doSomethingElse, filterAudience){
 
-        // AUDIENCE?
-        var data = self.photoData;
-        var circlesLeft = data.audience;
-        var squaresLeft = data.audience;
-        if(data.HIJACK){
-        	circlesLeft = data.audienceCircles;
-        	squaresLeft = data.audienceSquares;
-        	data.audience = data.audienceCircles+data.audienceSquares;
-        }else{
-        	data.audienceCircles = data.audience;
-        	data.audienceSquares = data.audience;
-        }
-        var peeps = self.scene.world.peeps.slice(0); // clone
+		// AUDIENCE?
+		var data = self.photoData;
+		var circlesLeft = data.audience;
+		var squaresLeft = data.audience;
+		if(data.HIJACK){
+			circlesLeft = data.audienceCircles;
+			squaresLeft = data.audienceSquares;
+			data.audience = data.audienceCircles+data.audienceSquares;
+		}else{
+			data.audienceCircles = data.audience;
+			data.audienceSquares = data.audience;
+		}
+		var peeps = self.scene.world.peeps.slice(0); // clone
 
-        // GET OUT THE WAY (AGAIN)
-        for(var i=0;i<peeps.length;i++){
-        	var p = peeps[i];
-        	if(p._CLASS_!="NormalPeep") continue;
-        	p.getOuttaTV();
-        }
+		// GET OUT THE WAY (AGAIN)
+		for(var i=0;i<peeps.length;i++){
+			var p = peeps[i];
+			if(p._CLASS_!="NormalPeep") continue;
+			p.getOuttaTV();
+		}
 
-        // ANY AUDIENCE, AT ALL?????
-        if(data.audience>0){
+		// ANY AUDIENCE, AT ALL?????
+		if(data.audience>0){
 
-        	// Who to watch TV, now?
-	        if(filterAudience) peeps=peeps.filter(filterAudience); // filter
-	        peeps.sort(function(){ return Math.random()<0.5; }); // shuffle
-	        for(var i=0;i<peeps.length;i++){
+			// Who to watch TV, now?
+			if(filterAudience) peeps=peeps.filter(filterAudience); // filter
+			peeps.sort(function(){ return Math.random()<0.5; }); // shuffle
+			for(var i=0;i<peeps.length;i++){
 
-	            var p = peeps[i];
-	            if(p._CLASS_!="NormalPeep") continue;
+				var p = peeps[i];
+				if(p._CLASS_!="NormalPeep") continue;
 
-	            // Circles on the left, Squares to the right, and here I am!
-	            var flip, offset;
-	            var watchTV = false;
-	            if(p.type=="circle" && circlesLeft>0){
-	            	flip = 1;
-	            	offset = 60 + (data.audienceCircles-circlesLeft)*40;
-	            	watchTV = true;
-	            	circlesLeft--;
-	            }
-	            if(p.type=="square" && squaresLeft>0){
-	            	flip = -1;
-	            	offset = 60 + (data.audienceSquares-squaresLeft)*40;
-	            	watchTV = true;
-	            	squaresLeft--;
-	            }
+				// Circles on the left, Squares to the right, and here I am!
+				var flip, offset;
+				var watchTV = false;
+				if(p.type=="circle" && circlesLeft>0){
+					flip = 1;
+					offset = 60 + (data.audienceCircles-circlesLeft)*40;
+					watchTV = true;
+					circlesLeft--;
+				}
+				if(p.type=="square" && squaresLeft>0){
+					flip = -1;
+					offset = 60 + (data.audienceSquares-squaresLeft)*40;
+					watchTV = true;
+					squaresLeft--;
+				}
 
-	            // Watch the TV? Otherwise move, get out the way.
-	            if(watchTV){
-	                p.x = self.tv.x;
-	                p.x -= flip*offset;
-	                p.y = self.tv.y+Math.random(); // tiny offset to avoid glitchy depth-sort
-	                if(doSomethingElse){
-	                	doSomethingElse(p);
-	                }else{
-	                	p.watchTV();
-	                }
-	            }
+				// Watch the TV? Otherwise move, get out the way.
+				if(watchTV){
+					p.x = self.tv.x;
+					p.x -= flip*offset;
+					p.y = self.tv.y+Math.random(); // tiny offset to avoid glitchy depth-sort
+					if(doSomethingElse){
+						doSomethingElse(p);
+					}else{
+						p.watchTV();
+					}
+				}
 
-	        }
+			}
 
-	    }
+		}
 
-        // Did anyone watch?
-        return (data.audience>0);
+		// Did anyone watch?
+		return (data.audience>0);
 
 	};
 
@@ -219,7 +219,7 @@ function Director(scene){
 				}
 				return isSelected;
 
-            });
+			});
 
 			caught[selector] = returnAll ? caughtProps : caughtProps[0]; // return all or one?
 
@@ -318,40 +318,40 @@ function Director(scene){
 		// Hide Camera
 		scene.camera.hide();
 
-        // SOUND?
+		// SOUND?
 		var data = self.photoData;
 		var fail = false;
 		var nothing = data.ITS_NOTHING;
 		if(!data.forceChyron){
 			if(data.audience==0 && !data.audienceCircles && !data.audienceSquares){
 
-	            Game.sounds.crickets.play();
-	            fail = true;
+				Game.sounds.crickets.play();
+				fail = true;
 
-	            // SHOW CRICKET
-	            var cricket = new Cricket(scene);
-		        cricket.watchTV();
-		        scene.world.addProp(cricket);
+				// SHOW CRICKET
+				var cricket = new Cricket(scene);
+				cricket.watchTV();
+				scene.world.addProp(cricket);
 
-		        // OR... MULTIPLE CRICKETS!
-		        if(data.CAUGHT_A_CRICKET){
+				// OR... MULTIPLE CRICKETS!
+				if(data.CAUGHT_A_CRICKET){
 
-		        	var cricket = new Cricket(scene);
-			        cricket.watchTV();
-			        cricket.x += 30;
-			        cricket.hopAwayTimeout += 15;
-			        scene.world.addProp(cricket);
+					var cricket = new Cricket(scene);
+					cricket.watchTV();
+					cricket.x += 30;
+					cricket.hopAwayTimeout += 15;
+					scene.world.addProp(cricket);
 
-			        var cricket = new Cricket(scene);
-			        cricket.watchTV();
-			        cricket.x += 60;
-			        cricket.hopAwayTimeout += 30;
-			        scene.world.addProp(cricket);
+					var cricket = new Cricket(scene);
+					cricket.watchTV();
+					cricket.x += 60;
+					cricket.hopAwayTimeout += 30;
+					scene.world.addProp(cricket);
 
-		        }
+				}
 
-	        }
-	    }
+			}
+		}
 
 		// Add photo texture to the TV
 		var text = self.chyron;
@@ -365,18 +365,18 @@ function Director(scene){
 
 		// Where to cut viewport to
 		self.cutViewportTo({
-	    	x: tv.x + tv.offset.x,
-	    	y: tv.y + tv.offset.y,
-	    	scale: tv.offset.scale
-	    });
+			x: tv.x + tv.offset.x,
+			y: tv.y + tv.offset.y,
+			scale: tv.offset.scale
+		});
 
-	    // GET OUT THE WAY
-	    var peeps = self.scene.world.peeps.slice(0);
-        for(var i=0;i<peeps.length;i++){
-        	var p = peeps[i];
-        	if(p._CLASS_!="NormalPeep") continue;
-        	p.getOuttaTV();
-        }
+		// GET OUT THE WAY
+		var peeps = self.scene.world.peeps.slice(0);
+		for(var i=0;i<peeps.length;i++){
+			var p = peeps[i];
+			if(p._CLASS_!="NormalPeep") continue;
+			p.getOuttaTV();
+		}
 
 	};
 	_anim.zoomOut1 = function(){
@@ -492,8 +492,8 @@ function Director(scene){
 			// Container
 			var g = scene.world.graphics;
 			g.scale.x = g.scale.y = s;
-    		g.pivot.x = x;
-    		g.pivot.y = y;
+			g.pivot.x = x;
+			g.pivot.y = y;
 
 		};
 

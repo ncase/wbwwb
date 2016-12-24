@@ -31,13 +31,13 @@ function World(scene, options){
 	g.addChild(self.layers.bg);
 	var bg = MakeSprite(options.bg ? options.bg : "bg");
 	bg.position.x = -100;
-    bg.position.y = -100;
-    self.layers.bg.addChild(bg);
-    self.bg = [];
-    self.addBG = function(bg){
+	bg.position.y = -100;
+	self.layers.bg.addChild(bg);
+	self.bg = [];
+	self.addBG = function(bg){
 		self.bg.push(bg);
 		self.layers.bg.addChild(bg.graphics);
-    };
+	};
 
 	// LAYER: PROPS
 	self.layers.props = new PIXI.Container();
@@ -78,14 +78,14 @@ function World(scene, options){
 			var peep = new NormalPeep(self.scene);
 			// ADD TO BALANCE 'EM!
 			if(circleCount<squareCount){
-	        	peep.setType("circle");
-	        	circleCount++;
-	        }else{
-	        	peep.setType("square");
-	        	squareCount++;
-	        }
-	        self.addPeep(peep);
-	    }
+				peep.setType("circle");
+				circleCount++;
+			}else{
+				peep.setType("square");
+				squareCount++;
+			}
+			self.addPeep(peep);
+		}
 
 
 	};
@@ -113,21 +113,21 @@ function World(scene, options){
 
 	};
 
-    // Update
-    self.update = function(){
+	// Update
+	self.update = function(){
 
-    	// BGs: Update all
-    	for(var i=0; i<self.bg.length; i++){
-    		self.bg[i].update();
-    	}
+		// BGs: Update all
+		for(var i=0; i<self.bg.length; i++){
+			self.bg[i].update();
+		}
 
 		// PROPS: Update then depth-sort
-    	for(var i=0; i<self.props.length; i++){
-    		self.props[i].update();
-    	}
-	    self.layers.props.children.sort(function(a,b){
-	    	var ay = a._REFERENCE_.y || a.y;
-	    	var by = b._REFERENCE_.y || b.y;
+		for(var i=0; i<self.props.length; i++){
+			self.props[i].update();
+		}
+		self.layers.props.children.sort(function(a,b){
+			var ay = a._REFERENCE_.y || a.y;
+			var by = b._REFERENCE_.y || b.y;
 			return (ay<by) ? -1 : 1;
 		});
 

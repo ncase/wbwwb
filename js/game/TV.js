@@ -26,36 +26,36 @@ function TV(scene){
 
 	// Graphics
 	var resources = PIXI.loader.resources;
-    var g = new PIXI.Container();
-    var bg = new PIXI.Sprite(resources.tv.texture);
-    bg.anchor.x = 0.5;
-    bg.anchor.y = 1.0;
-    bg.scale.x = bg.scale.y = 0.5;
-    g.addChild(bg);
-    self.graphics = g;
+	var g = new PIXI.Container();
+	var bg = new PIXI.Sprite(resources.tv.texture);
+	bg.anchor.x = 0.5;
+	bg.anchor.y = 1.0;
+	bg.scale.x = bg.scale.y = 0.5;
+	g.addChild(bg);
+	self.graphics = g;
 
-    // Offset
-    self.offset = {
-    	x: 0,
-    	y: -113.5,
-    	scale: 8
-    };
+	// Offset
+	self.offset = {
+		x: 0,
+		y: -113.5,
+		scale: 8
+	};
 
-    // Photo container
-    var photoContainer = new PIXI.Container();
-    var conversion = 0.5; // from 1/4 to 1/8
-    photoContainer.x = self.offset.x - Camera.WIDTH*0.5*conversion;
-    photoContainer.y = self.offset.y - Camera.HEIGHT*0.5*conversion;
-    photoContainer.scale.x = photoContainer.scale.y = conversion;
-    g.addChild(photoContainer);
+	// Photo container
+	var photoContainer = new PIXI.Container();
+	var conversion = 0.5; // from 1/4 to 1/8
+	photoContainer.x = self.offset.x - Camera.WIDTH*0.5*conversion;
+	photoContainer.y = self.offset.y - Camera.HEIGHT*0.5*conversion;
+	photoContainer.scale.x = photoContainer.scale.y = conversion;
+	g.addChild(photoContainer);
 
-    // Update
+	// Update
 	self.update = function(){
 		self.updateGraphics();
 	};
 	self.updateGraphics = function(){
 		g.x = self.x;
-    	g.y = self.y;
+		g.y = self.y;
 	};
 
 	// PHOTO
@@ -71,7 +71,7 @@ function TV(scene){
 
 		// Add photo now
 		photo = new PIXI.Sprite(photoTexture);
-	    photoContainer.addChild(photo);
+		photoContainer.addChild(photo);
 
 		// Chryon container
 		var chyron = new PIXI.Container();
@@ -96,13 +96,13 @@ function TV(scene){
 			if(text.length>max){ // more than [max] chars...
 				fontsize = Math.floor(max*fontsize/text.length);
 			}
-		    var text = new PIXI.Text(text, {font:"bold "+fontsize+"px Poppins", fill:"#FFF"});
-		    text.scale.x = text.scale.y = 0.2;
-		    text.anchor.x = 0;
-		    text.anchor.y = 0.5;
-		    text.x = 45;
-		    text.y = 115;
-		    chyron.addChild(text);
+			var text = new PIXI.Text(text, {font:"bold "+fontsize+"px Poppins", fill:"#FFF"});
+			text.scale.x = text.scale.y = 0.2;
+			text.anchor.x = 0;
+			text.anchor.y = 0.5;
+			text.x = 45;
+			text.y = 115;
+			chyron.addChild(text);
 		}
 
 	}
