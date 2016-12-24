@@ -20,7 +20,7 @@ function Cricket(scene){
 	var MODE = 0;
 	var MODE_CHIRP = 0;
 	var MODE_HOP = 1;
-	
+
 	self.flip = 1;
 	self.period = 10;
 	self.breathe = Math.floor(Math.random()*self.period);
@@ -73,7 +73,7 @@ function Cricket(scene){
 
 	self.hopAwayTimeout = -1;
 	self.watchTV = function(){
-        
+
         // 1) Stop & look
 		var tv = scene.tv;
 		self.x = tv.x + 100;

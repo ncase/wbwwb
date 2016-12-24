@@ -103,7 +103,7 @@ function HappyWeirdoPeep(scene){
         self.hop += self.speed/150;
         if(self.hop>1) self.hop--;
         self.flip = (self.vel.x<0) ? -1 : 1;
-        
+
         // Wobble!
         if(MODE!=MODE_FROWN){
             var t = self.hop*Math.TAU;

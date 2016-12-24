@@ -40,7 +40,7 @@ function Scene_Meta(){
 	g.addChild(self.stream);
 
 	// CHYRON
-	
+
 	// Chryon container
 	/*
 	var chyron = new PIXI.Container();
@@ -75,7 +75,7 @@ function Scene_Meta(){
         self.world.update();
 
         // RECURSIVE SCREEN
-        
+
         var matrix = new PIXI.Matrix();
 	    matrix.translate(-self.graphics.x, -self.graphics.y);
 	    matrix.scale(1/self.graphics.scale.x, 1/self.graphics.scale.y);

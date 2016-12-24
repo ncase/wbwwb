@@ -5,7 +5,7 @@ Game.addToManifest({
 }, true);
 
 function Scene_Preloader(){
-	
+
 	var self = this;
 	Scene.call(self);
 
@@ -44,7 +44,7 @@ function Scene_Preloader(){
     text.x = bar.x;
     text.y = bar.y;
     Game.stage.addChild(text);
-    
+
     // Playing time text
     var playingTimeText = new PIXI.Text(textStrings["playingTime"], { font: "32px Poppins", fill: "#FFFFFF", align: "center" });
     playingTimeText.anchor.x = 0.5;
@@ -52,7 +52,7 @@ function Scene_Preloader(){
     playingTimeText.x = bar.x;
     playingTimeText.y = 300;
     Game.stage.addChild(playingTimeText);
-    
+
     // Warning text
     var warningText = new PIXI.Text(textStrings["warning"], { font: "25px Poppins", fill: "#666666", align: "center" });
     warningText.anchor.x = 0.5;
@@ -60,7 +60,7 @@ function Scene_Preloader(){
     warningText.x = bar.x;
     warningText.y = 422;
     Game.stage.addChild(warningText);
-    
+
     // CURSOR
     var cursor = new Cursor(self);
     Game.stage.addChild(cursor.graphics);

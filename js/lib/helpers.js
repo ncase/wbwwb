@@ -25,7 +25,7 @@ var MakeMovieClip = function(resourceName){
 
 	// Make it!
 	var resources = PIXI.loader.resources;
-	var resource = resources[resourceName];	
+	var resource = resources[resourceName];
 	var numFrames = Object.keys(resource.data.frames).length;
 	var frames = [];
 	for(var i=0; i<numFrames; i++){

@@ -243,7 +243,7 @@ function Director(scene){
 		var cb = cam.y+cam.height/2;
 
 		for(var i=0;i<scene.world.props.length;i++){
-			
+
 			var prop = scene.world.props[i];
 
 			// prop's top-left-right-bottom
@@ -254,7 +254,7 @@ function Director(scene){
 			var pt = realY-prop.height;
 			var pb = realY;
 			var totalArea = prop.width*prop.height;
-	
+
 			// not overlapping at all
 			if(pr<cl) continue;
 			if(pl>cr) continue;
@@ -498,7 +498,7 @@ function Director(scene){
 		};
 
 	};
-	
+
 	// Goof.
 	self.update = function(){};
 

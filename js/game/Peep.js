@@ -30,7 +30,7 @@ function Peep(scene){
     self.graphics = g;
 
     // Hop! And bounce INDEPENDENT of anim. Bouncy math!
-    
+
     self.hop = Math.random();
     self._lastHop = self.hop;
 
@@ -38,7 +38,7 @@ function Peep(scene){
     self.direction = Math.random()*Math.PI*2;
     self.vel = {x:0,y:0};
     self.flip = 1;
-    
+
     self.isWalking = true;
     self.loop = true;
 
@@ -90,7 +90,7 @@ function Peep(scene){
 
 				var dx = spot.x-self.x;
 				var dy = spot.y-self.y;
-				
+
 				if(dx*dx+dy*dy < spot.radius*spot.radius){
 					self.direction = Math.atan2(dy,dx)+Math.PI; // insta-walk AWAY.
 				}

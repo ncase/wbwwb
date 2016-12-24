@@ -44,7 +44,7 @@ function Scene_Game(){
 
     // UPDATE
     self.update = function(){
-        
+
         self.world.update();
         self.camera.update();
         self.director.update();

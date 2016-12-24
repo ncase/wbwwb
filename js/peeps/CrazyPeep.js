@@ -139,7 +139,7 @@ function CrazyPeep(scene){
 
     // SHOUT STANDING
     self.standAnim = function(){
-        
+
         g.rotation = 0;
         g.pivot.y = 0;
 

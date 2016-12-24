@@ -4,7 +4,7 @@
 });
 
 function Scene_EndPrototype(){
-	
+
 	var self = this;
 	Scene.call(self);
 

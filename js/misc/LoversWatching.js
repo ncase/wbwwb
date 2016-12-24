@@ -6,7 +6,7 @@ function LoversWatching(type){
 	var self = this;
 	var mc = MakeMovieClip("lovers_watching");
 	self.graphics = mc;
-	
+
 	self.breathe = 0;
 	self.breatheSpeed = 0;
 	if(type=="circle"){

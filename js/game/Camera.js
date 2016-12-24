@@ -47,13 +47,13 @@ function Camera(scene, options){
 
 	// FLASH, FRAME, INSTRUCTIONS
 	var resources = PIXI.loader.resources;
-	
+
 	self.flash = new PIXI.Sprite(resources.cam_flash.texture);
 	self.flash.scale.x = self.flash.scale.y = 0.5;
     self.flash.anchor.x = self.flash.anchor.y = 0.5;
     self.flash.alpha = 0;
     self.graphics.addChild(self.flash);
-	
+
 	self.frame = new PIXI.Sprite(resources.cam_frame.texture);
 	self.frame.scale.x = self.frame.scale.y = 0.5;
     self.frame.anchor.x = self.frame.anchor.y = 0.5;
@@ -203,7 +203,7 @@ function Camera(scene, options){
 
 	// Update
 	self.updatePosition = function(){
-		
+
 		// Constraints
 	    if(self.x<self.width/2) self.x=self.width/2;
 	    if(self.x>Game.width-self.width/2) self.x=Game.width-self.width/2;

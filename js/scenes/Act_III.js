@@ -63,7 +63,7 @@ function Stage_Evil(self, HACK){
         return peep._CLASS_=="HappyWeirdoPeep";
     })[0];
     happy.prepareForMurder();
-    
+
     // The MURDERER
     var murderer = new EvilHatPeep(self);
     murderer.victim = happy;
@@ -174,7 +174,7 @@ function Stage_Panic(self){
         flip: -1,
         frame: 0
     });
-    self.world.addProp(deadbody);    
+    self.world.addProp(deadbody);
 
     // Gore Particles
     for(var i=0;i<30;i++){
@@ -218,7 +218,7 @@ function Stage_Panic(self){
             d.audience_movePhoto();
         },
         cutToTV: function(d){
-            
+
             d.audience_cutToTV();
 
             // Get rid of Hat Guy, if not done so already.

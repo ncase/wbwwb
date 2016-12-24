@@ -45,7 +45,7 @@ function NormalPeep(scene){
     // Animation
     var doubles = 0;
     self.callbacks.update = function(){
-        
+
         // Animate on doubles! ...or... TRIPLES?
         doubles = (doubles+1)%3;
 
@@ -94,7 +94,7 @@ function NormalPeep(scene){
 
     self.shocked = false;
     self.beShocked = function(){
-        
+
         self.shocked = true;
         self.stopWalking();
         self.bounce = 2;
@@ -115,7 +115,7 @@ function NormalPeep(scene){
     self.beConfused = function(target){
 
         self.flip = (target.x>self.x) ? 1 : -1;
-        
+
         self.confused = true;
         self.stopWalking();
         self.bounce = 1.1;
@@ -192,7 +192,7 @@ function NormalPeep(scene){
     self.wearHat = function(){
 
         self.clearAnims(); // just in case...
-        
+
         // 1) Stop & look
         var tv = scene.tv;
         self.stopWalking(true);
@@ -221,7 +221,7 @@ function NormalPeep(scene){
         self.clearAnims(); // just in case...
 
         if(!instant){
-        
+
             // 1) Stop & look
             var tv = scene.tv;
             self.stopWalking(true);
@@ -268,7 +268,7 @@ function NormalPeep(scene){
         // just in case...
         self.shocked = false;
         self.confused = false;
-        
+
         // TV Rect Bounds
         var gx = Game.width/2;
         var gy = Game.height/2;
@@ -300,7 +300,7 @@ function NormalPeep(scene){
     self.watchTV = function(){
 
         self.clearAnims(); // just in case...
-        
+
         // 1) Stop & look
         var tv = scene.tv;
         self.stopWalking(true);

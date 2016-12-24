@@ -47,7 +47,7 @@ function NervousPeep(scene){
     var doubles = 0;
     self.isShocked = false;
     self.callbacks.update = function(){
-        
+
         // Animate on doubles! ...or... TRIPLES?
         doubles = (doubles+1)%3;
 
@@ -172,7 +172,7 @@ function NervousPeep(scene){
     self.watchTV = function(){
 
         self.clearAnims(); // just in case...
-        
+
         // 0) Stop & look
         var tv = scene.tv;
         self.stopWalking(true);
@@ -187,7 +187,7 @@ function NervousPeep(scene){
 
             // SQUEAK
             Game.sounds.squeak.play();
-            
+
         },_s(OFFSET+BEAT*2));
 
         // 2) Blink...

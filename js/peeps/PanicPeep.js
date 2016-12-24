@@ -112,7 +112,7 @@ function PanicPeep(scene){
             flip: flip,
             frame: (CORPSE_FRAME+2)*2 + frameOffset
         });
-        scene.world.addProp(deadbody);    
+        scene.world.addProp(deadbody);
 
         // MY GORE
         for(var i=0;i<GORE_AMOUNT;i++){

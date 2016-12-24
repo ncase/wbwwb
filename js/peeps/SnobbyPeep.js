@@ -13,7 +13,7 @@ Game.addToManifest({
 FRAMES:
 00-03: disbelief at screen
 04-07: grouch face (07 is resting)
-09-14: SMUG 
+09-14: SMUG
 15-20: HMPH. (LOOP HMPH at 16)
 22-25: POP.
 26-29: Go Away. FLIP, then go to 07.
@@ -56,7 +56,7 @@ function SnobbyPeep(scene){
     };
 
     self.callbacks.update = function(){
-        
+
         // Animate on doubles! ...or... TRIPLES?
         doubles = (doubles+1)%3;
 
@@ -108,7 +108,7 @@ function SnobbyPeep(scene){
                         face.gotoAndStop(7);
                         MODE = MODE_BLINK;
                         self.isSmug = false;
-                        
+
                     }
                     break;
             }
@@ -146,7 +146,7 @@ function SnobbyPeep(scene){
 
                     // HMPH!
                     self.setTimeout(function(){
-                        
+
                         MODE = MODE_HMPH;
                         self.isSmug = true;
 
@@ -189,7 +189,7 @@ function SnobbyPeep(scene){
     self.watchTV = function(){
 
         self.clearAnims(); // just in case...
-        
+
         // 0) Stop & look
         var tv = scene.tv;
         self.stopWalking(true);
@@ -199,7 +199,7 @@ function SnobbyPeep(scene){
 
         // 1) Become nervous
         self.setTimeout(function(){
-            
+
             self.bounce = 1.6;
             MODE = MODE_STARE;
 

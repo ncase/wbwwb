@@ -80,7 +80,7 @@ function MurderPeep(scene){
     self.gracePeriod = -1;
     self.standingTime = -1;
     self.callbacks.update = function(){
-        
+
         // Animate on doubles! ...or... TRIPLES?
         doubles = (doubles+1)%4;
 
@@ -215,7 +215,7 @@ function MurderPeep(scene){
     self.watchTV = function(){
 
         self.clearAnims(); // just in case...
-        
+
         // 0) Stop & look
         var tv = scene.tv;
         self.stopWalking(true);
@@ -226,7 +226,7 @@ function MurderPeep(scene){
         // 1) Become nervous
         self.setTimeout(function(){
             self.bounce = 1.6;
-            MODE = MODE_CRAZY;            
+            MODE = MODE_CRAZY;
         },_s(OFFSET+BEAT*2));
 
         // 3) And go on.

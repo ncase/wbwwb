@@ -57,7 +57,7 @@ function Stage_Screamer(self){
                 return caught.shocked;
             })
             .otherwise(_chyPeeps);
-        
+
         },
         movePhoto: function(d){
             d.audience_movePhoto();
@@ -84,7 +84,7 @@ function Stage_Screamer(self){
             .otherwise(_cutLovers)
             .otherwise(_cutHats)
             .otherwise(_cutPeeps);
-            
+
         }
     };
 
@@ -141,7 +141,7 @@ function Stage_Nervous(self, HACK){
             })
             .otherwise(_chyHats)
             .otherwise(_chyPeeps);
-        
+
         },
         movePhoto: function(d){
             d.audience_movePhoto();
@@ -190,7 +190,7 @@ function Stage_Snobby(self, HACK){
             // 1. Snobby
             // 2. Hats
             // 3. Everything else
-            
+
             d.tryChyron(function(d){
                 var p = d.photoData;
                 var caught = d.caught({
@@ -213,7 +213,7 @@ function Stage_Snobby(self, HACK){
                 return false;
             })
             .otherwise(_chyHats)
-            .otherwise(_chyPeeps);            
+            .otherwise(_chyPeeps);
 
         },
         movePhoto: function(d){
@@ -229,7 +229,7 @@ function Stage_Snobby(self, HACK){
             d.tryCut2TV(function(d){
                 var p = d.photoData;
                 if(p.caughtSnobby){
-                    
+
                     // self.world.addBalancedPeeps(1); // Add with moar!
 
                     // Get rid of all hats
@@ -283,7 +283,7 @@ function Stage_Angry_Escalation(self, HACK){
         protest = new ProtestAnim(self);
 
         self.world.addProp(protest);
-        
+
     }
 
     // Director
@@ -414,7 +414,7 @@ function _chyAngry(d){
                 }
 
             }
-            
+
         }else{
             if(caught.shocked){
                 d.chyron = textStrings["justMissed"];
@@ -483,7 +483,7 @@ function _cutAngry(d){
 
     var p = d.photoData;
     if(p.caughtAngry){
-        
+
         d.audience_cutToTV();
 
         // Make ALL the watching normal peeps angry
@@ -492,7 +492,7 @@ function _cutAngry(d){
         peeps.filter(function(p){
             return (p._CLASS_=="NormalPeep" && p.isWatching);
         }).forEach(function(peep){
-            var newPeep = new AngryPeep(d.scene, peep.type);                 
+            var newPeep = new AngryPeep(d.scene, peep.type);
             world.replacePeep(peep, newPeep);
             newPeep.watchTV();
         });

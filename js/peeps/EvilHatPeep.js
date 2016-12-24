@@ -36,7 +36,7 @@ function EvilHatPeep(scene){
     // WHO TO KILL
     self.victim = null; // plz tell this peep.
     self.freezeEveryone = null; // plz tell this peep.
-    self.bang = null; // plz tell this peep. 
+    self.bang = null; // plz tell this peep.
 
     // Goes through the spot...
     var doubles = 0;
@@ -115,7 +115,7 @@ function EvilHatPeep(scene){
         self.setTimeout(function(){
             self.victim.smile();
         },_s(0.5));
-        
+
         // +1.5 beats.
         // Pull out gun. Happy frowns.
         // AND EVERYONE FREEZES.

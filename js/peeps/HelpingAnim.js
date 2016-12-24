@@ -67,7 +67,7 @@ function HelpingAnim(scene){
                         mc.gotoAndStop(frame);
                         if(frame==12) Game.sounds.scream.play();
                         if(frame==70){
-                            self.hasHelped=true;                            
+                            self.hasHelped=true;
                             Game.sounds.squeak.play();// SQUEAK
                         }
                     }else{
@@ -131,7 +131,7 @@ function HelpingAnim(scene){
         self.scene.world.addPeep(happyWeirdo);
 
         // KILL!
-        self.kill();        
+        self.kill();
 
     };
 

@@ -32,7 +32,7 @@ function ScreenZoomOut(scene){
     	scene.graphics.addChild(self.laptop);
 
     	self.update();
-	    
+
 	};
 
 	self.fixLaptop = function(){

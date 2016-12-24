@@ -114,7 +114,7 @@ function LoverPeep(scene){
     self.makeEmbarrassed = function(){
 
         self.clearAnims(); // just in case...
-        
+
         // 1) Stop & look
         var tv = scene.tv;
         self.x = tv.x;
@@ -132,7 +132,7 @@ function LoverPeep(scene){
 
         // 2) Blink...
         self.setTimeout(function(){
-            
+
             self.isWatching = false;
             self.faceMC.gotoAndStop(10);
             self.bounce = 1.2;
@@ -141,7 +141,7 @@ function LoverPeep(scene){
 
         // 3) And go on.
         self.setTimeout(function(){
-            
+
             self.isEmbarrassed = true;
             self.faceMC.gotoAndStop(11);
 
@@ -150,7 +150,7 @@ function LoverPeep(scene){
             self.loop = false;
             self.direction = 0;
             self.speed = 3;
-            
+
         },_s(WAIT+0.06));
 
     };

@@ -61,7 +61,7 @@ function AngryPeep(scene, type){
     };
 
     self.callbacks.update = function(){
-        
+
         // Animate on doubles! ...or... TRIPLES?
         doubles = (doubles+1)%3;
 
@@ -145,7 +145,7 @@ function AngryPeep(scene, type){
                 else volume=0.27;
                 var shout = Game.sounds.shout;
                 shout.volume(volume);
-                shout.play(); 
+                shout.play();
 
                 // MAKE BOD REDDER
                 // self.bodyRedMC.alpha = 1;
@@ -198,7 +198,7 @@ function AngryPeep(scene, type){
     self.watchTV = function(){
 
         self.clearAnims(); // just in case...
-        
+
         // 0) Stop & look
         var tv = scene.tv;
         self.stopWalking(true);
@@ -208,10 +208,10 @@ function AngryPeep(scene, type){
 
         // 1) Become frowny
         self.setTimeout(function(){
-            
+
             self.bounce = 1.6;
             MODE = MODE_STARE;
-            
+
             // SQUEAK
             Game.sounds.squeak.play();
 
