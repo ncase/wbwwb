@@ -1,5 +1,5 @@
 Game.addToManifest({
-    gore: "sprites/peeps/gore.json"
+	gore: "sprites/peeps/gore.json"
 });
 
 /**************************************
@@ -16,10 +16,10 @@ function Gore(scene){
 
 	// Graphics: Layers to this peep.
 	self.DRAWING_SCALE = 0.65;
-    var g = new PIXI.Container();
-    self.graphics = g;
-    self.mc = MakeMovieClip("gore");
-    self.mc.gotoAndStop(Math.floor(Math.random()*3));
+	var g = new PIXI.Container();
+	self.graphics = g;
+	self.mc = MakeMovieClip("gore");
+	self.mc.gotoAndStop(Math.floor(Math.random()*3));
 	self.mc.anchor.x = 0.5;
 	self.mc.anchor.y = 0.5;
 	self.mc.scale.x = self.mc.scale.y = self.DRAWING_SCALE;
@@ -74,15 +74,15 @@ function Gore(scene){
 
 				// BLOOD FOR THE BLOOD GOD
 				var blood = new Blood(scene);
-                blood.init({
-                    x: self.x,
-                    y: self.y,
-                    scale: Math.abs(self.vz)*0.02
-                });
-                scene.world.addBG(blood);
+				blood.init({
+					x: self.x,
+					y: self.y,
+					scale: Math.abs(self.vz)*0.02
+				});
+				scene.world.addBG(blood);
 
-                // Bounce
-                self.vz *= -0.2;
+				// Bounce
+				self.vz *= -0.2;
 
 			}else{
 				self.vz = 0;

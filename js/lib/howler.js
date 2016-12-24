@@ -2161,7 +2161,7 @@
 
 /*!
  *  Spatial Plugin - Adds support for stereo and 3D audio where Web Audio is supported.
- *  
+ *
  *  howler.js v2.0.0
  *  howlerjs.com
  *
@@ -2178,7 +2178,7 @@
   // Setup default properties.
   HowlerGlobal.prototype._pos = [0, 0, 0];
   HowlerGlobal.prototype._orientation = [0, 0, -1, 0, 1, 0];
-  
+
   /** Global Methods **/
   /***************************************************************************/
 
@@ -2561,7 +2561,7 @@
    *     refDistance - (1 by default) A reference distance for reducing volume as the source
    *                    moves away from the listener.
    *     rolloffFactor - (1 by default) How quickly the volume reduces as source moves from listener.
-   * 
+   *
    * @return {Howl/Object} Returns self or current panner attributes.
    */
   Howl.prototype.pannerAttr = function() {

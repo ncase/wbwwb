@@ -20,8 +20,8 @@ function AnimationProp(scene){
 	self.height = -1;
 
 	// Graphics
-    var g = new PIXI.Container();
-    self.graphics = g;
+	var g = new PIXI.Container();
+	self.graphics = g;
 
 	// DO IT.
 	self.DRAWING_SCALE = 0.65;
@@ -46,12 +46,12 @@ function AnimationProp(scene){
 
 	};
 
-    // Update
-    // TO IMPLEMENT: YOUR OWN ANIMATION CODDE
+	// Update
+	// TO IMPLEMENT: YOUR OWN ANIMATION CODDE
 	self.update = function(){
 		g.x = self.x;
-    	g.y = self.y;
-    	self.updateAnimation();
+		g.y = self.y;
+		self.updateAnimation();
 	};
 	self.updateAnimation = function(){};
 

@@ -5,7 +5,7 @@ Game.addToManifest({
 }, true);
 
 function Scene_Preloader(){
-	
+
 	var self = this;
 	Scene.call(self);
 
@@ -39,49 +39,49 @@ function Scene_Preloader(){
 
 	// Loading text
 	var text = new PIXI.Text("loading... 0%", {font:"25px Poppins", fill:"#4C4C4C", align:"center"});
-    text.anchor.x = 0.5;
-    text.anchor.y = 0.5;
-    text.x = bar.x;
-    text.y = bar.y;
-    Game.stage.addChild(text);
-    
-    // Playing time text
-    var playingTimeText = new PIXI.Text(textStrings["playingTime"], { font: "32px Poppins", fill: "#FFFFFF", align: "center" });
-    playingTimeText.anchor.x = 0.5;
-    playingTimeText.anchor.y = 0.5;
-    playingTimeText.x = bar.x;
-    playingTimeText.y = 300;
-    Game.stage.addChild(playingTimeText);
-    
-    // Warning text
-    var warningText = new PIXI.Text(textStrings["warning"], { font: "25px Poppins", fill: "#666666", align: "center" });
-    warningText.anchor.x = 0.5;
-    warningText.anchor.y = 0.5;
-    warningText.x = bar.x;
-    warningText.y = 422;
-    Game.stage.addChild(warningText);
-    
-    // CURSOR
-    var cursor = new Cursor(self);
-    Game.stage.addChild(cursor.graphics);
+	text.anchor.x = 0.5;
+	text.anchor.y = 0.5;
+	text.x = bar.x;
+	text.y = bar.y;
+	Game.stage.addChild(text);
+
+	// Playing time text
+	var playingTimeText = new PIXI.Text(textStrings["playingTime"], { font: "32px Poppins", fill: "#FFFFFF", align: "center" });
+	playingTimeText.anchor.x = 0.5;
+	playingTimeText.anchor.y = 0.5;
+	playingTimeText.x = bar.x;
+	playingTimeText.y = 300;
+	Game.stage.addChild(playingTimeText);
+
+	// Warning text
+	var warningText = new PIXI.Text(textStrings["warning"], { font: "25px Poppins", fill: "#666666", align: "center" });
+	warningText.anchor.x = 0.5;
+	warningText.anchor.y = 0.5;
+	warningText.x = bar.x;
+	warningText.y = 422;
+	Game.stage.addChild(warningText);
+
+	// CURSOR
+	var cursor = new Cursor(self);
+	Game.stage.addChild(cursor.graphics);
 
 	// Update!
 	self.update = function(){
 
 		// RECURSIVE SCREEN
 		var renderTexture = renderTexturePool[renderTexturePoolIndex];
-	    renderTexture.render(Game.stage);
-	    renderTexturePoolIndex = (renderTexturePoolIndex+1)%renderTexturePool.length;
-	    self.stream.texture = renderTexture;
+		renderTexture.render(Game.stage);
+		renderTexturePoolIndex = (renderTexturePoolIndex+1)%renderTexturePool.length;
+		self.stream.texture = renderTexture;
 
-	    // THE BUTTON!
-	    var scale = bar.scale.x;
-	    var gotoScale = (bar.currentFrame==2) ? 1.02 : 1.00;
-	    scale = scale*barEase + gotoScale*(1-barEase);
-	    bar.scale.x = bar.scale.y = scale;
+		// THE BUTTON!
+		var scale = bar.scale.x;
+		var gotoScale = (bar.currentFrame==2) ? 1.02 : 1.00;
+		scale = scale*barEase + gotoScale*(1-barEase);
+		bar.scale.x = bar.scale.y = scale;
 
-	    // Ya
-	    cursor.update((bar.currentFrame==2));
+		// Ya
+		cursor.update((bar.currentFrame==2));
 
 	};
 
