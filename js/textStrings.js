@@ -210,48 +210,48 @@ var textStrings_DE = {
 
 var textStrings_FR = {
     // Act 1
-    "niceHat"              : "Ooh quel joli chapeau"                                          ,
-    "outtaHere"            : "yeah git on outta here"                                ,
+    "niceHat"              : "Ooh quel joli chapeau"                                            ,
+    "outtaHere"            : "Aller, dégage de là !"                                            ,
     "getARoom"             : "BEURK, trouvez vous une chambre"                                  ,
-    "notCoolAnymore"       : "Les chapeaux ne sont plus à la mode"                          ,
-    "tvOnTv"               : "Une télé...A la télé !"                                        ,
-    "cricky"               : "Pti criquet <3"                                        ,
-    "tooManyCrickets"      : "ok, trop de criquets !"                         ,
-    "normalPeep"           : "c'est juste un bruit normal"                                    ,
-    "normalPeeps"          : "simplement des bruits normaux"                                ,
-    "wowNothing"           : "Waaaa, ce n'est rien..."                                  ,
+    "notCoolAnymore"       : "Les chapeaux ne sont plus à la mode"                              ,
+    "tvOnTv"               : "Une télé...A la télé !"                                           ,
+    "cricky"               : "Petit criquet <3"                                                 ,
+    "tooManyCrickets"      : "ok, trop de criquets !"                                           ,
+    "normalPeep"           : "c'est juste un gars normal"                                       ,
+    "normalPeeps"          : "simplement des gars normaux"                                      ,
+    "wowNothing"           : "Waaaa, ce n'est rien..."                                          ,
     
     // Act 2
-    "crazySquareAttacks"   : "ATTAQUE D'UN CARRÉ FOU"                                 ,
-    "justMissed"           : "oooooh, raté"                                 ,
+    "crazySquareAttacks"   : "ATTAQUE D'UN CARRÉ FOU"                                                ,
+    "justMissed"           : "oooooh, raté"                                                          ,
     "somethingInteresting" : "(tu dois les prendre en train de faire *quelque chose* d'intéressant)" ,
-    "whoIsScreaming"       : "(tu dois prendre celui qui leurs cri dessus)"               ,
-    "circleFearsSquares"   : "LES CERCLES SONT EFFRAYES PAR LES CARRES"                                  ,
-    "whoScaresThem"        : "(tu dois aussi prendre *celui* qui les terrorise)"         ,
+    "whoIsScreaming"       : "(tu dois prendre celui qui leurs cri dessus)"                          ,
+    "circleFearsSquares"   : "LES CERCLES SONT EFFRAYES PAR LES CARRES"                              ,
+    "whoScaresThem"        : "(tu dois aussi prendre *celui* qui les terrorise)"                     ,
     "areTheyScared"        : "(tu dois les prendre *en train d'être* terrorisés par un carré)"       , // not used
-    "squaresSnubCircles"   : "LES CARRES SNOBENT LES RONDS"                                  ,
-    "areTheySnubbed"       : "(tu dois les prendre *pendant* qu'ils snobent un cercle)"        , // not used
-    "everyoneHates"        : "TOUT LE MONDE DÉTESTE TOUT LE MONDE !!1!"                           ,
-    "almostEveryoneHates"  : "PRESQUE TOUT LE MONDE DÉTESTE TOUT LE MONDE ..."                     ,
-    "squaresHateCircles"   : "LES CARRÉS DÉTESTENT LES CERCLES"                                  ,
-    "circlesHateSquares"   : "LES CERCLES DÉTESTENT LES CARRÉS"                                  ,
-    "areTheyYelling"       : "(tu dois les prendre en train *d'hurler* entre eux)"              , // not used
-    "nerdsNow"             : "que font ces intellos en ce moment"                        ,
-    "schockedPeep"         : "pourquoi ce peep est choqué?"                              ,
-    "whatever"             : "peu importe"                                              ,
+    "squaresSnubCircles"   : "LES CARRES SNOBENT LES RONDS"                                          ,
+    "areTheySnubbed"       : "(tu dois les prendre *pendant* qu'ils snobent un cercle)"              , // not used
+    "everyoneHates"        : "TOUT LE MONDE DÉTESTE TOUT LE MONDE !!1!"                              ,
+    "almostEveryoneHates"  : "PRESQUE TOUT LE MONDE DÉTESTE TOUT LE MONDE ..."                       ,
+    "squaresHateCircles"   : "LES CARRÉS DÉTESTENT LES CERCLES"                                      ,
+    "circlesHateSquares"   : "LES CERCLES DÉTESTENT LES CARRÉS"                                      ,
+    "areTheyYelling"       : "(tu dois les prendre en train *d'hurler* entre eux)"                   , // not used
+    "nerdsNow"             : "que font ces intellos en ce moment"                                    ,
+    "schockedPeep"         : "pourquoi ce peep est choqué?"                                          ,
+    "whatever"             : "peu importe"                                                           ,
     
     // Act 3
-    "ellipsis"             : ". . ."                                                 ,
+    "ellipsis"             : ". . ."                                                                ,
     "coolNoMore"           : "les chapeaux ne sont plus à la mode, vous ne le savez pas?"           ,
-    "beScared"             : "SOIS TERRORISÉ, SOIS EN COLÈRE."                                  ,
+    "beScared"             : "SOIS TERRORISÉ, SOIS EN COLÈRE."                                      ,
     
     // MANIFESTO
     "manifesto" : [
        //"as if you viewers want GOOD news"       ,
-       "qui se connecte pour regarder des *gens s'entendre?*",
-       "la paix est d'un ennui, la violence fait le buzz."    ,
+       "qui se connecte pour regarder des *gens s'entendre?*"   ,
+       "la paix est d'un ennui, la violence fait le buzz."      ,
        //"peace is boring. conflict gets clicks." ,
-       "et chaque histoire a besoin d'un conflit, alors..."  ,
+       "et chaque histoire a besoin d'un conflit, alors..."     ,
        //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
        "DONNE AU PUBLIC CE QU'IL VEUT."
     ] ,
