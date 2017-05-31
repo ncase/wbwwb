@@ -6,7 +6,7 @@
 
 ---
 
-###Made with open culture, for open culture!
+### Made with open culture, for open culture!
 
 I'm releasing all my code and art to the public domain, under the [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/) un-license. Which means if you wanna remix this to make your own way-too-meta game, or use it in a presentation or classroom or whatever, you already have my permission!
 
