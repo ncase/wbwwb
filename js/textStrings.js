@@ -208,7 +208,7 @@ var textStrings_DE = {
     "misatrributed"      : "(falsch zugeschrieben)" ,
 };
 
-// French chars codes : é : \xE9 à : \xE0 Â : \xC2 É : \xC9 
+// French chars codes : é : \xE9 à : \xE0 Â : \xC2 É : \xC9 ç : \xE7
 
 var textStrings_FR = {
     // Act 1
@@ -303,7 +303,7 @@ var textStrings_FR = {
     
     // (quote0002.png)
     "WBWWB"              : "On devient ce que l'on voit." ,
-    "WSOTATOTSU"         : "Nous conçevons nos outils et les outils nous conçoivent." ,
+    "WSOTATOTSU"         : "Nous con\xE7evons nos outils et les outils nous con\xE7oivent." ,
     
     // (quote0003.png)
     "MarshallMcLuhan"    : "Marshall McLuhan" ,
