@@ -234,7 +234,7 @@ var textStrings_FR = {
     "squaresSnubCircles"   : "LES CARR\xC9S SNOBENT LES CERCLES"                                              ,
     "areTheySnubbed"       : "(Prends-les en photo en train de snobber un cercle !)"                       , // not used
     "everyoneHates"        : "TOUT LE MONDE SE HAIT!!1!"                                                   ,
-    "almostEveryoneHates"  : "ALMOST EVERYONE HATES EVERYONE..."                                           ,
+    "almostEveryoneHates"  : "QUASIMENT TOUT LE MONDE SE D\xC9TESTE..."                                           ,
     "squaresHateCircles"   : "LES CARR\xC9S DETESTENT LES CERCLES"                                            ,
     "circlesHateSquares"   : "LES CERCLES DETESTENT LES CARR\xC9S"                                            ,
     "areTheyYelling"       : "(Prends-les en train de se gueuler dessus)"                                  , // not used
@@ -262,7 +262,7 @@ var textStrings_FR = {
     
     // (bg_preload.png) Preload screen
     "playingTime"        : "Temps de jeu : 5 minutes" ,
-    "warning"            : "Attention : Le programme suivant\ncontient des scènes de snobbisme,\nm\xE9chancet\xE9 & meutre de masse.\nPublic averti." ,
+    "warning"            : "Attention : Le programme suivant\ncontient des scenes de snobbisme,\nmechancete & meutre de masse.\nPublic averti." ,
     
     // (cam-instructions.png) Camera Instructions
     "pointAndClick"      : "POINT & CLICK" ,
@@ -281,7 +281,7 @@ var textStrings_FR = {
     "patreonSupporters"  : "et \xE0 tous mes patreons:" ,
     
     // (credits0007.png)
-    "lastButNotLeast"    : "et en dernier mais pas des moindres," ,
+    "lastButNotLeast"    : "et sans oublier, vous..." ,
     
     // (credits0008.png)
     "thankYouForPlaying" : "merci d'avoir jou\xE9 !" ,
