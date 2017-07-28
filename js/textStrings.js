@@ -208,7 +208,7 @@ var textStrings_DE = {
     "misatrributed"      : "(falsch zugeschrieben)" ,
 };
 
-// French chars codes : é : \xE9 à : \xE0 Â : \xC2 É : \xC9 ç : \xE7
+// French chars codes : é : \xE9 à : \xE0 Â : \xC2 É : \xC9 ç : \xE7 ê : \xEA (Back to the roots)
 
 var textStrings_FR = {
     // Act 1
@@ -218,7 +218,7 @@ var textStrings_FR = {
     "notCoolAnymore"       : "On s'en fout, les chapeaux c'est has-been"                                   ,
     "tvOnTv"               : "Une t\xE9l\xE9... A LA T\xC9L\xC9 !"                                                     ,
     "cricky"               : "P'TIT CRIQUET <3"                                                            ,
-    "tooManyCrickets"      : "Ok, c'est peut-être un peu trop de criquets.."                               ,
+    "tooManyCrickets"      : "Ok, c'est peut-\xEAtre un peu trop de criquets.."                               ,
     "normalPeep"           : "Juste un bonhomme normal"                                                    ,
     "normalPeeps"          : "Juste quelques bonhommes normaux"                                            ,
     "wowNothing"           : "WOW ! Rien du tout !"                                                        ,
@@ -312,4 +312,4 @@ var textStrings_FR = {
     "misatrributed"      : "(Mal attribu\xE9)" ,
 };
 
-var textStrings = textStrings_FR
+var textStrings = textStrings_EN
