@@ -208,4 +208,108 @@ var textStrings_DE = {
     "misatrributed"      : "(falsch zugeschrieben)" ,
 };
 
+// French chars codes : é : \xE9 à : \xE0 Â : \xC2 É : \xC9 ç : \xE7 ê : \xEA (Back to the roots)
+
+var textStrings_FR = {
+    // Act 1
+    "niceHat"              : "OOH JOLI CHAPEAU"                                                            ,
+    "outtaHere"            : "Eh, d\xE9gagez de l\xE0"                                                           ,
+    "getARoom"             : "D\xC9GUEU ! PRENEZ UNE CHAMBRE POUR ÇA"                                         ,
+    "notCoolAnymore"       : "On s'en fout, les chapeaux c'est has-been"                                   ,
+    "tvOnTv"               : "Une t\xE9l\xE9... A LA T\xC9L\xC9 !"                                                     ,
+    "cricky"               : "P'TIT CRIQUET <3"                                                            ,
+    "tooManyCrickets"      : "Ok, c'est peut-\xEAtre un peu trop de criquets.."                               ,
+    "normalPeep"           : "Juste un bonhomme normal"                                                    ,
+    "normalPeeps"          : "Juste quelques bonhommes normaux"                                            ,
+    "wowNothing"           : "WOW ! Rien du tout !"                                                        ,
+    
+    // Act 2
+    "crazySquareAttacks"   : "UN CARR\xC9 FOU ATTAQUE"                                                        ,
+    "justMissed"           : "Ooooh t'as rat\xE9 l'occasion.."                                                ,
+    "somethingInteresting" : "(Tu dois les surprendre en train de faire *quelque-chose* d'int\xE9ressant...)" ,
+    "whoIsScreaming"       : "(Faut prendre en flagrant d\xE9lit ceux qui crient !)"                          ,
+    "circleFearsSquares"   : "Les cercles ont PEUR des carr\xE9s"                                             ,
+    "whoScaresThem"        : "(Tu dois aussi prendre ceux dont ils sont effray\xE9s !)"                       ,
+    "areTheyScared"        : "(Tu dois les prendre effray\xE9s par un carr\xE9 !)"                               , // not used
+    "squaresSnubCircles"   : "LES CARR\xC9S SNOBENT LES CERCLES"                                              ,
+    "areTheySnubbed"       : "(Prends-les en photo en train de snobber un cercle !)"                       , // not used
+    "everyoneHates"        : "TOUT LE MONDE SE HAIT!!1!"                                                   ,
+    "almostEveryoneHates"  : "QUASIMENT TOUT LE MONDE SE D\xC9TESTE..."                                           ,
+    "squaresHateCircles"   : "LES CARR\xC9S DETESTENT LES CERCLES"                                            ,
+    "circlesHateSquares"   : "LES CERCLES DETESTENT LES CARR\xC9S"                                            ,
+    "areTheyYelling"       : "(Prends-les en train de se gueuler dessus)"                                  , // not used
+    "nerdsNow"             : "Qu'est-ce que font ces nerds l\xE0 ?"                                           ,
+    "schockedPeep"         : "Pourquoi ce bonhomme est choqu\xE9 ?"                                           ,
+    "whatever"             : "On s'en fout"                                                                ,
+    
+    // Act 3
+    "ellipsis"             : ". . ."                                                                       ,
+    "coolNoMore"           : "Tu savais pas que les chapeaux \xE9taient has-been ?"                           ,
+    "beScared"             : "SOIS EFFRAY\xC9, SOIS F\xC2CH\xC9."                                                   ,
+    
+    // MANIFESTO
+    "manifesto" : [
+       //"as if you viewers want GOOD news"       ,
+       "Qui regarderait des gens s'aimant les uns les autres ?",
+       "La paix c'est chiant, la violence c'est viral."    ,
+       //"peace is boring. conflict gets clicks." ,
+       "toute histoire n\xE9cessite un conflit, donc bon..."  ,
+       //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+       "DONNEZ AU T\xC9L\xC9SPECTATEUR CE QU'IL VEUT."
+    ] ,
+    
+    // -- Strings currently in graphics resources --
+    
+    // (bg_preload.png) Preload screen
+    "playingTime"        : "Temps de jeu : 5 minutes" ,
+    "warning"            : "Attention : Le programme suivant\ncontient des scenes de snobbisme,\nmechancete & meutre de masse.\nPublic averti." ,
+    
+    // (cam-instructions.png) Camera Instructions
+    "pointAndClick"      : "POINT & CLICK" ,
+    
+    // (chyron3.png)
+    "chyronNothing"      : "WOW ! *Rien du tout* !" ,
+    
+    // (credits0001.png)
+    "createdBy"          : "Cr\xE9\xE9 par" ,
+    "NickyCase"          : "Nicky Case" ,
+    
+    // (credits0002.png)
+    "manyThanks"         : "Plein de remerciements \xE0 mes testeurs:" ,
+    
+    // (credits000[3,4,5,6].png)
+    "patreonSupporters"  : "et \xE0 tous mes patreons:" ,
+    
+    // (credits0007.png)
+    "lastButNotLeast"    : "et sans oublier, vous..." ,
+    
+    // (credits0008.png)
+    "thankYouForPlaying" : "merci d'avoir jou\xE9 !" ,
+    
+    // (preload_play.png)
+    "playButton"         : "JOUER" ,
+    
+    // (end_button.png) Post Credits
+    "otherWorkButton"    : "Mes autres oeuvres" ,
+    "buyCoffeeButton"    : "M'acheter un petit caf\xE9" ,
+    "replayButton"       : "Rejouer ce bordel" ,
+    
+    // (logo.png) Post Credits
+    "logoWBWWB"          : "PARTAGE LA DOULEUR :" ,
+    
+    // (end_prototype.png)
+    "endOfPrototype"     : "FIN DU PROTOTYPE" ,
+    "toBeContinued"      : "(A suivre !)" ,
+    
+    // (quote0002.png)
+    "WBWWB"              : "On devient ce que l'on voit." ,
+    "WSOTATOTSU"         : "Nous con\xE7evons nos outils et les outils nous con\xE7oivent." ,
+    
+    // (quote0003.png)
+    "MarshallMcLuhan"    : "Marshall McLuhan" ,
+    
+    // (quote0004.png)
+    "misatrributed"      : "(Mal attribu\xE9)" ,
+};
+
 var textStrings = textStrings_EN
