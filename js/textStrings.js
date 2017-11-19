@@ -25,7 +25,7 @@ var textStrings_EN = {
     "areTheyScared"        : "(ya gotta catch 'em *being* scared by a square)"       , // not used
     "squaresSnubCircles"   : "SQUARES SNUB CIRCLES"                                  ,
     "areTheySnubbed"       : "(ya gotta catch 'em *while* snubbing a circle)"        , // not used
-    "everyoneHates"        : "EVERYONE HATES EVERYONE!!1!"                           ,
+    "everyoneHates"        : "EVERYONE HATES EVERYONE!!!!"                           ,
     "almostEveryoneHates"  : "ALMOST EVERYONE HATES EVERYONE..."                     ,
     "squaresHateCircles"   : "SQUARES HATE CIRCLES"                                  ,
     "circlesHateSquares"   : "CIRCLES HATE SQUARES"                                  ,
