@@ -120,7 +120,7 @@ var textStrings_CN = {
  +    "crazySquareAttacks"   : "疯狂小方攻击"                                 ,
  +    "justMissed"           : "ohhh差点就错过了"                                 ,
  +    "somethingInteresting" : "(你应该拍些有趣的)" ,
- +    "whoIsScreaming"       : "(谁在尖叫？"               ,
+ +    "whoIsScreaming"       : "(谁在尖叫？）"               ,
  +    "circleFearsSquares"   : "小圆害怕小方"                                  ,
  +    "whoScaresThem"        : "(你应该拍谁在害怕他们)"         ,
  +    "areTheyScared"        : "(ya gotta catch 'em *being* scared by a square)"       , // not used
@@ -129,7 +129,7 @@ var textStrings_CN = {
  +    "everyoneHates"        : "每个人都讨厌每个人!!1!"                           ,
  +    "almostEveryoneHates"  : "几乎每个人都讨厌每个人"                     ,
  +    "squaresHateCircles"   : "小方讨厌小圆"                                  ,
- +    "circlesHateSquares"   : "校园讨厌小方"                                  ,
+ +    "circlesHateSquares"   : "小圆讨厌小方"                                  ,
  +    "areTheyYelling"       : "(ya gotta catch 'em *yelling* at others)"              , // not used
  +    "nerdsNow"             : "这些人在做什么"                        ,
  +    "schockedPeep"         : "为什么这个人在害怕？"                              ,
