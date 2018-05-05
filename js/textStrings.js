@@ -163,17 +163,17 @@ var textStrings_CN = {
      "chyronNothing"      : "WOWWEE, *什么都没有*" ,
      
      // (credits0001.png)
-     "createdBy"          : "created by" ,
-     "NickyCase"          : "Nicky Case" ,
+     "createdBy"          : "作者/汉化" ,
+     "NickyCase"          : "Nicky Case/ClayCoffee" ,
      
      // (credits0002.png)
-     "manyThanks"         : "many thanks to my playtesters:" ,
+     "manyThanks"         : "很感谢我的测试者们:" ,
      
      // (credits000[3,4,5,6].png)
-     "patreonSupporters"  : "and to my patreon supporters:" ,
+     "patreonSupporters"  : "还有我的资助者们:" ,
      
      // (credits0007.png)
-     "lastButNotLeast"    : "and last but not least," ,
+     "lastButNotLeast"    : "还有一句话," ,
      
      // (credits0008.png)
      "thankYouForPlaying" : "感谢您的游玩!" ,
@@ -182,16 +182,16 @@ var textStrings_CN = {
      "playButton"         : "开始" ,
      
      // (end_button.png) Post Credits
-     "otherWorkButton"    : "see my other work" ,
-     "buyCoffeeButton"    : "buy me a coffee" ,
-     "replayButton"       : "replay this mess" ,
+     "otherWorkButton"    : "其他游戏" ,
+     "buyCoffeeButton"    : "捐助" ,
+     "replayButton"       : "重玩" ,
      
      // (logo.png) Post Credits
-     "logoWBWWB"          : "SHARE THE PAIN:" ,
+     "logoWBWWB"          : "分享这个图片:" ,
      
      // (end_prototype.png)
-     "endOfPrototype"     : "END OF PROTOTYPE" ,
-     "toBeContinued"      : "(to be continued!)" ,
+     "endOfPrototype"     : "结束" ,
+     "toBeContinued"      : "(还没完!)" ,
      
      // (quote0002.png)
      "WBWWB"              : "We become what we behold." ,
@@ -201,7 +201,7 @@ var textStrings_CN = {
      "MarshallMcLuhan"    : "Marshall McLuhan" ,
      
      // (quote0004.png)
-     "misatrributed"      : "(misattributed)" ,
+     "misatrributed"      : "(错误归因)" ,
  };
 // Umlaut codes: Ä = \xC4, Ö = \xD6, Ü = \xDC, ä = \xE4, ö = \xF6, ü = \xFC, ß = \x
 
