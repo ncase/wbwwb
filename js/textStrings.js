@@ -143,12 +143,12 @@ var textStrings_CN = {
     // MANIFESTO
     "manifesto" : [
        //"as if you viewers want GOOD news"       ,
-      "who tunes in to watch *people get along?*",
-        "peace is boring. violence goes viral."    ,
+      "谁来监视人们相处？*",
+        "和平是无聊的。冲突会获得点击。"    ,
         //"peace is boring. conflict gets clicks." ,
-        "and every story needs a conflict, so..."  ,
+        "给观众他们想要的。"  ,
         //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
-        "GIVE THE AUDIENCE WHAT THEY WANT."
+        "汉化:ClayCoffee"
      ] ,
      
      // -- Strings currently in graphics resources --
