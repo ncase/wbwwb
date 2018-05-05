@@ -163,8 +163,8 @@ var textStrings_CN = {
      "chyronNothing"      : "WOWWEE, *什么都没有*" ,
      
      // (credits0001.png)
-     "createdBy"          : "作者/汉化" ,
-     "NickyCase"          : "Nicky Case/ClayCoffee" ,
+     "createdBy"          : "汉化ClayCoffee" ,
+     "NickyCase"          : "作者Nicky Case" ,
      
      // (credits0002.png)
      "manyThanks"         : "很感谢我的测试者们:" ,
