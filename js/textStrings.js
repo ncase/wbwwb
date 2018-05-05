@@ -104,106 +104,105 @@ var textStrings_EN = {
 };
 
 var textStrings_CN = {
- +    // Act 1
- +    "niceHat"              : "哦！一顶好帽子！"                                          ,
- +    "outtaHere"            : "是的，请滚出去"                                ,
- +    "getARoom"             : "恶心，你们去开房吧"                                  ,
- +    "notCoolAnymore"       : "NVM的帽子不酷了"                          ,
- +    "tvOnTv"               : "一个电视..在电视上！"                                        ,
- +    "cricky"               : "一只小蟋蟀 <3"                                        ,
- +    "tooManyCrickets"      : "好的太多蟋蟀了"                         ,
- +    "normalPeep"           : "就是一个正常人"                                    ,
- +    "normalPeeps"          : "就是一些正常人"                                ,
- +    "wowNothing"           : "WOW,什么也没有"                                  ,
- +    
- +    // Act 2
- +    "crazySquareAttacks"   : "疯狂小方攻击"                                 ,
- +    "justMissed"           : "ohhh差点就错过了"                                 ,
- +    "somethingInteresting" : "(你应该拍些有趣的)" ,
- +    "whoIsScreaming"       : "(谁在尖叫？）"               ,
- +    "circleFearsSquares"   : "小圆害怕小方"                                  ,
- +    "whoScaresThem"        : "(你应该拍谁在害怕他们)"         ,
- +    "areTheyScared"        : "(ya gotta catch 'em *being* scared by a square)"       , // not used
- +    "squaresSnubCircles"   : "小方冷落小圆"                                  ,
- +    "areTheySnubbed"       : "(ya gotta catch 'em *while* snubbing a circle)"        , // not used
- +    "everyoneHates"        : "每个人都讨厌每个人!!1!"                           ,
- +    "almostEveryoneHates"  : "几乎每个人都讨厌每个人"                     ,
- +    "squaresHateCircles"   : "小方讨厌小圆"                                  ,
- +    "circlesHateSquares"   : "小圆讨厌小方"                                  ,
- +    "areTheyYelling"       : "(ya gotta catch 'em *yelling* at others)"              , // not used
- +    "nerdsNow"             : "这些人在做什么"                        ,
- +    "schockedPeep"         : "为什么这个人在害怕？"                              ,
- +    "whatever"             : "无论什么"                                              ,
- +    
- +    // Act 3
- +    "ellipsis"             : ". . ."                                                 ,
- +    "coolNoMore"           : "帽子不在酷了，你听说了么？"           ,
- +    "beScared"             : "害怕吧，生气吧"                                  ,
- +    
- +    // MANIFESTO
- +    "manifesto" : [
- +       //"as if you viewers want GOOD news"       ,
- +       "who tunes in to watch *people get along?*",
- +       "peace is boring. violence goes viral."    ,
- +       //"peace is boring. conflict gets clicks." ,
- +       "and every story needs a conflict, so..."  ,
- +       //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
- +       "GIVE THE AUDIENCE WHAT THEY WANT."
- +    ] ,
- +    
- +    // -- Strings currently in graphics resources --
- +    
- +    // (bg_preload.png) Preload screen
- +    "playingTime"        : "游玩时间: 5 分钟" ,
- +    "warning"            : "警告: 这个游戏\n包含暴力,\n无礼和大规模屠杀内容.\n请自行选择是否游玩." ,
- +    
- +    // (cam-instructions.png) Camera Instructions
- +    "pointAndClick"      : "点击 & 拍摄" ,
- +    
- +    // (chyron3.png)
- +    "chyronNothing"      : "WOWWEE, *什么都没有*" ,
- +    
- +    // (credits0001.png)
- +    "createdBy"          : "created by" ,
- +    "NickyCase"          : "Nicky Case" ,
- +    
- +    // (credits0002.png)
- +    "manyThanks"         : "many thanks to my playtesters:" ,
- +    
- +    // (credits000[3,4,5,6].png)
- +    "patreonSupporters"  : "and to my patreon supporters:" ,
- +    
- +    // (credits0007.png)
- +    "lastButNotLeast"    : "and last but not least," ,
- +    
- +    // (credits0008.png)
- +    "thankYouForPlaying" : "感谢您的游玩!" ,
- +    
- +    // (preload_play.png)
- +    "playButton"         : "开始" ,
- +    
- +    // (end_button.png) Post Credits
- +    "otherWorkButton"    : "see my other work" ,
- +    "buyCoffeeButton"    : "buy me a coffee" ,
- +    "replayButton"       : "replay this mess" ,
- +    
- +    // (logo.png) Post Credits
- +    "logoWBWWB"          : "SHARE THE PAIN:" ,
- +    
- +    // (end_prototype.png)
- +    "endOfPrototype"     : "END OF PROTOTYPE" ,
- +    "toBeContinued"      : "(to be continued!)" ,
- +    
- +    // (quote0002.png)
- +    "WBWWB"              : "We become what we behold." ,
- +    "WSOTATOTSU"         : "我们塑造我们的工具，然后我们的工具塑造我们。." ,
- +    
- +    // (quote0003.png)
- +    "MarshallMcLuhan"    : "Marshall McLuhan" ,
- +    
- +    // (quote0004.png)
- +    "misatrributed"      : "(misattributed)" ,
- +};
+     // Act 1
+      "niceHat"              : "哦！一顶好帽子！"                                          ,
+      "outtaHere"            : "是的，请滚出去"                                ,
+      "getARoom"             : "恶心，你们去开房吧"                                  ,
+      "notCoolAnymore"       : "NVM的帽子不酷了"                          ,
+      "tvOnTv"               : "一个电视..在电视上！"                                        ,
+      "cricky"               : "一只小蟋蟀 <3"                                        ,
+    "tooManyCrickets"      : "好的太多蟋蟀了"                         ,
+     "normalPeep"           : "就是一个正常人"                                    ,
+     "normalPeeps"          : "就是一些正常人"                                ,
+     "wowNothing"           : "WOW,什么也没有"                                  ,
+     
+     // Act 2
+     "crazySquareAttacks"   : "疯狂小方攻击"                                 ,
+     "justMissed"           : "ohhh差点就错过了"                                 ,
+    "somethingInteresting" : "(你应该拍些有趣的)" ,
+     "whoIsScreaming"       : "(谁在尖叫？）"               ,
+    "circleFearsSquares"   : "小圆害怕小方"                                  ,
+    "whoScaresThem"        : "(你应该拍谁在害怕他们)"         ,
+     "areTheyScared"        : "(ya gotta catch 'em *being* scared by a square)"       , // not used
+     "squaresSnubCircles"   : "小方冷落小圆"                                  ,
+    "areTheySnubbed"       : "(ya gotta catch 'em *while* snubbing a circle)"        , // not used
+    "everyoneHates"        : "每个人都讨厌每个人!!1!"                           ,
+   "almostEveryoneHates"  : "几乎每个人都讨厌每个人"                     ,
+   "squaresHateCircles"   : "小方讨厌小圆"                                  ,
+   "circlesHateSquares"   : "小圆讨厌小方"                                  ,
+   "areTheyYelling"       : "(ya gotta catch 'em *yelling* at others)"              , // not used
+    "nerdsNow"             : "这些人在做什么"                        ,
+   "schockedPeep"         : "为什么这个人在害怕？"                              ,
+     "whatever"             : "无论什么"                                              ,
+    
+   // Act 3
+    "ellipsis"             : ". . ."                                                 ,
+    "coolNoMore"           : "帽子不在酷了，你听说了么？"           ,
+    "beScared"             : "害怕吧，生气吧"                                  ,
+    
+    // MANIFESTO
+    "manifesto" : [
+       //"as if you viewers want GOOD news"       ,
+      "谁来监视人们相处？*",
+        "和平是无聊的。冲突会获得点击。"    ,
+        //"peace is boring. conflict gets clicks." ,
+        "给观众他们想要的。"  ,
+        //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+        "汉化:ClayCoffee"
+     ] ,
+     
+     // -- Strings currently in graphics resources --
+        // (bg_preload.png) Preload screen
+     "playingTime"        : "游玩时间: 5 分钟" ,
+     "warning"            : "警告: 这个游戏\n包含暴力,\n无礼和大规模屠杀内容.\n请自行选择是否游玩." ,
+     
+     // (cam-instructions.png) Camera Instructions
+     "pointAndClick"      : "点击 & 拍摄" ,
+     
+     // (chyron3.png)
+     "chyronNothing"      : "WOWWEE, *什么都没有*" ,
+     
+     // (credits0001.png)
+     "createdBy"          : "汉化ClayCoffee" ,
+     "NickyCase"          : "作者Nicky Case" ,
+     
+     // (credits0002.png)
+     "manyThanks"         : "很感谢我的测试者们:" ,
+     
+     // (credits000[3,4,5,6].png)
+     "patreonSupporters"  : "还有我的资助者们:" ,
+     
+     // (credits0007.png)
+     "lastButNotLeast"    : "还有一句话," ,
+     
+     // (credits0008.png)
+     "thankYouForPlaying" : "感谢您的游玩!" ,
+     
+     // (preload_play.png)
+     "playButton"         : "开始" ,
+     
+     // (end_button.png) Post Credits
+     "otherWorkButton"    : "其他游戏" ,
+     "buyCoffeeButton"    : "捐助" ,
+     "replayButton"       : "重玩" ,
+     
+     // (logo.png) Post Credits
+     "logoWBWWB"          : "分享这个图片:" ,
+     
+     // (end_prototype.png)
+     "endOfPrototype"     : "结束" ,
+     "toBeContinued"      : "(还没完!)" ,
+     
+     // (quote0002.png)
+     "WBWWB"              : "We become what we behold." ,
+     "WSOTATOTSU"         : "我们塑造我们的工具，然后我们的工具塑造我们。." ,
+     
+     // (quote0003.png)
+     "MarshallMcLuhan"    : "Marshall McLuhan" ,
+     
+     // (quote0004.png)
+     "misatrributed"      : "(错误归因)" ,
+ };
 // Umlaut codes: Ä = \xC4, Ö = \xD6, Ü = \xDC, ä = \xE4, ö = \xF6, ü = \xFC, ß = \x
 
 var textStrings_DE = {
@@ -716,4 +715,4 @@ var textStrings_PL = {
     "misatrributed"      : "(błędnie oznaczony)"
 };
 
-var textStrings = textStrings_EN
+var textStrings = textStrings_CN
