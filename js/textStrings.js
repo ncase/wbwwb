@@ -716,4 +716,4 @@ var textStrings_PL = {
     "misatrributed"      : "(błędnie oznaczony)"
 };
 
-var textStrings = textStrings_EN
+var textStrings = textStrings_CN
