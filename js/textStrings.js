@@ -732,18 +732,18 @@ var textStrings_JA = {
     // Act 2
     "crazySquareAttacks"   : "狂った四角の攻撃"                                      ,
     "justMissed"           : "あぁ、逃してしまった"                                  ,
-    "somethingInteresting" : "(ya gotta catch 'em doing *something* interesting...)" ,
-    "whoIsScreaming"       : "(ya gotta catch who's screaming at 'em)"               ,
+    "somethingInteresting" : "(何か面白いものを撮らなければ...)"                     ,
+    "whoIsScreaming"       : "(叫んでいる人を撮らなければ...)"                       ,
     "circleFearsSquares"   : "丸は四角を怖がる"                                      ,
-    "whoScaresThem"        : "(ya gotta also catch *who* they're scared by)"         ,
-    "areTheyScared"        : "(ya gotta catch 'em *being* scared by a square)"       , // not used
+    "whoScaresThem"        : "(彼らを怖がらせている人も撮らなければ...)"             ,
+    "areTheyScared"        : "(四角が怖がらせている人を撮らなければ...)"             , // not used
     "squaresSnubCircles"   : "四角は丸を拒絶する"                                    ,
-    "areTheySnubbed"       : "(ya gotta catch 'em *while* snubbing a circle)"        , // not used
+    "areTheySnubbed"       : "(丸を小突いている瞬間を撮らなければ...)"               , // not used
     "everyoneHates"        : "みんな誰もが憎い!!1!"                                  ,
     "almostEveryoneHates"  : "ほとんど皆が皆を憎んでいる..."                         ,
     "squaresHateCircles"   : "四角は丸が嫌い"                                        ,
     "circlesHateSquares"   : "丸は四角が嫌い"                                        ,
-    "areTheyYelling"       : "(ya gotta catch 'em *yelling* at others)"              , // not used
+    "areTheyYelling"       : "(誰かを怒鳴っているところを撮らなければ...)"           , // not used
     "nerdsNow"             : "オタクたちは今何をしているのか？"                      ,
     "schockedPeep"         : "なぜショックを受けているのか？"                        ,
     "whatever"             : "どうでもいい"                                          ,
