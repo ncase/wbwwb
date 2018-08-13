@@ -716,4 +716,106 @@ var textStrings_PL = {
     "misatrributed"      : "(błędnie oznaczony)"
 };
 
+var textStrings_JA = {
+    // Act 1
+    "niceHat"              : "おお、格好いい帽子！"                                  ,
+    "outtaHere"            : "はい、ここから出ていって"                              ,
+    "getARoom"             : "気持ち悪い、他のところでいちゃいちゃして"              ,
+    "notCoolAnymore"       : "帽子はもう全然格好良くない"                            ,
+    "tvOnTv"               : "これはテレビ...テレビに映ったテレビ！"                 ,
+    "cricky"               : "小さいコオロギ<3"                                      ,
+    "tooManyCrickets"      : "オッケー、大量のコオロギだ"                            ,
+    "normalPeep"           : "ただの一般人"                                          ,
+    "normalPeeps"          : "ただの一般人たち"                                      ,
+    "wowNothing"           : "わあ！何もない！"                                      ,
+    
+    // Act 2
+    "crazySquareAttacks"   : "狂った四角の攻撃"                                      ,
+    "justMissed"           : "あぁ、逃してしまった"                                  ,
+    "somethingInteresting" : "(ya gotta catch 'em doing *something* interesting...)" ,
+    "whoIsScreaming"       : "(ya gotta catch who's screaming at 'em)"               ,
+    "circleFearsSquares"   : "丸は四角を怖がる"                                      ,
+    "whoScaresThem"        : "(ya gotta also catch *who* they're scared by)"         ,
+    "areTheyScared"        : "(ya gotta catch 'em *being* scared by a square)"       , // not used
+    "squaresSnubCircles"   : "四角は丸を拒絶する"                                    ,
+    "areTheySnubbed"       : "(ya gotta catch 'em *while* snubbing a circle)"        , // not used
+    "everyoneHates"        : "みんな誰もが憎い!!1!"                                  ,
+    "almostEveryoneHates"  : "ほとんど皆が皆を憎んでいる..."                         ,
+    "squaresHateCircles"   : "四角は丸が嫌い"                                        ,
+    "circlesHateSquares"   : "丸は四角が嫌い"                                        ,
+    "areTheyYelling"       : "(ya gotta catch 'em *yelling* at others)"              , // not used
+    "nerdsNow"             : "オタクたちは今何をしているのか？"                      ,
+    "schockedPeep"         : "なぜショックを受けているのか？"                        ,
+    "whatever"             : "どうでもいい"                                          ,
+    
+    // Act 3
+    "ellipsis"             : ". . ."                                                 ,
+    "coolNoMore"           : "帽子はもうダサい、聞いたことない？"                    ,
+    "beScared"             : "恐怖しろ。怒れ。"                                      ,
+    
+    // MANIFESTO
+    "manifesto" : [
+       //"as if you viewers want GOOD news"       ,
+       "who tunes in to watch *people get along?*",
+       "peace is boring. violence goes viral."    ,
+       //"peace is boring. conflict gets clicks." ,
+       "and every story needs a conflict, so..."  ,
+       //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+       "GIVE THE AUDIENCE WHAT THEY WANT."
+    ] ,
+    
+    // -- Strings currently in graphics resources --
+    
+    // (bg_preload.png) Preload screen
+    "playingTime"        : "playing time: 5 minutes" ,
+    "warning"            : "warning: the following program\ncontains scenes of snobbery,\nrudeness & mass murder.\nviewer discretion is advised." ,
+    
+    // (cam-instructions.png) Camera Instructions
+    "pointAndClick"      : "POINT & CLICK" ,
+    
+    // (chyron3.png)
+    "chyronNothing"      : "WOWWEE, IT'S *NOTHING*" ,
+    
+    // (credits0001.png)
+    "createdBy"          : "created by" ,
+    "NickyCase"          : "Nicky Case" ,
+    
+    // (credits0002.png)
+    "manyThanks"         : "many thanks to my playtesters:" ,
+    
+    // (credits000[3,4,5,6].png)
+    "patreonSupporters"  : "and to my patreon supporters:" ,
+    
+    // (credits0007.png)
+    "lastButNotLeast"    : "and last but not least," ,
+    
+    // (credits0008.png)
+    "thankYouForPlaying" : "thank YOU for playing!" ,
+    
+    // (preload_play.png)
+    "playButton"         : "PLAY" ,
+    
+    // (end_button.png) Post Credits
+    "otherWorkButton"    : "see my other work" ,
+    "buyCoffeeButton"    : "buy me a coffee" ,
+    "replayButton"       : "replay this mess" ,
+    
+    // (logo.png) Post Credits
+    "logoWBWWB"          : "SHARE THE PAIN:" ,
+    
+    // (end_prototype.png)
+    "endOfPrototype"     : "END OF PROTOTYPE" ,
+    "toBeContinued"      : "(to be continued!)" ,
+    
+    // (quote0002.png)
+    "WBWWB"              : "We become what we behold." ,
+    "WSOTATOTSU"         : "We shape our tools and then our tools shape us." ,
+    
+    // (quote0003.png)
+    "MarshallMcLuhan"    : "Marshall McLuhan" ,
+    
+    // (quote0004.png)
+    "misatrributed"      : "(misattributed)" ,
+};
+
 var textStrings = textStrings_EN
