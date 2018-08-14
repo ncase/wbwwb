@@ -718,40 +718,40 @@ var textStrings_PL = {
 
 var textStrings_JA = {
     // Act 1
-    "niceHat"              : "おお、格好いい帽子！"                                  ,
-    "outtaHere"            : "はい、ここから出ていって"                              ,
-    "getARoom"             : "気持ち悪い、他のところでいちゃいちゃして"              ,
-    "notCoolAnymore"       : "帽子はもう全然格好良くない"                            ,
-    "tvOnTv"               : "これはテレビ...テレビに映ったテレビ！"                 ,
-    "cricky"               : "小さいコオロギ<3"                                      ,
-    "tooManyCrickets"      : "オッケー、大量のコオロギだ"                            ,
-    "normalPeep"           : "ただの一般人"                                          ,
-    "normalPeeps"          : "ただの一般人たち"                                      ,
-    "wowNothing"           : "わあ！何もない！"                                      ,
+    "niceHat"              : "おお、格好いい帽子！",
+    "outtaHere"            : "はい、ここから出ていって",
+    "getARoom"             : "気持ち悪い、他のところでいちゃいちゃして",
+    "notCoolAnymore"       : "帽子はもう全然格好良くない",
+    "tvOnTv"               : "これはテレビ...テレビに映ったテレビ！",
+    "cricky"               : "小さいコオロギ<3",
+    "tooManyCrickets"      : "オッケー、大量のコオロギだ",
+    "normalPeep"           : "ただの一般人",
+    "normalPeeps"          : "ただの一般人たち",
+    "wowNothing"           : "わあ！何もない！",
     
     // Act 2
-    "crazySquareAttacks"   : "狂った四角の攻撃"                                      ,
-    "justMissed"           : "あぁ、逃してしまった"                                  ,
-    "somethingInteresting" : "(何か面白いものを撮らなければ...)"                     ,
-    "whoIsScreaming"       : "(叫んでいる人を撮らなければ...)"                       ,
-    "circleFearsSquares"   : "丸は四角を怖がる"                                      ,
-    "whoScaresThem"        : "(彼らを怖がらせている人も撮らなければ...)"             ,
-    "areTheyScared"        : "(四角が怖がらせている人を撮らなければ...)"             , // not used
-    "squaresSnubCircles"   : "四角は丸を拒絶する"                                    ,
-    "areTheySnubbed"       : "(丸を小突いている瞬間を撮らなければ...)"               , // not used
-    "everyoneHates"        : "みんな誰もが憎い!!1!"                                  ,
-    "almostEveryoneHates"  : "ほとんど皆が皆を憎んでいる..."                         ,
-    "squaresHateCircles"   : "四角は丸が嫌い"                                        ,
-    "circlesHateSquares"   : "丸は四角が嫌い"                                        ,
-    "areTheyYelling"       : "(誰かを怒鳴っているところを撮らなければ...)"           , // not used
-    "nerdsNow"             : "オタクたちは今何をしているのか？"                      ,
-    "schockedPeep"         : "なぜショックを受けているのか？"                        ,
-    "whatever"             : "どうでもいい"                                          ,
+    "crazySquareAttacks"   : "狂った四角の攻撃",
+    "justMissed"           : "あぁ、逃してしまった",
+    "somethingInteresting" : "(何か面白いものを撮らなければ...)",
+    "whoIsScreaming"       : "(叫んでいる人を撮らなければ...)",
+    "circleFearsSquares"   : "丸は四角を怖がる",
+    "whoScaresThem"        : "(彼らを怖がらせている人も撮らなければ...)",
+    "areTheyScared"        : "(四角が怖がらせている人を撮らなければ...)", // not used
+    "squaresSnubCircles"   : "四角は丸を拒絶する",
+    "areTheySnubbed"       : "(丸を小突いている瞬間を撮らなければ...)", // not used
+    "everyoneHates"        : "みんな誰もが憎い!!1!",
+    "almostEveryoneHates"  : "ほとんど皆が皆を憎んでいる...",
+    "squaresHateCircles"   : "四角は丸が嫌い",
+    "circlesHateSquares"   : "丸は四角が嫌い",
+    "areTheyYelling"       : "(誰かを怒鳴っているところを撮らなければ...)", // not used
+    "nerdsNow"             : "オタクたちは今何をしているのか？",
+    "schockedPeep"         : "なぜショックを受けているのか？",
+    "whatever"             : "どうでもいい",
     
     // Act 3
-    "ellipsis"             : ". . ."                                                 ,
-    "coolNoMore"           : "帽子はもうダサい、聞いたことない？"                    ,
-    "beScared"             : "恐怖しろ。怒れ。"                                      ,
+    "ellipsis"             : ". . .",
+    "coolNoMore"           : "帽子はもうダサい、聞いたことない？",
+    "beScared"             : "恐怖しろ。怒れ。",
     
     // MANIFESTO
     "manifesto" : [
