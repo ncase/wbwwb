@@ -768,13 +768,13 @@ var textStrings_JA = {
     
     // (bg_preload.png) Preload screen
     "playingTime"        : "playing time: 5 minutes" ,
-    "warning"            : "warning: the following program\ncontains scenes of snobbery,\nrudeness & mass murder.\nviewer discretion is advised." ,
+    "warning"            : "注意: このゲームには\n差別、野蛮、大量虐殺の\nシーンが含まれます。\nプレイは自己判断で。" ,
     
     // (cam-instructions.png) Camera Instructions
-    "pointAndClick"      : "POINT & CLICK" ,
+    "pointAndClick"      : "撮りたいものを枠内に入れてクリック" ,
     
     // (chyron3.png)
-    "chyronNothing"      : "WOWWEE, IT'S *NOTHING*" ,
+    "chyronNothing"      : "わあ！何もない！" ,
     
     // (credits0001.png)
     "createdBy"          : "created by" ,
