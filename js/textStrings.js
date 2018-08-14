@@ -716,7 +716,7 @@ var textStrings_PL = {
     "misatrributed"      : "(błędnie oznaczony)"
 };
 
-var textStrings_JA = {
+var textStrings_JP = {
     // Act 1
     "niceHat"              : "おお、格好いい帽子！",
     "outtaHere"            : "はい、ここから出ていって",
