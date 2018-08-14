@@ -716,4 +716,109 @@ var textStrings_PL = {
     "misatrributed"      : "(błędnie oznaczony)"
 };
 
-var textStrings = textStrings_EN
+var textStrings = textStrings_PT
+
+// Portuguese translations.
+
+var textStrings_PT = {
+    // Act 1
+    "niceHat"              : "UAAAAU, CHAPÉU LEGAL"                                          ,
+    "outtaHere"            : "é, sai daqui"                                ,
+    "getARoom"             : "NOJENTO, VAI ARRUMAR UM QUARTO"                                  ,
+    "notCoolAnymore"       : "chapéis não são mais legais"                          ,
+    "tvOnTv"               : "UMA TV... NUMA TV!"                                        ,
+    "cricky"               : "GRILINHO <3"                                        ,
+    "tooManyCrickets"      : "tá, agora são muitos grilos"                         ,
+    "normalPeep"           : "só uma pessoa normal"                                    ,
+    "normalPeeps"          : "só umas pessoas normais"                                ,
+    "wowNothing"           : "NOSSAAAAAA, NÃO É NADA"                                  ,
+    
+    // Act 2
+    "crazySquareAttacks"   : "QUADRADO DOIDO ATACA"                                 ,
+    "justMissed"           : "nossaaaaaa foi quase"                                 ,
+    "somethingInteresting" : "(você tem que pegar eles fazendo *alguma coisa* interessante...)" ,
+    "whoIsScreaming"       : "(vocÊ tem que pegar que tá gritando com eles)"               ,
+    "circleFearsSquares"   : "CIRCULOS TÊM MEDO DE QUADRADOS"                                  ,
+    "whoScaresThem"        : "(vocÊ tem que pegar *por quem* eles estão sendo assustados)"         ,
+    "areTheyScared"        : "(você tem que pegar eles *sendo* atacados por um quadrado)"       , // not used
+    "squaresSnubCircles"   : "QUADRADOS ESNOBAM CÍRCULOS"                                  ,
+    "areTheySnubbed"       : "(você tem que pegar eles *enquanto* esnobam um círculo)"        , // not used
+    "everyoneHates"        : "TODO MUNDO ODEIA TODO MUNDO!!1!"                           ,
+    "almostEveryoneHates"  : "QUASE TODO MUNDO ODEIA TODO MUNDO..."                     ,
+    "squaresHateCircles"   : "QUADRADOS ODEIAM CÍRCULOS"                                  ,
+    "circlesHateSquares"   : "CIRCULOS ODEIAM QUADRADOS"                                  ,
+    "areTheyYelling"       : "(você tem que pegar eles gritando)"              , // not used
+    "nerdsNow"             : "o quê esses nerds tão fazendo agora"                        ,
+    "schockedPeep"         : "por que essa pessoa tá chocada?"                              ,
+    "whatever"             : "tanto faz"                                              ,
+    
+    // Act 3
+    "ellipsis"             : ". . ."                                                 ,
+    "coolNoMore"           : "chapéis não são mais legais, você não ouviu?"           ,
+    "beScared"             : "FIQUE COM MEDO, FIQUE COM RAIVA."                                  ,
+    
+    // MANIFESTO
+    "manifesto" : [
+       //"as if you viewers want GOOD news"       ,
+       "quem começa a assistir *pessoas se dando bem?*",
+       "paz é chata. violência é viral."    ,
+       //"peace is boring. conflict gets clicks." ,
+       "e toda história precisa de um conflito, então..."  ,
+       //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+       "DÊ A AUDIÊNCIA OQUE ELES QUEREM."
+    ] ,
+    
+    // -- Strings currently in graphics resources --
+    
+    // (bg_preload.png) Preload screen
+    "playingTime"        : "tempo de jogo: 5 minutos" ,
+    "warning"            : "aviso: o seguinte programa contém cenas de esnobismo, indelicadeza e assassinato em massa." ,
+    
+    // (cam-instructions.png) Camera Instructions
+    "pointAndClick"      : "APONTAR E CLICAR" ,
+    
+    // (chyron3.png)
+    "chyronNothing"      : "NOSSAAAAA, É *NADA*" ,
+    
+    // (credits0001.png)
+    "createdBy"          : "criado por" ,
+    "NickyCase"          : "Nicky Case" ,
+    
+    // (credits0002.png)
+    "manyThanks"         : "muito obrigada para os meus testadores:" ,
+    
+    // (credits000[3,4,5,6].png)
+    "patreonSupporters"  : "e para os meus patreon supporters:" ,
+    
+    // (credits0007.png)
+    "lastButNotLeast"    : "e por último, mas não menos importante" ,
+    
+    // (credits0008.png)
+    "thankYouForPlaying" : "obrigada VOCÊ por jogar!" ,
+    
+    // (preload_play.png)
+    "playButton"         : "JOGAR" ,
+    
+    // (end_button.png) Post Credits
+    "otherWorkButton"    : "ver meus outros trabalhos" ,
+    "buyCoffeeButton"    : "me comprar um café" ,
+    "replayButton"       : "jogar essa bagunça denovo" ,
+    
+    // (logo.png) Post Credits
+    "logoWBWWB"          : "COMPARTILHAR A DOR:" ,
+    
+    // (end_prototype.png)
+    "endOfPrototype"     : "FIM DO PROTÓTIPO" ,
+    "toBeContinued"      : "(continua!)" ,
+    
+    // (quote0002.png)
+    "WBWWB"              : "Nos tornamos oque vêmos." ,
+    "WSOTATOTSU"         : "Nós moldamos nossas ferramentas e então nossas ferramentas nos moldam." ,
+    
+    // (quote0003.png)
+    "MarshallMcLuhan"    : "Marshall McLuhan" ,
+    
+    // (quote0004.png)
+    "misatrributed"      : "(misattributed)" ,
+};
+
