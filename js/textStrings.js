@@ -756,12 +756,12 @@ var textStrings_JP = {
     // MANIFESTO
     "manifesto" : [
        //"as if you viewers want GOOD news"       ,
-       "who tunes in to watch *people get along?*",
-       "peace is boring. violence goes viral."    ,
+       "誰が仲良しごっこを見たいと思うだろうか？",
+       "平和は退屈だ。暴力を拡散させよう",
        //"peace is boring. conflict gets clicks." ,
-       "and every story needs a conflict, so..."  ,
+       "全ての物語には争いが必要だ。つまり..."  ,
        //"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
-       "GIVE THE AUDIENCE WHAT THEY WANT."
+       "観客が求めているものを与えろ"
     ] ,
     
     // -- Strings currently in graphics resources --
