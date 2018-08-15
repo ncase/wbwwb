@@ -819,3 +819,4 @@ var textStrings_JP = {
 };
 
 var textStrings = textStrings_EN
+var language = "EN"
