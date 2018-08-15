@@ -718,7 +718,7 @@ var textStrings_PL = {
 
 var textStrings_JP = {
     // Act 1
-    "niceHat"              : "おお、格好いい帽子！",
+    "niceHat"              : "おぉ、格好いい帽子！",
     "outtaHere"            : "はい、ここから出ていって",
     "getARoom"             : "気持ち悪い、他のところでいちゃいちゃして",
     "notCoolAnymore"       : "帽子はもう全然格好良くない",
@@ -744,7 +744,7 @@ var textStrings_JP = {
     "squaresHateCircles"   : "四角は丸が嫌い",
     "circlesHateSquares"   : "丸は四角が嫌い",
     "areTheyYelling"       : "(誰かを怒鳴っているところを撮らなければ...)", // not used
-    "nerdsNow"             : "オタクたちは今何をしているのか？",
+    "nerdsNow"             : "オタクたちは何をしているのか？",
     "schockedPeep"         : "なぜショックを受けているのか？",
     "whatever"             : "どうでもいい",
     
