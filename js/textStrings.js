@@ -809,7 +809,7 @@ var textStrings_JP = {
     
     // (quote0002.png)
     "WBWWB"              : "We become what we behold." ,
-    "WSOTATOTSU"         : "We shape our tools and then our tools shape us." ,
+    "WSOTATOTSU"         : "我々がツールを形作り、ツールが我々を形作る" ,
     
     // (quote0003.png)
     "MarshallMcLuhan"    : "Marshall McLuhan" ,
