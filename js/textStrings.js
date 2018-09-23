@@ -922,5 +922,5 @@ var textStrings_JP = {
     "misatrributed"      : "(misattributed)" ,
 };
 
-var textStrings = textStrings_EN
-var language = "EN"
+var textStrings = textStrings_FR
+var language = "FR"
