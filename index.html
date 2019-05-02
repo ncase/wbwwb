@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 	<head>
 		<link rel="stylesheet" href="css/game.css">
 	</head>
@@ -6,16 +6,19 @@
 		<div id="stage"></div>
 		<div id="modal_shade"></div>
 		<div class="overlay" id="warning">
-			<div>oh noes</div>
-			<div>
+			<div dir="rtl">ای بابا!</div>
+			<div dir="rtl">
 			your browser doesn't support webgl.<br>
-			try a different browser or computer?
+			try a different browser or computer?<br>
+				<br>
+				مرورگر شما مرخص است! از یه مرورگر و یا کامپیوتر دیگه استفاده کنید!
 			</div>
 		</div>
 		<div class="overlay" id="paused">
 			<div>paused</div>
-			<div>
-			click anywhere to resume
+			<div dir="rtl">
+			click anywhere to resume<br>
+				برای بازگشت رو یه جا رو کلیک کن!
 			</div>
 		</div>
 	</body>
@@ -96,6 +99,6 @@ window.onload = function(){
 		document.getElementById("warning").style.display = "block";
 	}
 };
-window.SHARE_TEXT = "I just played this really weird game about the news. WE BECOME WHAT WE BEHOLD:"
-window.SHARE_URL = "https://ncase.itch.io/wbwwb";
+window.SHARE_TEXT = 'همین الان یه بازی خیلی خفن رو بازی کردم'
+window.SHARE_URL = "";
 </script>
