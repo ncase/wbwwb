@@ -2,4 +2,4 @@
 
 *ένα παιχνίδι για κύκλους των νέων, φαύλους κύκλους, άπειρους κύκλους*
 
-**[ΠΑΙΞΤΕ (Ελληνικά)](https://alexclay.itch.io/)** -- **[ΠΑΙΞΤΕ (ENGLISH)](https://ncase.itch.io/wbwwb)**
+**[ΠΑΙΞΤΕ (Ελληνικά)](https://galandrielle.github.io/wbwwb)** -- **[ΠΑΙΞΤΕ (ENGLISH)](https://ncase.itch.io/wbwwb)**
