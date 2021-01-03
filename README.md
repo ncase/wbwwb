@@ -1,5 +1,5 @@
 ![banner](https://github.com/Galandrielle/wbwwb/blob/master/Greek-CoverImage.png)
 
-*a game about news cycles, vicious cycles, infinite cycles*
+*ένα παιχνίδι για κύκλους των νέων, φαύλους κύκλους, άπειρους κύκλους*
 
-**[PLAY Persian)](https://alexclay.itch.io/)** -- **[PLAY (ENGLISH)](https://ncase.itch.io/wbwwb)**
+**[ΠΑΙΞΤΕ (Ελληνικά)](https://alexclay.itch.io/)** -- **[ΠΑΙΞΤΕ (ENGLISH)](https://ncase.itch.io/wbwwb)**
