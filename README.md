@@ -1,4 +1,4 @@
-![banner](https://github.com/AFZL95/wbwwb/blob/WBWWB-FA/Persian-CoverImage.png)
+![banner](https://github.com/Galandrielle/wbwwb/blob/master/Greek-CoverImage.png)
 
 *a game about news cycles, vicious cycles, infinite cycles*
 
