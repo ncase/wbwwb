@@ -108,4 +108,4 @@ var textStrings_GR = {
 };
 
 var textStrings = textStrings_GR
-var language = "GR"
+//var language = "GR"
