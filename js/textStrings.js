@@ -57,7 +57,7 @@ var textStrings_GR = {
 
 	// (bg_preload.png) Preload screen
 	"playingTime": "χρόνος παιχνιδιού: 5 λεπτά",
-	"warning": "προειδοποίηση: το πρόγραμμα\nπεριέχει σκηνές ακαταδεξίας,\nαγένειας και μαζικής δολοφονίας.\nη σύνεση του θεατή είναι προτεινόμενη.",
+	"warning": "προειδοποίηση: το πρόγραμμα\nπεριέχει σκηνές ακαταδεξίας,\nαγένειας και μαζικής δολοφονίας.\nη σύνεση του θεατή είναι προτεινόμενη.\nΔημιουργός: Nicky Case, Μετάφραση στα Ελληνικά: Galandrielle",
 
 	// (cam-instructions.png) Camera Instructions
 	"pointAndClick": "POINT & CLICK",
