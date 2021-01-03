@@ -70,23 +70,23 @@ var textStrings_GR = {
 	"NickyCase": "Νίκι Κέις",
 
 	// (credits0002.png)
-	"manyThanks": " ευχαριστώ τους δοκιμαστές του παιχνιδιού:",
+	"manyThanks": "Ο Νίκι Κέις ευχαριστεί τους δοκιμαστές του παιχνιδιού:",
 
 	// (credits000[3,4,5,6].png)
-	"patreonSupporters": " και τους υποστηρικτές στο patreon:",
+	"patreonSupporters": "και τους υποστηρικτές στο patreon:",
 
 	// (credits0007.png)
 	"lastButNotLeast": "και τελευταία αλλά όχι καταϊδρωμένα,",
 
 	// (credits0008.png)
-	"thankYouForPlaying": "ευχαριστώ ΕΣΕΝΑ που έπαιξες!",
+	"thankYouForPlaying": "ευχαριστεί ΕΣΕΝΑ που έπαιξες!",
 
 	// (preload_play.png)
 	"playButton": "ΠΑΙΞΕ",
 
 	// (end_button.png) Post Credits
-	"otherWorkButton": "περισσότερα από τον δημιουργό",
-	"buyCoffeeButton": "patreon ου δημιουργού",
+	"otherWorkButton": "περισσότερα από τον Νίκι Κέις",
+	"buyCoffeeButton": "patreon του Νίκι Κέις",
 	"replayButton": "ξαναπαίξε αυτό το χάος",
 
 	// (logo.png) Post Credits
@@ -98,7 +98,7 @@ var textStrings_GR = {
 
 	// (quote0002.png)
 	"WBWWB": "Γινόμαστε αυτό που παρατηρούμε.",
-	"WSOTATOTSU": "Σχηματίζουμε τα εργαλέια μας και μετά τα εργαλεία μας μα σχηματίζουν.",
+	"WSOTATOTSU": "Σχηματίζουμε τα εργαλεία μας και μετά τα εργαλεία μας μας σχηματίζουν.",
 
 	// (quote0003.png)
 	"MarshallMcLuhan": "Μάρσαλ ΜακΛούχαν",
