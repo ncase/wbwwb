@@ -20,7 +20,7 @@ var textStrings_GR = {
 
 	// Act 2
 	"crazySquareAttacks": "ΤΡΕΛΕΣ ΕΠΙΘΕΣΕΙΣ ΤΕΤΡΑΓΩΝΩΝ",
-	"justMissed": "	ωωωωωω μόλις το έχασες",
+	"justMissed": "ωωωωωω μόλις το έχασες",
 	"somethingInteresting": "(πρέπει να τους πιάσεις να κάνουν ΚΑΤΙ ενδιαφέρον...)",
 	"whoIsScreaming": "(πρέπει να πιάσεις αυτόν που τους φωνάζει)",
 	"circleFearsSquares": "ΚΥΚΛΟΣ ΦΟΒΑΤΑΙ ΤΑ ΤΕΤΡΑΓΩΝΑ",
