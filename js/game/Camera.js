@@ -60,7 +60,7 @@ function Camera(scene, options){
     self.graphics.addChild(self.frame);
 
 	if(!options.noIntro){
-	    self.instructions = new PIXI.Sprite(resources.cam_instructions.texture);
+		self.instructions = new PIXI.Text(textStrings["pointAndClick"],{font:"48px Cairo", fill:"#4C4C4C", align:"center"});
 		self.instructions.scale.x = self.instructions.scale.y = 0.5;
 	    self.instructions.anchor.x = 0.5;
 	    self.instructions.anchor.y = 0;

@@ -38,12 +38,12 @@ function Scene_Preloader(){
 	var barEase = 0.9;
 
 	// Loading text
-	var text = new PIXI.Text("loading... 0%", {font:"25px Cairo", fill:"#4C4C4C", align:"center"});
+	var text = new PIXI.Text((typeof textStrings["loading"] != undefined ? textStrings["loading"] : "loading...") + " 0%", {font:"25px Cairo", fill:"#4C4C4C", align:"center"});
     text.anchor.x = 0.5;
     text.anchor.y = 0.5;
-    text.x = bar.x;
-    text.y = bar.y;
-    Game.stage.addChild(text);
+    text.x = 0;
+    text.y = 0;
+    bar.addChild(text);
     
     // Playing time text
     var playingTimeText = new PIXI.Text(textStrings["playingTime"] + "\n", { font: "32px Cairo", fill: "#FFFFFF", align: "center" }); // \n hack. needed when the text field cuts some of the string font's bottom
@@ -87,7 +87,10 @@ function Scene_Preloader(){
 
 	Game.loadAssets(function(){
 
-		Game.stage.removeChild(text);
+		//It changes loading text to play text
+		text.text = (typeof textStrings["playButton"] != undefined ? textStrings["playButton"] : "!بسم الله");
+		text.style = { font: "32px Cairo", fill: "#FFFFFF", align: "center" };
+				
 		bar.gotoAndStop(1);
 		bar.scale.x = bar.scale.y = 1.1;
 
@@ -109,7 +112,7 @@ function Scene_Preloader(){
 
 	}, function(ratio){
 		var percent = Math.floor(ratio*100);
-		text.text = "loading... "+percent+"%";
+		text.text = (typeof textStrings["loading"] != 'undefined' ? textStrings["loading"] : "loading...") +" "+percent+"%";
 	}, false);
 
 }
