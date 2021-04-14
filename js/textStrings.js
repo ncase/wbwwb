@@ -312,5 +312,117 @@ var textStrings_FA = {
 	"misatrributed": "(!با مقداری تغییر)",
 };
 
+// Tradução para Português do Brasil
+// por Felipe Moreira. https://www.instagram.com/lipemo_/ - https://github.com/lipemo
+var textStrings_pt_BR = {
+	// Act 1
+	"niceHat": "OOH CHAPÉU LEGAL", 
+	"outtaHere": "yeah sai daqui", 
+	"getARoom": "ECA, VÃO PARA UM HOTEL", 
+	"notCoolAnymore": "esquece isso, chapéus não são mais legais", 
+	"tvOnTv": "UMA TV... NA TV!", 
+	"cricky": "UM GRILINHO <3",
+	"tooManyCrickets": "ok são grilos demais", 
+	"normalPeep": "apenas uma pessoa normal", 
+	"normalPeeps": "apenas algumas pessoas normais", 
+	"wowNothing": "WOWWEE, NÃO É NADA",
+
+	// Act 2
+	"crazySquareAttacks": "QUADRADO LOUCO ATACA",
+	"justMissed": "oooooh errou", 
+	"somethingInteresting": "(pegue eles fazendo *algo* interessante...)", 
+	"whoIsScreaming": "(pegue quem está gritando com eles)",
+	"circleFearsSquares": "CÍRCULOS TEMEM QUADRADOS",
+	"whoScaresThem": "(pegue também de *quem* eles estão com medo)",
+	"areTheyScared": "(pegue eles *sendo assustados* por um quadrado)",
+	"squaresSnubCircles": "QUADRADOS ESNOBAM CÍRCULOS",
+	"areTheySnubbed": "(pegue eles *enquanto esnobam* um círculo)", // not used 
+	"everyoneHates": "TODOS ODEIAM TODOS!!!!", 
+	"almostEveryoneHates": "QUASE TODOS SE ODEIAM...", 
+	"squaresHateCircles": "QUADRADOS ODEIAM CÍRCULOS", 
+	"circlesHateSquares": "CÍRCULOS ODEIAM QUADRADOS", 
+	"areTheyYelling": "(pegue eles *gritando* com os outros)", // not used 
+	"nerdsNow": "o que esses nerds estão fazendo agora", 
+	"schockedPeep": "por que essas pessoas estão chodadas?", 
+	"whatever": "tanto faz", 
+
+	// Act 3
+	"ellipsis": ". . .",
+	"coolNoMore": "chapéus não são mais legais, você não sabia?", 
+	"beScared": "TENHA MEDO. TENHA RAIVA.",
+
+	// MANIFESTO
+	"manifesto": [
+		//"as if you viewers want GOOD news",
+		"quem assiste *pessoas se dando bem*?",
+		"paz é chato. violência viraliza.", 
+		//"peace is boring. conflict gets clicks." ,
+		"toda história precisa de conflitos, então...", 
+		//"...GIVE THE AUDIENCE WHAT THEY WANT.",
+		"DE A AUDIÊNCIA O QUE ELES QUEREM." 
+	],
+
+	// -- Strings currently in graphics resources --
+
+	// (bg_preload.png) Preload screen
+	"playingTime": "tempo de jogo: 5 minutos", 
+	"warning": "aviso: este jogo\ncontém cenas de esnobismo,\ngrosseria e assassinato em massa.\ndiscrição do visualizador é aconselhável.",
+
+	// (cam-instructions.png) Camera Instructions
+	"pointAndClick": "APONTE E CLIQUE",
+
+	// (chyron3.png)
+	"chyronNothing": "WOWWEE, NÃO É NADA*",
+
+	// (credits0001.png)
+	"createdBy": "criado por",
+	"NickyCase": "Nicky Case",
+
+	// (credits0002.png)
+	"manyThanks": "muito obrigado aos meus testadores:", 
+
+	// (credits000[3,4,5,6].png)
+	"patreonSupporters": "e aos meus apoiadores no patreon:", 
+
+	// (credits0007.png)
+	"lastButNotLeast": "e por último mas não menos importante,",
+
+	// (credits0008.png)
+	"thankYouForPlaying": "obrigado a VOCÊ por ter jogado!",
+
+	// (preload_play.png)
+	"playButton": "JOGAR",
+	
+	// (end_button.png) Post Credits
+	"otherWorkButton": "veja meus outros trabalhos",
+	"buyCoffeeButton": "me compre um café",
+	"replayButton": "repita essa bagunça",
+
+	// (logo.png) Post Credits
+	"logoWBWWB": "COMPARTILHE ESSA DOR:",
+
+	// (end_prototype.png)
+	"endOfPrototype": "END OF PROTOTYPE",
+	"toBeContinued": "(Continua!)", 
+
+	// (quote0002.png)
+	"WBWWB": "Nós nos tornamos o que vemos.", 
+	"WSOTATOTSU": "Nós moldamos nossas ferramentas e elas nos moldam.",
+
+	// (quote0003.png)
+	"MarshallMcLuhan": "Marshall McLuhan",
+
+	// (quote0004.png)
+	"misatrributed": "(misattributed)",
+
+	/////////////////////////////////////
+	//New translations that I added to pt_BR textStrings that doesn't exists in other languages. it's ideal to add this in other languages too
+	"paused": "PAUSADO", 
+	"resume": "Clique em qualquer lugar para continuar",
+	"loading": "Carregando...", 
+};
+
 var textStrings = textStrings_FA
-//var textStrings = textStrings_KR;
+//var textStrings = textStrings_EN
+//var textStrings = textStrings_DE
+//var textStrings = textStrings_pt_BR;

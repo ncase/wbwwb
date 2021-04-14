@@ -15,8 +15,8 @@
 			</div>
 		</div>
 		<div class="overlay" id="paused">
-			<div>paused</div>
-			<div dir="rtl">
+			<div id=pausedText>paused</div>
+			<div dir="rtl" id="resumeText">
 			click anywhere to resume<br>
 				برای بازگشت رو یه جا رو کلیک کن!
 			</div>
@@ -98,6 +98,16 @@ window.onload = function(){
 	}catch(e){
 		document.getElementById("warning").style.display = "block";
 	}
+
+	//It translates some screen texts
+	if(typeof textStrings["paused"] != 'undefined'){
+		document.getElementById("pausedText").innerText = textStrings["paused"];
+	}
+	if(typeof textStrings["resume"] != 'undefined'){
+		document.getElementById("resumeText").innerText = textStrings["resume"];
+	}
+	
+	
 };
 window.SHARE_TEXT = 'همین الان یه بازی خیلی خفن رو بازی کردم'
 window.SHARE_URL = "";
