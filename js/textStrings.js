@@ -311,6 +311,104 @@ var textStrings_FA = {
 	// (quote0004.png)
 	"misatrributed": "(!با مقداری تغییر)",
 };
+var textStrings_NN = {
+	// Act 1
+	"niceHat": "Ååååh, fin hatt",
+	"outtaHere": "jepp, kom deg vidare",
+	"getARoom": "Ekkelt! Skaff dykk eit soverom",
+	"notCoolAnymore": "Ikkje tenk på det, hattar er ikkje kult meir",
+	"tvOnTv": "Ein TV... PÅ TV!",
+	"cricky": "Litle grashoppa <3",
+	"tooManyCrickets": "OK, det er for mange grashopper",
+	"normalPeep": "Eit heilt normalt menneske",
+	"normalPeeps": "Berre nokre normale mennesker",
+	"wowNothing": "JUHUUU! Det er ingenting",
 
-var textStrings = textStrings_FA
-//var textStrings = textStrings_KR;
+	// Act 2
+	"crazySquareAttacks": "Gal firkant angriper",
+	"justMissed": "ååååh, akkurat for seint",
+	"somethingInteresting": "(Det må liksom skje *noko* spanande...)",
+	"whoIsScreaming": "(Du må ta bilde av dei som skriker til dei)",
+	"circleFearsSquares": "SIRKLAR ER REDDE FIRKANTAR",
+	"whoScaresThem": "(Du må ta bilde av *kven* dei er redde for)",
+	"areTheyScared": "(Du må ta bilde av dei *når dei vert skremt* av ein firkant)", // not used
+	"squaresSnubCircles": "FIRKANTAR FORNÆRMER SIRKLAR",
+	"areTheySnubbed": "(Du må ta bilde av dei *når dei fornærmer* ein sirkel)", // not used
+	"everyoneHates": "ALLE HATAR ALLE!!!",
+	"almostEveryoneHates": "NESTEN ALLE HATAR ALLE...",
+	"squaresHateCircles": "FIRKANTAR HATAR SIRKLAR",
+	"circlesHateSquares": "SIRKLAR HATAR FIRKANTAR",
+	"areTheyYelling": "(Du må ta bilde av dei *når dei skriker* til andre)", // not used
+	"nerdsNow": "kva gjer dei nørdane no",
+	"schockedPeep": "Kvifor er dette mennesket sjokkert??",
+	"whatever": "ikkje bry deg",
+
+	// Act 3
+	"ellipsis": ". . .",
+	"coolNoMore": "Hattar er ikkje kult meir. Har du ikkje fått med deg det?",
+	"beScared": "VER REDD. VER SINT.",
+
+	// MANIFESTO
+	"manifesto": [
+		//"as if you viewers want GOOD news"       ,
+		"Kven gidder å sjå på folk som har det *greit i lag?*",
+		"Fred er kjedeleg. Vold går viralt.",
+		//"peace is boring. conflict gets clicks." ,
+		"og alle historiar trenger ein konflikt, så...",
+		//"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+		"GI PUBLIKUM DET DEI VIL HA."
+	],
+
+	// -- Strings currently in graphics resources --
+
+	// (bg_preload.png) Preload screen
+	"playingTime": "Speletid: 5 minuttar",
+	"warning": "Åtvaring: dette programmet har scener med \nsnobberi,\nfrekke saker,\nuhøflege saker og massemord. Du vert herved åtvara",
+
+	// (cam-instructions.png) Camera Instructions
+	"pointAndClick": "PEK OG KLIKK",
+
+	// (chyron3.png)
+	"chyronNothing": "JØSS, DET ER *INGENTING*",
+
+	// (credits0001.png)
+	"createdBy": "Laga av",
+	"NickyCase": "Nicky Case",
+
+	// (credits0002.png)
+	"manyThanks": "takk til testarar:",
+
+	// (credits000[3,4,5,6].png)
+	"patreonSupporters": "og støttespelarar:",
+
+	// (credits0007.png)
+	"lastButNotLeast": "og sist, men ikkje minst",
+
+	// (credits0008.png)
+	"thankYouForPlaying": "takk til deg som spelar!",
+
+	// (preload_play.png)
+	"playButton": "SPEL",
+
+	// (end_button.png) Post Credits
+	"otherWorkButton": "sjå andre ting eg har laga",
+	"buyCoffeeButton": "spander ein kaffe",
+	"replayButton": "spel dette rotet ein gong til",
+
+	// (logo.png) Post Credits
+	"logoWBWWB": "Del smerta:",
+
+	// (end_prototype.png)
+	"endOfPrototype": "SLUTT PÅ PROTOTYPE",
+	"toBeContinued": "(fortsetjing følgjer!)",
+
+	// (quote0002.png)
+	"WBWWB": "Me blir det me ser.",
+	"WSOTATOTSU": "Me formar verktøya våre, og deretter formar verktøya oss.",
+
+	// (quote0003.png)
+	"MarshallMcLuhan": "Marshall McLuhan",
+
+	// (quote0004.png)
+	"misatrributed": "(feilattribuert)",
+};
