@@ -311,6 +311,109 @@ var textStrings_FA = {
 	// (quote0004.png)
 	"misatrributed": "(!با مقداری تغییر)",
 };
+// Brazilian Portuguese translation.
+// by Filipe Daineze https://github.com/fddaineze
+var textStrings_PT = {
+	// Act 1
+	"niceHat": 			"OOH CHAPÉU MANEIRO",
+	"outtaHere": 			"Isso, cai fora daqui",
+	"getARoom": 			"AFF, VAI PRA UM QUARTO",
+	"notCoolAnymore": 		"Ok, chapéus não são legais",
+	"tvOnTv": 			"Uma TV ... NA TV!",
+	"cricky": 			"LOL' UM GRILO <3",
+	"tooManyCrickets": 		"ok, são muitos grilos",
+	"normalPeep": 			"Apenas uma pessoa normal",
+	"normalPeeps": 			"Apenas algumas pessoas normais",
+	"wowNothing": 			"WOOOWW, NÃO É NADA!",
+
+	// Act 2
+	"crazySquareAttacks": 		"QUADRADOS LOUCOS ATACAM",
+	"justMissed": 			"aaaaah eu perdi isso",
+	"somethingInteresting": 	"(precisa ser *algo* interessante...)",
+	"whoIsScreaming": 		"(mas *quem* está gritando com eles?)",
+	"circleFearsSquares": 		"CÍRCULOS TEMEM QUADRADOS",
+	"whoScaresThem": 		"(pegue também *de quem* estão com medo)",
+	"areTheyScared": 		"pegue-os *sendo assustados* por um quadrado)", // not used
+	"squaresSnubCircles": 		"QUADR. ESNOBAM CÍRCULOS",
+	"areTheySnubbed": 		"(pegue *enquanto* esnobam um círculo)", // not used
+	"everyoneHates": 		"TODO MUNDO ODEIA TODO MUNDO!!1!",
+	"almostEveryoneHates": 		"QUASE TODO MUNDO ODEIA TODO MUNDO..",
+	"squaresHateCircles": 		"QUADRADOS ODEIAM CÍRCULOS",
+	"circlesHateSquares": 		"CÍRCULOS ODEIAM QUADRADOS",
+	"areTheyYelling": 		"(pegue-os *gritando* com os outros)", // not used
+	"nerdsNow": 			"o que esses nerds estão fazendo agora",
+	"schockedPeep": 		"por que esse povo está chocado?",
+	"whatever": 			"tanto faz",
+
+	// Act 3
+	"ellipsis": 			". . .",
+	"coolNoMore": 			"Chapéus não são legais, não ouviu?",
+	"beScared": 			"TENHA MEDO. TENHA RAIVA.",
+
+	// MANIFESTO
+	"manifesto": [
+		//"as if you viewers want GOOD news"       ,
+		"quem vê TV pra ver *boas notícias?*",
+		"paz é um tédio. violência é viral.",
+		//"peace is boring. conflict gets clicks." ,
+		"toda história precisa de conflitos...",
+		//"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+		"DÊ AO PÚBLICO O QUE QUEREM."
+	],
+
+	// -- Strings currently in graphics resources --
+
+	// (bg_preload.png) Preload screen
+	"playingTime": 			"tempo de jogo: 5 minutos",
+	"warning": "aviso: o seguinte programa\ncontém cenas de esnobismo,\ngrosseria e assassinato em massa.\na discrição ao assistir é aconselhada.",
+
+	// (cam-instructions.png) Camera Instructions
+	"pointAndClick": 		"APONTE E CLIQUE",
+
+	// (chyron3.png)
+	"chyronNothing": 		"WOOOWW, NÃO É *NADA*",
+
+	// (credits0001.png)
+	"createdBy": 			"Criado por",
+	"NickyCase": 			"Nicky Case",
+
+	// (credits0002.png)
+	"manyThanks": 			"muito obrigado aos meus playtesters:",
+
+	// (credits000[3,4,5,6].png)
+	"patreonSupporters": 		"e a meus apoiadores do patreon:",
+
+	// (credits0007.png)
+	"lastButNotLeast": 		"e por último mas não menos importante,",
+
+	// (credits0008.png)
+	"thankYouForPlaying": 		"obrigado a VOCÊ por jogar!",
+
+	// (preload_play.png)
+	"playButton": "JOGAR",
+
+	// (end_button.png) Post Credits
+	"otherWorkButton": 		"veja meus outros trabalhos",
+	"buyCoffeeButton": 		"me compre um café",
+	"replayButton": 		"repita essa bagunça",
+
+	// (logo.png) Post Credits
+	"logoWBWWB": 			"COMPARTILHE A DOR:",
+
+	// (end_prototype.png)
+	"endOfPrototype": 		"FIM DO PROTÓTIPO",
+	"toBeContinued": 		"(continua!)",
+
+	// (quote0002.png)
+	"WBWWB": 			"Nos tornamos o que vemos.",
+	"WSOTATOTSU": 			"Nós moldamos nossas ferramentas e, em seguida, nossas ferramentas nos moldam.",
+
+	// (quote0003.png)
+	"MarshallMcLuhan": 		"Marshall McLuhan",
+
+	// (quote0004.png)
+	"misatrributed": 		"(atribuído erroneamente)",
+};
 
 var textStrings_PT_BR = { //I put that way because portuguese from Brazil (PT_BR) is a little different than portuguese from Portugal (PT_PT)
 	// Act 1
