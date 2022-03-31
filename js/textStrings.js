@@ -29,7 +29,7 @@ var textStrings_EN = {
 	"almostEveryoneHates": "ALMOST EVERYONE HATES EVERYONE...",
 	"squaresHateCircles": "SQUARES HATE CIRCLES",
 	"circlesHateSquares": "CIRCLES HATE SQUARES",
-	"areTheyYelling": "(ya gotta catch 'em *yelling* at others)", // not used
+	"areTheyYelling": "(ya gotta catch 'em *yelling* at others)",
 	"nerdsNow": "what are these nerds doing now",
 	"schockedPeep": "why's this peep shocked?",
 	"whatever": "whatever",
