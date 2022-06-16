@@ -25,7 +25,7 @@ var textStrings_EN = {
 	"areTheyScared": "(ya gotta catch 'em *being* scared by a square)", // not used
 	"squaresSnubCircles": "SQUARES SNUB CIRCLES",
 	"areTheySnubbed": "(ya gotta catch 'em *while* snubbing a circle)", // not used
-	"everyoneHates": "EVERYONE HATES EVERYONE!!1!",
+	"everyoneHates": "EVERYONE HATES EVERYONE!!!!",
 	"almostEveryoneHates": "ALMOST EVERYONE HATES EVERYONE...",
 	"squaresHateCircles": "SQUARES HATE CIRCLES",
 	"circlesHateSquares": "CIRCLES HATE SQUARES",
@@ -129,7 +129,7 @@ var textStrings_DE = {
 	"areTheyScared": "(erwische sie, *wenn* sie fl\xFCchten)",
 	"squaresSnubCircles": "QUADRAT: Anschuldigungen von KREISEN l\xE4cherlich.",
 	"areTheySnubbed": "(erwische sie, *w\xE4hrend* sie angreifen)",
-	"everyoneHates": "ALLE HASSEN JEDEN!!1!",
+	"everyoneHates": "ALLE HASSEN JEDEN!!!!",
 	"almostEveryoneHates": "FAST JEDER HASST ALLE...",
 	"squaresHateCircles": "QUADRATE HASSEN KREISE",
 	"circlesHateSquares": "KREISE HASSEN QUADRATE",
@@ -336,7 +336,7 @@ var textStrings_PT = {
 	"areTheyScared": 		"pegue-os *sendo assustados* por um quadrado)", // not used
 	"squaresSnubCircles": 		"QUADR. ESNOBAM CÍRCULOS",
 	"areTheySnubbed": 		"(pegue *enquanto* esnobam um círculo)", // not used
-	"everyoneHates": 		"TODO MUNDO ODEIA TODO MUNDO!!1!",
+	"everyoneHates": 		"TODO MUNDO ODEIA TODO MUNDO!!!!",
 	"almostEveryoneHates": 		"QUASE TODO MUNDO ODEIA TODO MUNDO..",
 	"squaresHateCircles": 		"QUADRADOS ODEIAM CÍRCULOS",
 	"circlesHateSquares": 		"CÍRCULOS ODEIAM QUADRADOS",
@@ -438,7 +438,7 @@ var textStrings_PT_BR = { //I put that way because portuguese from Brazil (PT_BR
 	"areTheyScared": "(você tem que pegar eles *sendo* assustados por um quadrado)", // not used
 	"squaresSnubCircles": "QUADRADOS AFRONTAM CÍRCULOS",
 	"areTheySnubbed": "(você tem que pegá-los *enquanto* eles afrontam os círculos)", // not used
-	"everyoneHates": "TODO MUNDO ODEIA TODO MUNDO!!1!",
+	"everyoneHates": "TODO MUNDO ODEIA TODO MUNDO!!!!",
 	"almostEveryoneHates": "QUASE TODO MUNDO ODEIA TODO MUNDO...",
 	"squaresHateCircles": "QUADRADOS ODEIAM CÍRCULOS",
 	"circlesHateSquares": "CÍRCULOS ODEIAM QUADRADOS",
@@ -540,7 +540,7 @@ var textStrings_ES = {
 	"areTheyScared": "(tienes que atraparlos *siendo* asustados por un cuadrado)", // not used
 	"squaresSnubCircles": "CUADRADOS DESPRECIAN A CIRCULOS",
 	"areTheySnubbed": "(ya gotta catch 'em *while* snubbing a circle)", // not used
-	"everyoneHates": "TODOS SE ODIAN!!1!",
+	"everyoneHates": "TODOS SE ODIAN!!!!",
 	"almostEveryoneHates": "CASI TODOS SE ODIAN...",
 	"squaresHateCircles": "CUADRADOS ODIAN A CIRCULOS",
 	"circlesHateSquares": "CIRCLES HATE SQUARES",
