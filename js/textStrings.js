@@ -109,3 +109,23 @@ var textStrings_GR = {
 
 var textStrings = textStrings_GR
 //var language = "GR"
+
+const textStrings = (() => {
+	switch (navigator.language) {
+		case "en-US":
+			return textStrings_EN;
+		case "da":
+			return textStrings_DA;
+		case "fa":
+			return textStrings_FA;
+		case "pt-pt":
+			return textStrings_PT;
+		case "pt-BR":
+			return textStrings_PT_BR;
+		case "es":
+			return textStrings_ES;
+		default:
+			return textStrings_EN;
+	}
+}
+)();
