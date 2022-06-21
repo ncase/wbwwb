@@ -735,6 +735,8 @@ const textStrings = (() => {
 			return textStrings_PT_BR;
 		case "es":
 			return textStrings_ES;
+		case "es":
+			return textStrings_GR;
 		default:
 			return textStrings_EN;
 	}
