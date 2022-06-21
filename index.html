@@ -6,14 +6,19 @@
 		<div id="stage"></div>
 		<div id="modal_shade"></div>
 		<div class="overlay" id="warning">
+			<div dir="rtl">ای بابا!</div>
 			<div dir="rtl">
-			ο φυλλομετρητής σας δεν υποσστηρίζει WebGL.<br>
-			δοκιμάστε διαφορετικό φυλλομετρητή ή υπολογιστή;
+			your browser doesn't support webgl.<br>
+			try a different browser or computer?<br>
+				<br>
+				مرورگر شما مرخص است! از یه مرورگر و یا کامپیوتر دیگه استفاده کنید!
 			</div>
 		</div>
 		<div class="overlay" id="paused">
-			<div>παύση</div>
-			<div dir="rtl">πατήστε οπουδήποτε για να συνεχίσετε
+			<div>paused</div>
+			<div dir="rtl">
+			click anywhere to resume<br>
+				برای بازگشت رو یه جا رو کلیک کن!
 			</div>
 		</div>
 	</body>
@@ -44,6 +49,59 @@
 <script src="js/game/TV.js"></script>
 <script src="js/game/AnimationProp.js"></script>
 <script src="js/game/ScreenShake.js"></script>
+<script src="js/game/ScreenZoomOut.js"></script>
+<script src="js/game/Gore.js"></script>
+<script src="js/game/DeadBody.js"></script>
+<script src="js/game/Blood.js"></script>
+
+<!-- Peeps -->
+<script src="js/peeps/NormalPeep.js"></script>
+<script src="js/peeps/CrazyPeep.js"></script>
+<script src="js/peeps/NervousPeep.js"></script>
+<script src="js/peeps/SnobbyPeep.js"></script>
+<script src="js/peeps/AngryPeep.js"></script>
+<script src="js/peeps/HatPeep.js"></script>
+<script src="js/peeps/LoverPeep.js"></script>
+<script src="js/peeps/ProtestAnim.js"></script>
+<script src="js/peeps/HelpingAnim.js"></script>
+<script src="js/peeps/HappyWeirdoPeep.js"></script>
+<script src="js/peeps/EvilHatPeep.js"></script>
+<script src="js/peeps/PanicPeep.js"></script>
+<script src="js/peeps/MurderPeep.js"></script>
+
+<!-- Misc Crap -->
+<script src="js/misc/Candlelight.js"></script>
+<script src="js/misc/LoversWatching.js"></script>
+<script src="js/misc/Cricket.js"></script>
+<script src="js/misc/Cursor.js"></script>
+
+<!-- Scenes -->
+<script src="js/scenes/Scene_Preloader.js"></script>
+<script src="js/scenes/Scene_Quote.js"></script>
+<script src="js/scenes/Scene_Game.js"></script>
+<script src="js/scenes/Scene_Credits.js"></script>
+<script src="js/scenes/Scene_Post_Credits.js"></script>
+<script src="js/scenes/Scene_Post_Post_Credits.js"></script>
+<script src="js/scenes/Scene_EndPrototype.js"></script>
+<script src="js/scenes/Act_I.js"></script>
+<script src="js/scenes/Act_II.js"></script>
+<script src="js/scenes/Act_III.js"></script>
+<script src="js/scenes/Scene_Meta.js"></script>
+
+<!-- Game Scripts -->
+<script>
+Game.stats = false;
+window.onload = function(){
+	try{
+		Game.init();
+		//Game.init("Game");
+	}catch(e){
+		document.getElementById("warning").style.display = "block";
+	}
+};
+window.SHARE_TEXT = 'همین الان یه بازی خیلی خفن رو بازی کردم'
+window.SHARE_URL = "";
+</script>
 <script src="js/game/ScreenZoomOut.js"></script>
 <script src="js/game/Gore.js"></script>
 <script src="js/game/DeadBody.js"></script>
