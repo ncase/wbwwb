@@ -92,14 +92,14 @@ function TV(scene){
 
 		// Chyron Text
 		if(!options.nothing){
-			if(language == "JP"){
-				var fontsize=100, max=9;
-			} else{
-				var fontsize=100, max=14;
-			}
-			if(text.length>max){ // more than [max] chars...
-				fontsize = Math.floor(max*fontsize/text.length);
-			}
+				if(language == "JP"){
+					var fontsize=100, max=9;
+				} else{
+					var fontsize=100, max=14;
+				}
+				if(text.length>max){ // more than [max] chars...
+					fontsize = Math.floor(max*fontsize/text.length);
+				}
 		    var text = new PIXI.Text(text, {font:"bold "+fontsize+"px Poppins", fill:"#FFF"});
 		    text.scale.x = text.scale.y = 0.2;
 		    text.anchor.x = 0;

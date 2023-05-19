@@ -517,3 +517,15 @@ var textStrings_ES = {
 };
 
 var textStrings = textStrings_PT_BR;
+
+const textStrings = (() => {
+	switch (navigator.language) {
+		case "en-US":
+			return textStrings_EN;
+		case "pt-BR":
+			return textStrings_PT_BR;
+		default:
+			return textStrings_PT_BR;
+	}
+}
+)();
