@@ -394,7 +394,7 @@ var textStrings_PT_BR = { //I put that way because portuguese from Brazil (PT_BR
 	// (end_button.png) Post Credits
 	"otherWorkButton": "veja meus outros trabalhos",
 	"buyCoffeeButton": "me pague um café",
-	"replayButton": "joge novamente",
+	"replayButton": "jogue novamente",
 
 	// (logo.png) Post Credits
 	"logoWBWWB": "COMPARTILHE:",
