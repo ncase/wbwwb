@@ -33,12 +33,12 @@ function Scene_Preloader(){
 	var bar = MakeMovieClip("preload_play");
 	bar.anchor.x = bar.anchor.y = 0.5;
 	bar.x = 278;
-	bar.y = 250;
+	bar.y = 225;
 	Game.stage.addChild(bar);
 	var barEase = 0.9;
 
 	// Loading text
-	var text = new PIXI.Text("loading... 0%", {font:"25px Cairo", fill:"#4C4C4C", align:"center"});
+	var text = new PIXI.Text("loading... 0%", {font:"25px Poppins", fill:"#4C4C4C", align:"center"});
     text.anchor.x = 0.5;
     text.anchor.y = 0.5;
     text.x = bar.x;
@@ -46,15 +46,15 @@ function Scene_Preloader(){
     Game.stage.addChild(text);
     
     // Playing time text
-    var playingTimeText = new PIXI.Text(textStrings["playingTime"] + "\n", { font: "32px Cairo", fill: "#FFFFFF", align: "center" }); // \n hack. needed when the text field cuts some of the string font's bottom
+    var playingTimeText = new PIXI.Text(textStrings["playingTime"] + "\n", { font: "32px Poppins", fill: "#FFFFFF", align: "center" }); 
     playingTimeText.anchor.x = 0.5;
     playingTimeText.anchor.y = 0.5;
     playingTimeText.x = bar.x;
-    playingTimeText.y = 345;
+    playingTimeText.y = 300;
     Game.stage.addChild(playingTimeText);
     
     // Warning text
-    var warningText = new PIXI.Text(textStrings["warning"], { font: "25px Cairo", fill: "#666666", align: "center" });
+    var warningText = new PIXI.Text(textStrings["warning"], { font: "25px Poppins", fill: "#666666", align: "center" });
     warningText.anchor.x = 0.5;
     warningText.anchor.y = 0.5;
     warningText.x = bar.x;

@@ -29,7 +29,7 @@ function Scene_Post_Post_Credits(){
 
 		var button = new PIXI.Container();
 		button.x = x;
-		button.y = 325;
+		button.y = 280;
 		cont.addChild(button);
 
 		var bg = MakeMovieClip("end_button");
@@ -61,10 +61,10 @@ function Scene_Post_Post_Credits(){
 
 	};
 	_addButton(250, 2, function(){
-		window.open("http://afzl95.github.io/");
+		window.open("http://ncase.me");
 	});
 	_addButton(480, 3, function(){
-		window.open("https://twitter.com/ali_fzl95");
+		window.open("https://www.patreon.com/ncase");
 	});
 	_addButton(710, 4, function(){
 		Game.sceneManager.gotoScene("Quote");
@@ -75,7 +75,7 @@ function Scene_Post_Post_Credits(){
 
 		var button = MakeSprite(icon);
 		button.x = x;
-		button.y = 419;
+		button.y = 342;
 		button.anchor.x = button.anchor.y = 0.5;
 		cont.addChild(button);
 
@@ -98,13 +98,12 @@ function Scene_Post_Post_Credits(){
 	};
 	var text = encodeURIComponent(window.SHARE_TEXT);
 	var url = encodeURIComponent(window.SHARE_URL);
-	_addSocialButton(Game.width/2 - 38, "facebook", function(){
+	_addSocialButton(575, "facebook", function(){
 		var href = "https://www.facebook.com/sharer/sharer.php?u="+url+"&t="+text;
 		window.open(href);
 	});
-	_addSocialButton(Game.width/2 + 13, "twitter", function(){
-		var href = "https://twitter.com/intent/tweet?text="+text+"%0a"+url;
-		//var href = "https://twitter.com/intent/tweet?text="+text+"%20"+url+"&via=ncasenmare";
+	_addSocialButton(610, "twitter", function(){
+		var href = "https://twitter.com/intent/tweet?text="+text+"%20"+url+"&via=ncasenmare";
 		window.open(href);
 	});
 

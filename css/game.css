@@ -1,8 +1,8 @@
 @font-face {
-	font-family: 'Cairo';
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
-	src: url('Cairo-Regular.ttf') format('truetype');
+	src: url('Poppins-Medium.ttf') format('truetype');
 }
 
 html, body{
@@ -10,7 +10,7 @@ html, body{
 	height: 100%;
 }
 body{
-	font-family: 'Cairo';
+	font-family: 'Poppins';
 	margin: 0;
 	background: #222;
 	position:relative;
