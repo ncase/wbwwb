@@ -515,3 +515,5 @@ var textStrings_ES = {
 	// (quote0004.png)
 	"misatrributed": "(misattributed)",
 };
+
+var textStrings = textStrings_PT_BR;
