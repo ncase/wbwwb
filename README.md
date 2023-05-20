@@ -1,10 +1,18 @@
 ![banner](https://i.imgur.com/f6FcrhT.png)
 
-*a game about news cycles, vicious cycles, infinite cycles*
+*Um jogo sobre influências, bolhas, fake news*
 
 **[PLAY (ENGLISH)](https://ncase.itch.io/wbwwb)**
 
+**[PLAY (PORTUGUESE)](https://natan-dias.github.io/wbwwb/)**
+
+Neste fork eu adaptei algumas coisas para a tradução em PT_BR. Não deixe de conferir o repositório original do criador deste jogo:
+
+**[GitHub de Nicky Case](https://github.com/ncase/wbwwb)**
+
 ---
+
+## From the Author
 
 ### Made with open culture, for open culture!
 
