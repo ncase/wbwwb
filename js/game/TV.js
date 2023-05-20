@@ -92,7 +92,7 @@ function TV(scene){
 
 		// Chyron Text
 		if(!options.nothing){
-			var fontsize = 50
+			var fontsize = 25
 		    var text = new PIXI.Text(text, {font:"bold "+fontsize+"px Poppins", fill:"#FFF"});
 		    text.scale.x = text.scale.y = 0.2;
 		    text.anchor.x = 0;

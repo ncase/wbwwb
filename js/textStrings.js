@@ -328,31 +328,31 @@ var textStrings_PT_BR = { //I put that way because portuguese from Brazil (PT_BR
 	// Act 2
 	"crazySquareAttacks": "UM QUADRADO MALUCO ATACOU",
 	"justMissed": "oooooh perdi isso!",
-	"somethingInteresting": "(você tem que pegá-los fazendo *algo* interessante...)",
+	"somethingInteresting": "(Fotografe eles fazendo algo...)",
 	"whoIsScreaming": "(você tem que pegar quem está gritando pra eles)",
 	"circleFearsSquares": "CÍRCULOS TEMEM QUADRADOS",
-	"whoScaresThem": "(você também tem que pegar *quem* está assustando eles)",
-	"areTheyScared": "(você tem que pegar eles *sendo* assustados por um quadrado)", // not used
+	"whoScaresThem": "(Fotografe eles fazendo algo)",
+	"areTheyScared": "(Fotografe eles fazendo algo)", // not used
 	"squaresSnubCircles": "QUADRADOS AFRONTAM CÍRCULOS",
-	"areTheySnubbed": "(você tem que pegá-los *enquanto* eles afrontam os círculos)", // not used
-	"everyoneHates": "TODO MUNDO ODEIA TODO MUNDO!!1!",
-	"almostEveryoneHates": "QUASE TODO MUNDO ODEIA TODO MUNDO...",
+	"areTheySnubbed": "(Fotografe eles fazendo algo)", // not used
+	"everyoneHates": "TODO MUNDO ODEIA TODO MUNDO!!!",
+	"almostEveryoneHates": "QUASE TODO MUNDO SE ODEIA ...",
 	"squaresHateCircles": "QUADRADOS ODEIAM CÍRCULOS",
 	"circlesHateSquares": "CÍRCULOS ODEIAM QUADRADOS",
-	"areTheyYelling": "(você tem que pegá-los *gritando* com os outros)", // not used
+	"areTheyYelling": "(Fotografe eles fazendo algo)", // not used
 	"nerdsNow": "o que esses nerds estão fazendo agora?",
 	"schockedPeep": "por que estas pessoas estão chocadas?",
 	"whatever": "tanto faz",
 
 	// Act 3
 	"ellipsis": ". . .",
-	"coolNoMore": "chapéus não são mais legais, você não soube?",
-	"beScared": "FIQUE COM MEDO! FIQUE COM RAIVA.",
+	"coolNoMore": "chapéus não são cringe, você não soube?",
+	"beScared": "OS OUTROS ESTÃO ERRADOS! LUTE PELA VERDADE!",
 
 	// MANIFESTO
 	"manifesto": [
 		//"as if you viewers want GOOD news"       ,
-		"quem se preocupa em assistir *pessoas se dando bem?*",
+		"Ninguém liga para boas notícias",
 		"paz é entediante. violência é viral.",
 		//"peace is boring. conflict gets clicks." ,
 		"e toda história precisa de um conflito, logo...",
@@ -364,7 +364,7 @@ var textStrings_PT_BR = { //I put that way because portuguese from Brazil (PT_BR
 
 	// (bg_preload.png) Preload screen
 	"playingTime": "tempo de jogo: 5 minutos",
-	"warning": "atenção: este programa\ncontém cenas de afrontas,\ngrosseria e assassinatos em massa.\naconselha-se discrição do espectador.",
+	"warning": "ATENÇÃO: este programa\ncontém cenas de afrontas,\ngrosseria e assassinatos em massa.\naconselha-se discrição do espectador.",
 
 	// (cam-instructions.png) Camera Instructions
 	"pointAndClick": "POINT & CLICK", //This term is used here in Brazil, so I didn't translate it
@@ -404,7 +404,7 @@ var textStrings_PT_BR = { //I put that way because portuguese from Brazil (PT_BR
 	"toBeContinued": "(continua!)",
 
 	// (quote0002.png)
-	"WBWWB": "Nós nos tornamos quem nós vemos.", //I don't know if is cool the name be translated, but here it is
+	"WBWWB": "Nós nos tornamos o que vemos.", //I don't know if is cool the name be translated, but here it is
 	"WSOTATOTSU": "Nós moldamos nossas ferramentas e então nossas ferramentas nos moldam.",
 
 	// (quote0003.png)
