@@ -2,6 +2,8 @@
 
 *Um jogo sobre influências, bolhas, fake news*
 
+PT_BR Tradução: [Natan Dias](https://github.com/natan-dias)
+
 **[PLAY (ENGLISH)](https://ncase.itch.io/wbwwb)**
 
 **[PLAY (PORTUGUESE)](https://natan-dias.github.io/wbwwb/)**
