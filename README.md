@@ -1,8 +1,8 @@
-![banner](https://github.com/AFZL95/wbwwb/blob/WBWWB-FA/Persian-CoverImage.png)
+# DEAR ASPIRING TRANSLATORS, PLEASE CHECK THE MAIN PAGE DESCRIPTION FIRST TO SEE IF YOUR TRANSLATION ALREADY EXISTS: https://ncase.itch.io/wbwwb (also check the Issues to see if your translation is already being worked on - collaborate with them if they're stuck!)
 
 *a game about news cycles, vicious cycles, infinite cycles*
 
-**[PLAY Persian)](https://alexclay.itch.io/)** -- **[PLAY (ENGLISH)](https://ncase.itch.io/wbwwb)**
+**[PLAY](https://ncase.itch.io/wbwwb)**
 
 ---
 
