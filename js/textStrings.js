@@ -720,3 +720,105 @@ var textStrings_ZH_TW = {
     // (quote0004.png)
     "misatrributed"      : "(沒有說過)" ,
 };
+
+var textStrings_TR = {
+	// Act 1
+	"niceHat": "OOO GÜZEL ŞAPKA",
+	"outtaHere": "hadi yok ol burdan",
+	"getARoom": "İĞRENÇ, GİDİN Bİ ODA BULUN",
+	"notCoolAnymore": "boşver şapkalar artık havalı değil",
+	"tvOnTv": "TELEVİZYON... TELEVİZONDA!",
+	"cricky": "KÜÇÜK ÇEKİRGECİK <3",
+	"tooManyCrickets": "tamam çok fazla çekirge oldu",
+	"normalPeep": "sadece normal bir insan",
+	"normalPeeps": "sadece normal insanlar",
+	"wowNothing": "VAAAY, HİÇBİŞEY",
+
+	// Act 2
+	"crazySquareAttacks": "DELİRMİŞ KARE SALDIRILARI",
+	"justMissed": "ah be ucu ucuna kaçırdın",
+	"somethingInteresting": "(onları *ilginç* birşey yaparken yakalamalısın...)",
+	"whoIsScreaming": "(onlara bağıran kimse onu yakalamalısın)",
+	"circleFearsSquares": "DAİRE KARELERDEN KORKUYOR",
+	"whoScaresThem": "(aynı zamanda *kimden* korktuklarını da yakalamalısın)",
+	"areTheyScared": "(Dairenin Kareden *korktukları* bi anda yakalamalısın)", // not used
+	"squaresSnubCircles": "KARELER DAİRELERİ KÜÇÜMSÜYOR",
+	"areTheySnubbed": "(Kareyi daireyi *küçümserken* yakalamalısın)", // not used
+	"everyoneHates": "HERKES HERKESTEN NEFRET EDİYOR",
+	"almostEveryoneHates": "NEREDEYSE HERKES HERKESTEN NEFRET EDİYOR",
+	"squaresHateCircles": "KARELER DAİRELERDEN NEFRET EDİYOR",
+	"circlesHateSquares": "DAİRELER KARELERDEN NEFRET EDİYOR",
+	"areTheyYelling": "(onları başkalarına *bağırırken* yakalamalısın)", // not used
+	"nerdsNow": "bu inekler bu sefer ne yapıyor",
+	"schockedPeep": "noldu da şoka girdi bu?",
+	"whatever": "neyse",
+
+	// Act 3
+	"ellipsis": ". . .",
+	"coolNoMore": "şapkalar havalı değil artık, duymadın mı?",
+	"beScared": "KORK, SİNİRLEN",
+
+	// MANIFESTO
+	"manifesto": [
+		//"sanki siz izleyeciler İYİ bi haber almak istiyormuşsunuz gibi",
+		"kim *milletin iyi geçindiğini* izlemek için haberleri açar ki?",
+		"barış sıkıcı. asıl şiddet ilgi çeker.",
+		// "barış sıkıcı. tıklanma için çatışma lazım",
+		"ve her hikayeye bir çatışma lazım, o zaman...",
+		//"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+		"SEYİRCİLERE İSTEDİKLERİNİ VER",
+	],
+
+	// -- Strings currently in graphics resources --
+
+	// (bg_preload.png) Preload screen
+	"playingTime": "oynama zamanı: 5 dakika",
+	"warning": "dikkat: birazdan izleyeceğiniz program içinde \nküçümseme, kabalık ve toplu cinayet\ngörüntülerine yer vermektedir.\nsonra uyarmadı demeyin.",
+
+	// (cam-instructions.png) Camera Instructions
+	"pointAndClick": "FAREYİ GÖTÜR VE TIKLA",
+
+	// (chyron3.png)
+	"chyronNothing": "VAAAY, *HİÇBİŞEY*",
+
+	// (credits0001.png)
+	"createdBy": "yaratıcısı",
+	"NickyCase": "Nicky Case",
+
+	// (credits0002.png)
+	"manyThanks": "oyunumu test edenlere çok teşekkürler:",
+
+	// (credits000[3,4,5,6].png)
+	"patreonSupporters": "ve patreon destekçilerime:",
+
+	// (credits0007.png)
+	"lastButNotLeast": "ve tabikide",
+
+	// (credits0008.png)
+	"thankYouForPlaying": "Oynadığın için teşekkür ederim",
+
+	// (preload_play.png)
+	"playButton": "OYNA",
+
+	// (end_button.png) Post Credits
+	"otherWorkButton": "diğer işlerimi gör",
+	"buyCoffeeButton": "bana bir kahve ısmarla",
+	"replayButton": "bu kaosu tekrar oyna",
+
+	// (logo.png) Post Credits
+	"logoWBWWB": "ACIYI PAYLAŞ:",
+
+	// (end_prototype.png)
+	"endOfPrototype": "PROTOTİPİN SONU",
+	"toBeContinued": "(devamı gelicek!)",
+
+	// (quote0002.png)
+	"WBWWB": "Ne seyrediyorsak ona dönüşüyoruz.",
+	"WSOTATOTSU": "Biz ağletlerimize şekil veriyoruz ve sonra aletlerimiz bize şekil veriyor.",
+
+	// (quote0003.png)
+	"MarshallMcLuhan": "Marshall McLuhan",
+
+	// (quote0004.png)
+	"misatrributed": "(yanlış atfedilmiş)",
+};
