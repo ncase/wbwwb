@@ -720,3 +720,105 @@ var textStrings_ZH_TW = {
     // (quote0004.png)
     "misatrributed"      : "(沒有說過)" ,
 };
+
+var textStrings_VI = {
+	// Act 1
+	"niceHat": "NÓN ĐẸP ĐẤY"
+	"outtaHere": "đúng rồi cút ra đê",
+	"getARoom": "EO ƠI, VÀO PHÒNG KHÁC DÙM CÁI",
+	"notCoolAnymore": "thôi nón không còn ngầu nữa",
+	"tvOnTv": "MỘT TV...TRÊN TV!",
+	"cricky": "CON DẾ CUTI QUÁ <3",
+	"tooManyCrickets": "ok nhiều con dế lắm đấy",
+	"normalPeep": "chỉ là đứa thường thôi",
+	"normalPeeps": "chỉ là những đứa thường thôi",
+	"wowNothing": "WOW, KHÔNG CÓ GÌ CẢ",
+
+	// Act 2
+	"crazySquareAttacks": "TẤN CÔNG ĐIÊN KHÙNG CỦA VUÔNG",
+	"justMissed": "uầy trượt rồi",
+	"somethingInteresting": "bạn phải bắt chúng làm (gì đấy) thú vị chứ...",
+	"whoIsScreaming": "(bạn phải bắt đứa đang hét người ta ý)",
+	"circleFearsSquares": "TRÒN SỢ VUÔNG",
+	"whoScaresThem": "(bạn phải bắt *người* mà chúng sợ)",
+	"areTheyScared": "(ya gotta catch 'em *being* scared by a square)", // not used
+	"squaresSnubCircles": "HÌNH VUÔNG CHỌC HÌNH TRÒN",
+	"areTheySnubbed": "(ya gotta catch 'em *while* snubbing a circle)", // not used
+	"everyoneHates": "MỌI NGƯỜI GHÉT LẪN NHAU!!1!",
+	"almostEveryoneHates": "GẦN NHƯ NGƯỜI NÀO GHÉT LẪN NHAU...",
+	"squaresHateCircles": "VUÔNG GHÉT TRÒN",
+	"circlesHateSquares": "TRÒN GHÉT VUÔNG",
+	"areTheyYelling": "(ya gotta catch 'em *yelling* at others)", // not used
+	"nerdsNow": "mấy mọt sách đấy đang làm gì vậy",
+	"schockedPeep": "sao ông này bị sốc vậy?",
+	"whatever": "sao cũng được",
+
+	// Act 3
+	"ellipsis": ". . .",
+	"coolNoMore": "nón có ngầu nữa đây, bạn không biết à?";
+	"beScared": "HÃY SỢ HÃI. HÃY TỨC LÊN.",
+
+	// MANIFESTO
+	"manifesto": [
+		//"as if you viewers want GOOD news"       ,
+		"ai mà đi xem *người ta làm hoà* đâu chứ",
+		"hoà bình nhàm chán. chiến tranh viral",
+		//"peace is boring. conflict gets clicks." ,
+		"và mọi câu chuyện cần một xung đột nên...",
+		//"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+		"CHO KHÁN GIẢ NHỮNG GÌ MÀ HỌ MUỐN"
+	],
+
+	// -- Strings currently in graphics resources --
+
+	// (bg_preload.png) Preload screen
+	"playingTime": "thời gian chơi: 5 phút",
+	"warning": "warning: chương trình sau đây\nchứa cảnh giả học làm sang,\nvô văn hoá & giết người hàng loạt.\ncẩn trọng trước khi xem.",
+
+	// (cam-instructions.png) Camera Instructions
+	"pointAndClick": "CHỈ VÀ BẤM",
+
+	// (chyron3.png)
+	"chyronNothing": "WOW, NÓ *KHÔNG LÀ GÌ CẢ*",
+
+	// (credits0001.png)
+	"createdBy": "tạo bởi",
+	"NickyCase": "Nicky Case",
+
+	// (credits0002.png)
+	"manyThanks": "trân trọng cảm ơn người chơi thử:",
+
+	// (credits000[3,4,5,6].png)
+	"patreonSupporters": "và người ủng hộ patreon của tôi:",
+
+	// (credits0007.png)
+	"lastButNotLeast": "và cuối cùng,",
+
+	// (credits0008.png)
+	"thankYouForPlaying": "cảm ơn BẠN vì đã chơi!",
+
+	// (preload_play.png)
+	"playButton": "CHƠI",
+
+	// (end_button.png) Post Credits
+	"otherWorkButton": "xem các trò khác của tui",
+	"buyCoffeeButton": "mua hộ cà phê",
+	"replayButton": "chơi lại",
+
+	// (logo.png) Post Credits
+	"logoWBWWB": "CHIA SẺ NỖI ĐAU:",
+
+	// (end_prototype.png)
+	"endOfPrototype": "KẾT THÚC",
+	"toBeContinued": "(to be continued!)",
+
+	// (quote0002.png)
+	"WBWWB": "Ta trở thành những gì ta thấy",
+	"WSOTATOTSU": "Ta hình thành công cụ và công cụ hình thành ta.",
+
+	// (quote0003.png)
+	"MarshallMcLuhan": "Marshall McLuhan",
+
+	// (quote0004.png)
+	"misatrributed": "credit sai",
+};
