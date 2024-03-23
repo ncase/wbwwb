@@ -720,3 +720,108 @@ var textStrings_ZH_TW = {
     // (quote0004.png)
     "misatrributed"      : "(沒有說過)" ,
 };
+
+var textStrings_DA = {
+	// Er lidt i tvivl med nogle af dem, bare lav dem om hvis der er en bedre overs\xE6ttelse -Panda
+	// Unicode escape sequences: Å = \xC5, Æ = \xC6, Ø = \xD8, å = \xE5, æ = \xE6, ø = \xF8
+
+	// Akt 1
+	"niceHat": "\xC5H, FLOT HAT",
+	"outtaHere": "yeah g\xE5 v\xE6k herfra",
+	"getARoom": "KLAMT, G\xC5 IND OG F\xC5 ET V\xC6RELSE",
+	"notCoolAnymore": "ligemeget hatte er ikke seje l\xE6ngere",
+	"tvOnTv": "ET TV... P\xC5 TV!",
+	"cricky": "LILLE FOREKYLLING <3",
+	"tooManyCrickets": "Okay, det er for mange f\xE5rekyllinger",
+	"normalPeep": "bare en normal person",
+	"normalPeeps": "bare nogle normale personer",
+	"wowNothing": "WOW, DET ER INGENTING",
+
+	// Akt 2
+	"crazySquareAttacks": "VANVITTIGE FIRKANTEDE ANGREB",
+	"justMissed": "oooooh missede den lige",
+	"somethingInteresting": "( du skal fange dem i at g\xF8re *noget* interessant...)",
+	"whoIsScreaming": "( du skal fange, hvem der skriger ad dem)",
+	"circleFearsSquares": "CIRKLER FRYGTER FIRKANTER",
+	"whoScaresThem": "( du skal ogs\xE5 fange *hvem* de er bange for)",
+	"areTheyScared": "( du skal fange dem i at *blive* skr\xE6mt af en firkant)", // bliver ikke brugt
+	"squaresSnubCircles": "FIRKANTER SNOBBER CIRKLER", // Muligvis forkert -Panda
+	"areTheySnubbed": "( du skal fange dem *mens* de snubler en cirkel)", // bliver ikke brugt
+	"everyoneHates": "ALLE HADER ALLE!!1!",
+	"almostEveryoneHates": "N\xC6STEN ALLE HADER ALLE...",
+	"squaresHateCircles": "FIRKANTER HADER CIRKLER",
+	"circlesHateSquares": "CIRKLER HADER FIRKANTER",
+	"areTheyYelling": "( du skal fange dem i at *r\xE5be* ad andre)", // bliver ikke brugt
+	"nerdsNow": "hvad laver de n\xF8rder nu",
+	"schockedPeep": "hvorfor er denne person chokeret?",
+	"whatever": "ligemeget",
+
+	// Akt 3
+	"ellipsis": ". . .",
+	"coolNoMore": "Hatte er ikke seje l\xE6ngere, har du ikke h\xF8rt det?",
+	"beScared": "V\xC6R BANGE. V\xC6R VRED.",
+
+	// MANIFESTO
+	"manifesto": [
+		//"som om I seere vil have GODE nyheder" ,
+		"Hvem ser med for at se *personer komme overens?*",
+		"fred er kedeligt. vold g\xE5r viralt.",
+		//"fred er kedeligt. konflikt giver klik." ,
+		"og enhver historie har brug for en konflikt, s\xE5...",
+		//"...GIV PUBLIKUM, HVAD DE VIL HAVE." ,
+		"GIV PUBLIKUM, HVAD DE VIL HAVE."
+	],
+
+	// -- Strenge aktuelt i grafikressourcer --
+
+	// (bg_preload.png) Preload screen
+	"playingTime": "spilletid: 5 minutter",
+	"warning": "advarsel: f\xF8lgende program\nindeholder scener med snobberi,\nuh\xF8flighed og massemord.\nseeren opfordres til at udvise omtanke.", // Samme her, muligvis forkert -Panda
+
+	// (cam-instructions.png) Camera Instructions
+	"pointAndClick": "PEG OG KLIK",
+
+	// (chyron3.png)
+	"chyronNothing": "WOW, DET ER *INGENTING*",
+
+	// (credits0001.png)
+	"createdBy": "lavet af",
+	"NickyCase": "Nicky Case",
+
+	// (credits0002.png)
+	"manyThanks": "Mange tak til mine playtestere:",
+
+	// (credits000[3,4,5,6].png)
+	"patreonSupporters": "og til mine medlemmer af patreon:",
+
+	// (credits0007.png)
+	"lastButNotLeast": "og sidst, men ikke mindst,",
+
+	// (credits0008.png)
+	"thankYouForPlaying": "Tak, fordi du spillede!",
+
+	// (preload_play.png)
+	"playButton": "START",
+
+	// (end_button.png) Post Credits
+	"otherWorkButton": "se mine andre v\xE6rker",
+	"buyCoffeeButton": "k\xF8b mig en kop kaffe",
+	"replayButton": "gentag det her roderi",
+
+	// (logo.png) Post Credits
+	"logoWBWWB": "DEL SMERTEN:",
+
+	// (end_prototype.png)
+	"endOfPrototype": "SLUTNINGEN AF PROTOTYPEN",
+	"toBeContinued": "(forts\xE6ttes!)",
+
+	// (quote0002.png)
+	"WBWWB": "Vi bliver, hvad vi betragter.",
+	"WSOTATOTSU": "Vi former vores v\xE6rkt\xF8jer, og s\xE5 former vores v\xE6rkt\xF8jer os.",
+
+	// (quote0003.png)
+	"MarshallMcLuhan": "Marshall McLuhan",
+
+	// (quote0004.png)
+	"misatrributed": "(forkert tilskrevet)",
+};
