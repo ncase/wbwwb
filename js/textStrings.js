@@ -208,6 +208,7 @@ var textStrings_DE = {
 	"misatrributed": "(falsch zugeschrieben)",
 };
 
+
 // Persian translation. همرنگ جماعت شو
 //
 // by Ali FZL https://twitter.com/ali_fzl95
@@ -822,3 +823,48 @@ var textStrings_TR = {
 	// (quote0004.png)
 	"misatrributed": "(yanlış bir şekilde ona atfedilir)",
 };
+
+// Function to initialize textStrings based on browser language, fallback to English
+function initializeTextStrings(forcedLanguage) {
+    // Get browser language or use forced language
+    var browserLang = forcedLanguage || navigator.language || navigator.userLanguage || 'en';
+    
+    // Map browser language codes to available text string objects
+    var langMap = {
+        'en': textStrings_EN,
+        'en-US': textStrings_EN,
+        'en-GB': textStrings_EN,
+        'de': textStrings_DE,
+        'de-DE': textStrings_DE,
+        'de-AT': textStrings_DE,
+        'de-CH': textStrings_DE,
+        'fa': textStrings_FA,
+        'fa-IR': textStrings_FA,
+        'pt': textStrings_PT,
+        'pt-PT': textStrings_PT,
+        'pt-BR': textStrings_PT_BR,
+        'es': textStrings_ES,
+        'es-ES': textStrings_ES,
+        'es-MX': textStrings_ES,
+        'es-AR': textStrings_ES,
+        'zh-TW': textStrings_ZH_TW,
+        'zh-Hant': textStrings_ZH_TW,
+        'tr': textStrings_TR,
+        'tr-TR': textStrings_TR
+    };
+    
+    // Try exact match first, then try language code without region
+    var selectedLang = langMap[browserLang];
+    if (!selectedLang && browserLang.indexOf('-') > -1) {
+        var langCode = browserLang.split('-')[0];
+        selectedLang = langMap[langCode];
+    }
+    
+    // Set the global textStrings variable (fallback to English if language not supported)
+    window.textStrings = selectedLang || textStrings_EN;
+    
+    return window.textStrings;
+}
+
+// Initialize textStrings automatically on page load
+initializeTextStrings();
