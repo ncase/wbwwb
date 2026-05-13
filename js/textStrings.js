@@ -822,3 +822,105 @@ var textStrings_TR = {
 	// (quote0004.png)
 	"misatrributed": "(yanlış bir şekilde ona atfedilir)",
 };
+
+var textStrings_MN = {
+	// Act 1
+	"niceHat": "ӨӨ, ГОЁ МАЛГАЙ ВЭ",
+	"outtaHere": "за, эндээс холдож үз",
+	"getARoom": "ЗАВААН ЮМ, ЦААШАА ОЧИЖ НЯЛУУР",
+	"notCoolAnymore": "за байз, малгай моодноос гарчээ",
+	"tvOnTv": "ЗУРАГТААР... ЗУРАГТ ГАРЧ БАЙНА!",
+	"cricky": "ЖИЖИГХЭН ЦАРЦААХАЙ <3",
+	"tooManyCrickets": "за, энэ арай л олон царцаа байна",
+	"normalPeep": "зүгээр л нэг жирийн залуу",
+	"normalPeeps": "зүгээр л жирийн хүмүүс",
+	"wowNothing": "ХӨӨХ, ЭНД ЮУ Ч АЛГА",
+
+	// Act 2
+	"crazySquareAttacks": "ГАЛЗУУ ДӨРВӨЛЖИНГИЙН ХАЛДЛАГА!",
+	"justMissed": "өөө, яг хоцорчихлоо",
+	"somethingInteresting": "(тэдний ямар нэгэн *сонирхолтой* зүйл хийж байхыг нь барьж авах хэрэгтэй...)",
+	"whoIsScreaming": "(хэн тэдэн рүү орилж байгааг барьж авах хэрэгтэй)",
+	"circleFearsSquares": "ДУГУЙНУУД ДӨРВӨЛЖИНГӨӨС АЙЖ БАЙНА",
+	"whoScaresThem": "(тэд *хэнээс* айж байгааг барьж авах хэрэгтэй)",
+	"areTheyScared": "(тэдний дөрвөлжингөөс айж *байгааг* нь барьж авах хэрэгтэй)", // not used
+	"squaresSnubCircles": "ДӨРВӨЛЖИНГҮҮД ДУГУЙГ ҮЛ ТООЖ БАЙНА",
+	"areTheySnubbed": "(тэднийг дугуйг үл тоож *байх үед* нь барьж авах хэрэгтэй)", // not used
+	"everyoneHates": "БҮГД НЭГ НЭГНЭЭ ҮЗЭН ЯДДАГ!!!",
+	"almostEveryoneHates": "БАРАГ БҮГД НЭГ НЭГНЭЭ ҮЗЭН ЯДДАГ...",
+	"squaresHateCircles": "ДӨРВӨЛЖИНГҮҮД ДУГУЙГ ҮЗЭН ЯДДАГ",
+	"circlesHateSquares": "ДУГУЙНУУД ДӨРВӨЛЖИНГ ҮЗЭН ЯДДАГ",
+	"areTheyYelling": "(тэдний бусад руу *орилж* байгааг нь барьж авах хэрэгтэй)", // not used
+	"nerdsNow": "энэ хэд одоо юу хийгээд байна аа",
+	"schockedPeep": "энэ нөхөр яагаад цочирдоо вэ?",
+	"whatever": "юу ч байсан яахав дээ",
+
+	// Act 3
+	"ellipsis": ". . .",
+	"coolNoMore": "Малгай моодноос гарсан гэж чи дуулаагүй юу?",
+	"beScared": "АЙДАС УУР ХИЛЭН ДАГУУЛНА.",
+
+	// MANIFESTO
+	"manifesto": [
+		//"as if you viewers want GOOD news"       ,
+		"хэн *энгийн юм* үзэх гэж суваг тааруулдаг юм бэ?",
+		"энх тайван бол уйтгартай. хүчирхийлэл л тренд болдог.",
+		//"peace is boring. conflict gets clicks." ,
+		"түүх бүрт асуудал хэрэгтэй, тиймээс...",
+		//"...GIVE THE AUDIENCE WHAT THEY WANT."   ,
+		"ҮЗЭГЧДИЙН ХҮССЭН ЗҮЙЛИЙГ НЬ ӨГ."
+	],
+
+	// -- Strings currently in graphics resources --
+
+	// (bg_preload.png) Preload screen
+	"playingTime": "тоглох хугацаа: 5 минут",
+	"warning": "анхааруулга: дараах хөтөлбөрт их зан,\nбүдүүлэг байдал болон олон\nнийтийг хамарсан аллагын хэсгүүд гарах тул.\nүзэгчдэд сэрэмжлүүлж байна.",
+
+	// (cam-instructions.png) Camera Instructions
+	"pointAndClick": "ЧИГЛҮҮЛЭЭД ДАР",
+
+	// (chyron3.png)
+	"chyronNothing": "ХӨӨХ, ЭНД *ЮУ Ч АЛГА*",
+
+	// (credits0001.png)
+	"createdBy": "бүтээсэн",
+	"NickyCase": "Nicky Case",
+
+	// (credits0002.png)
+	"manyThanks": "тоглоомыг туршиж үзсэн хүмүүст маш их баярлалаа:",
+
+	// (credits000[3,4,5,6].png)
+	"patreonSupporters": "мөн миний patreon дэмжигчдэд:",
+
+	// (credits0007.png)
+	"lastButNotLeast": "эцэст нь хэлэхэд,",
+
+	// (credits0008.png)
+	"thankYouForPlaying": "тоглосонд БАЯРЛАЛАА!",
+
+	// (preload_play.png)
+	"playButton": "ТОГЛОХ",
+
+	// (end_button.png) Post Credits
+	"otherWorkButton": "миний бусад бүтээлийг үзэх",
+	"buyCoffeeButton": "надад кофе авч өгөх",
+	"replayButton": "энэ замбараагүй явдлыг дахин тоглох",
+
+	// (logo.png) Post Credits
+	"logoWBWWB": "ШАНАЛЛАА ХУВААЛЦАХ:",
+
+	// (end_prototype.png)
+	"endOfPrototype": "ПРОТОТИПИЙН ТӨГСГӨЛ",
+	"toBeContinued": "(үргэлжлэл бий!)",
+
+	// (quote0002.png)
+	"WBWWB": "Бид юу харна, тийм л болж хувирдаг.",
+	"WSOTATOTSU": "Бид багаж хэрэгслээ бүтээдэг, дараа нь багаж хэрэгсэл биднийг бүтээдэг.",
+
+	// (quote0003.png)
+	"MarshallMcLuhan": "Маршалл Маклюэн",
+
+	// (quote0004.png)
+	"misatrributed": "(буруу хамааруулсан)",
+};
