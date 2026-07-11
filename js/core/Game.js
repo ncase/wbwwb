@@ -159,6 +159,11 @@ Game.loadAssets = function(completeCallback, progressCallback, PRELOADER){
 		}
 
 		// Otherwise, is an image. Leave it to PIXI.
+		if(src.slice(-5)==".json"){
+			src = src.slice(0, src.length-5)+"@2x.json";
+		}else if(src.slice(-4)==".png"){
+			src += "?resolution=@2x";
+		}
 	    loader.add(key, src);
 
 	}

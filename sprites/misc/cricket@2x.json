@@ -1,0 +1,55 @@
+{
+  "frames": {
+    "cricket0000": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 274,
+        "h": 274
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 274,
+        "h": 274
+      },
+      "sourceSize": {
+        "w": 274,
+        "h": 274
+      }
+    },
+    "cricket0001": {
+      "frame": {
+        "x": 0,
+        "y": 274,
+        "w": 274,
+        "h": 274
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 274,
+        "h": 274
+      },
+      "sourceSize": {
+        "w": 274,
+        "h": 274
+      }
+    }
+  },
+  "meta": {
+    "app": "Adobe Animate",
+    "version": "15.2.0.66",
+    "image": "cricket.png?resolution=@2x",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 1024
+    },
+    "scale": "2"
+  }
+}

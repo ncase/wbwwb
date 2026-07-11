@@ -1,29 +1,29 @@
-﻿<html>
+<!doctype html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A game about news cycles, vicious cycles, and infinite cycles.">
+		<title>Native WBWWB C++ Port</title>
+		<link rel="icon" href="sprites/app_icon.png">
 		<link rel="stylesheet" href="css/game.css">
 	</head>
 	<body>
 		<div id="stage"></div>
 		<div id="modal_shade"></div>
 		<div class="overlay" id="warning">
-			<div dir="rtl">ای بابا!</div>
-			<div dir="rtl">
+			<div>Oh no!</div>
+			<div>
 			your browser doesn't support webgl.<br>
-			try a different browser or computer?<br>
-				<br>
-				مرورگر شما مرخص است! از یه مرورگر و یا کامپیوتر دیگه استفاده کنید!
+			try a different browser or computer?
 			</div>
 		</div>
 		<div class="overlay" id="paused">
 			<div>paused</div>
-			<div dir="rtl">
+			<div>
 			click anywhere to resume<br>
-				برای بازگشت رو یه جا رو کلیک کن!
 			</div>
 		</div>
-	</body>
-</html>
-
 <!-- External Libraries -->
 <script src="js/lib/pixi.min.js"></script>
 <script src="js/lib/howler.js"></script>
@@ -96,9 +96,12 @@ window.onload = function(){
 		Game.init();
 		//Game.init("Game");
 	}catch(e){
+		console.error(e);
 		document.getElementById("warning").style.display = "block";
 	}
 };
-window.SHARE_TEXT = 'همین الان یه بازی خیلی خفن رو بازی کردم'
+window.SHARE_TEXT = 'I just played a cool game';
 window.SHARE_URL = "";
 </script>
+	</body>
+</html>

@@ -29,8 +29,8 @@ function Scene_Meta(){
     // RECURSIVE SCREEN
 	var renderTexturePoolIndex = 0;
 	var renderTexturePool = [
-		new PIXI.RenderTexture(Game.renderer, Game.width, Game.height),
-		new PIXI.RenderTexture(Game.renderer, Game.width, Game.height)
+		PIXI.RenderTexture.create(Game.width, Game.height),
+		PIXI.RenderTexture.create(Game.width, Game.height)
 	];
 	self.stream = new PIXI.Sprite();
 	self.stream.x = Game.width/2;
@@ -82,7 +82,7 @@ function Scene_Meta(){
 	    //matrix.translate(-sx,-sy);
 
 		var renderTexture = renderTexturePool[renderTexturePoolIndex];
-	    renderTexture.render(self.graphics, matrix);
+	    Game.renderer.render(self.graphics, renderTexture, undefined, matrix, true);
 	    renderTexturePoolIndex = (renderTexturePoolIndex+1)%renderTexturePool.length;
 	    self.stream.texture = renderTexture;
 

@@ -15,8 +15,8 @@ function Scene_Preloader(){
 	// RECURSIVE SCREEN
 	var renderTexturePoolIndex = 0;
 	var renderTexturePool = [
-		new PIXI.RenderTexture(Game.renderer, Game.width, Game.height),
-		new PIXI.RenderTexture(Game.renderer, Game.width, Game.height)
+		PIXI.RenderTexture.create(Game.width, Game.height),
+		PIXI.RenderTexture.create(Game.width, Game.height)
 	];
 	self.stream = new PIXI.Sprite();
 	self.stream.x = 722;
@@ -70,7 +70,7 @@ function Scene_Preloader(){
 
 		// RECURSIVE SCREEN
 		var renderTexture = renderTexturePool[renderTexturePoolIndex];
-	    renderTexture.render(Game.stage);
+	    Game.renderer.render(Game.stage, renderTexture, undefined, undefined, true);
 	    renderTexturePoolIndex = (renderTexturePoolIndex+1)%renderTexturePool.length;
 	    self.stream.texture = renderTexture;
 

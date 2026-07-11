@@ -1,0 +1,55 @@
+{
+  "frames": {
+    "lover_panic0000": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 248,
+        "h": 404
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 248,
+        "h": 404
+      },
+      "sourceSize": {
+        "w": 248,
+        "h": 404
+      }
+    },
+    "lover_panic0001": {
+      "frame": {
+        "x": 248,
+        "y": 0,
+        "w": 248,
+        "h": 404
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 248,
+        "h": 404
+      },
+      "sourceSize": {
+        "w": 248,
+        "h": 404
+      }
+    }
+  },
+  "meta": {
+    "app": "Adobe Animate",
+    "version": "15.2.0.66",
+    "image": "lover_panic.png?resolution=@2x",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 512
+    },
+    "scale": "2"
+  }
+}

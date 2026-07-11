@@ -1,0 +1,23 @@
+# Native build output
+/native/build/
+/native/build-*/
+/native/out/
+CMakeUserPresets.json
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.vcxproj*
+*.sln
+*.log
+
+# Local runtime state
+/wbwwb_settings.json
+
+# Source exports and generated delivery archives
+/upscaled textures/
+/wbwwb-sprites-and-textures.zip
+
+# OS metadata
+.DS_Store
+Thumbs.db

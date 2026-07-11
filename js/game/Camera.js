@@ -154,8 +154,8 @@ function Camera(scene, options){
 	// Get texture!
 	var renderTexturePoolIndex = 0;
 	var renderTexturePool = [
-		new PIXI.RenderTexture(Game.renderer, self.width, self.height),
-		new PIXI.RenderTexture(Game.renderer, self.width, self.height)
+		PIXI.RenderTexture.create(self.width, self.height),
+		PIXI.RenderTexture.create(self.width, self.height)
 	];
 	self.getTexture = function(){
 
@@ -171,7 +171,7 @@ function Camera(scene, options){
 	    matrix.translate(-sx,-sy);
 
 	    var renderTexture = renderTexturePool[renderTexturePoolIndex];
-	    renderTexture.render(scene.world.graphics, matrix); // TO DO: higher rez
+	    Game.renderer.render(scene.world.graphics, renderTexture, undefined, matrix, true);
 	    renderTexturePoolIndex = (renderTexturePoolIndex+1)%renderTexturePool.length;
 
 	    // Return texture!

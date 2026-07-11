@@ -1,27 +1,55 @@
-﻿{"frames": {
-
-"lovers_watching0000":
 {
-	"frame": {"x":0,"y":0,"w":100,"h":120},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":120},
-	"sourceSize": {"w":100,"h":120}
-},
-"lovers_watching0001":
-{
-	"frame": {"x":0,"y":120,"w":100,"h":120},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":120},
-	"sourceSize": {"w":100,"h":120}
-}},
-"meta": {
-	"app": "Adobe Animate",
-	"version": "15.2.0.66",
-	"image": "lovers_watching.png",
-	"format": "RGBA8888",
-	"size": {"w":128,"h":256},
-	"scale": "1"
-}
+  "frames": {
+    "lovers_watching0000": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 240
+      }
+    },
+    "lovers_watching0001": {
+      "frame": {
+        "x": 0,
+        "y": 240,
+        "w": 200,
+        "h": 240
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 240
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 240
+      }
+    }
+  },
+  "meta": {
+    "app": "Adobe Animate",
+    "version": "15.2.0.66",
+    "image": "lovers_watching.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 256,
+      "h": 512
+    },
+    "scale": "2"
+  }
 }

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Native WBWWB C++ Port
+Comment=Native C++ port of We Become What We Behold
+Exec=wbwwb_native
+Icon=wbwwb_native
+Categories=Game;
+Terminal=false

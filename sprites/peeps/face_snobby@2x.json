@@ -1,0 +1,615 @@
+{
+  "frames": {
+    "face_snobby0000": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0001": {
+      "frame": {
+        "x": 240,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0002": {
+      "frame": {
+        "x": 480,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0003": {
+      "frame": {
+        "x": 720,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0004": {
+      "frame": {
+        "x": 960,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0005": {
+      "frame": {
+        "x": 1200,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0006": {
+      "frame": {
+        "x": 1440,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0007": {
+      "frame": {
+        "x": 1680,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0008": {
+      "frame": {
+        "x": 0,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0009": {
+      "frame": {
+        "x": 240,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0010": {
+      "frame": {
+        "x": 480,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0011": {
+      "frame": {
+        "x": 720,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0012": {
+      "frame": {
+        "x": 960,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0013": {
+      "frame": {
+        "x": 1200,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0014": {
+      "frame": {
+        "x": 1440,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0015": {
+      "frame": {
+        "x": 1680,
+        "y": 282,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0016": {
+      "frame": {
+        "x": 0,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0017": {
+      "frame": {
+        "x": 240,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0018": {
+      "frame": {
+        "x": 480,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0019": {
+      "frame": {
+        "x": 720,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0020": {
+      "frame": {
+        "x": 960,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0021": {
+      "frame": {
+        "x": 1200,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0022": {
+      "frame": {
+        "x": 1440,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0023": {
+      "frame": {
+        "x": 1680,
+        "y": 564,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0024": {
+      "frame": {
+        "x": 0,
+        "y": 846,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0025": {
+      "frame": {
+        "x": 240,
+        "y": 846,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0026": {
+      "frame": {
+        "x": 480,
+        "y": 846,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0027": {
+      "frame": {
+        "x": 720,
+        "y": 846,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0028": {
+      "frame": {
+        "x": 960,
+        "y": 846,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    },
+    "face_snobby0029": {
+      "frame": {
+        "x": 1200,
+        "y": 846,
+        "w": 240,
+        "h": 282
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 282
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 282
+      }
+    }
+  },
+  "meta": {
+    "app": "Adobe Animate",
+    "version": "15.2.0.66",
+    "image": "face_snobby.png?resolution=@2x",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 2048
+    },
+    "scale": "2"
+  }
+}

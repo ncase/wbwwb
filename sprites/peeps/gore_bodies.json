@@ -1,107 +1,255 @@
-﻿{"frames": {
-
-"gore_bodies0000":
 {
-	"frame": {"x":0,"y":0,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0001":
-{
-	"frame": {"x":161,"y":0,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0002":
-{
-	"frame": {"x":322,"y":0,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0003":
-{
-	"frame": {"x":0,"y":121,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0004":
-{
-	"frame": {"x":161,"y":121,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0005":
-{
-	"frame": {"x":322,"y":121,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0006":
-{
-	"frame": {"x":0,"y":242,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0007":
-{
-	"frame": {"x":161,"y":242,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0008":
-{
-	"frame": {"x":322,"y":242,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0009":
-{
-	"frame": {"x":0,"y":363,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0010":
-{
-	"frame": {"x":161,"y":363,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-},
-"gore_bodies0011":
-{
-	"frame": {"x":322,"y":363,"w":161,"h":121},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":121},
-	"sourceSize": {"w":161,"h":121}
-}},
-"meta": {
-	"app": "Adobe Animate",
-	"version": "15.2.0.66",
-	"image": "gore_bodies.png",
-	"format": "RGBA8888",
-	"size": {"w":512,"h":512},
-	"scale": "1"
-}
+  "frames": {
+    "gore_bodies0000": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0001": {
+      "frame": {
+        "x": 322,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0002": {
+      "frame": {
+        "x": 644,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0003": {
+      "frame": {
+        "x": 0,
+        "y": 242,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0004": {
+      "frame": {
+        "x": 322,
+        "y": 242,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0005": {
+      "frame": {
+        "x": 644,
+        "y": 242,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0006": {
+      "frame": {
+        "x": 0,
+        "y": 484,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0007": {
+      "frame": {
+        "x": 322,
+        "y": 484,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0008": {
+      "frame": {
+        "x": 644,
+        "y": 484,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0009": {
+      "frame": {
+        "x": 0,
+        "y": 726,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0010": {
+      "frame": {
+        "x": 322,
+        "y": 726,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    },
+    "gore_bodies0011": {
+      "frame": {
+        "x": 644,
+        "y": 726,
+        "w": 322,
+        "h": 242
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 322,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 322,
+        "h": 242
+      }
+    }
+  },
+  "meta": {
+    "app": "Adobe Animate",
+    "version": "15.2.0.66",
+    "image": "gore_bodies.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": "2"
+  }
 }
