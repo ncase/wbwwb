@@ -41,8 +41,8 @@ function EvilHatPeep(scene){
     // Goes through the spot...
     var doubles = 0;
     var MODE = 0;
-    MODE_WALK = 0;
-    MODE_GUN = 1;
+    var MODE_WALK = 0;
+    var MODE_GUN = 1;
     self.goThroughSpots = true;
     self.callbacks.update = function(){
 

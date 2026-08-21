@@ -1,104 +1,126 @@
-﻿<html>
-	<head>
-		<link rel="stylesheet" href="css/game.css">
-	</head>
-	<body>
-		<div id="stage"></div>
-		<div id="modal_shade"></div>
-		<div class="overlay" id="warning">
-			<div dir="rtl">ای بابا!</div>
-			<div dir="rtl">
-			your browser doesn't support webgl.<br>
-			try a different browser or computer?<br>
-				<br>
-				مرورگر شما مرخص است! از یه مرورگر و یا کامپیوتر دیگه استفاده کنید!
-			</div>
-		</div>
-		<div class="overlay" id="paused">
-			<div>paused</div>
-			<div dir="rtl">
-			click anywhere to resume<br>
-				برای بازگشت رو یه جا رو کلیک کن!
-			</div>
-		</div>
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>We Become What We Behold</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+  <div id="stage"></div>
+  <div id="modal_shade"></div>
+
+  <div class="overlay" id="warning">
+    <div>OH NO</div>
+    <div>Your browser does not support WebGL.<br>Please try another modern browser or device.</div>
+  </div>
+
+  <div class="overlay" id="paused">
+    <div>PAUSED<br>Click anywhere to continue</div>
+  </div>
+
+  <!-- Third-party runtime libraries. Versions are intentionally pinned. -->
+  <script src="https://cdn.jsdelivr.net/npm/pixi.js@8.19.0/dist/pixi.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
+  <script src="js/lib/stats.min.js"></script>
+  <!-- CreateJS CDN stable TweenJS 1.0.0. -->
+  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+
+  <!-- Compatibility/runtime infrastructure. This contains no scene content. -->
+  <script src="js/lib/pixi-compat.js"></script>
+  <script>
+    (function () {
+      var createjs = window.createjs;
+      if (!createjs || !createjs.Ticker || !createjs.Tween || !createjs.Ease) {
+        console.error("TweenJS failed to initialize", createjs);
+        var warning = document.getElementById("warning");
+        if (warning) {
+          warning.innerHTML = "<div>RUNTIME ERROR</div><div>Animation support could not be initialized.<br>Please refresh the page or try another browser.</div>";
+          warning.style.display = "block";
+        }
+        window.WBWWBTweenUnavailable = true;
+        return;
+      }
+      window.Ticker = createjs.Ticker;
+      window.Tween = createjs.Tween;
+      window.Ease = createjs.Ease;
+      Ticker.framerate = 60;
+      Ticker.paused = true;
+    })();
+  </script>
+  <script src="js/lib/helpers.js"></script>
+
+  <!-- Localization: English is the canonical source of truth. -->
+  <script src="js/textStrings.js?v=20260821-3"></script>
+  <script src="js/locale.js?v=20260821-3"></script>
+  <script src="js/locale-tr.js?v=20260821-3"></script>
+  <!-- Explicit ?lang=xx / ?locale=xx is authoritative over saved preferences. -->
+  <script src="js/locale-query.js?v=20260821-3"></script>
+
+  <!-- Core engine -->
+  <script src="js/core/Game.js"></script>
+  <script src="js/core/SceneManager.js"></script>
+  <script src="js/core/Scene.js"></script>
+
+  <!-- Main game engine -->
+  <script src="js/game/World.js"></script>
+  <script src="js/game/Camera.js"></script>
+  <script src="js/game/Director.js"></script>
+  <script src="js/game/Peep.js"></script>
+  <script src="js/game/TV.js"></script>
+  <script src="js/game/AnimationProp.js"></script>
+  <script src="js/game/ScreenShake.js"></script>
+  <script src="js/game/ScreenZoomOut.js"></script>
+  <script src="js/game/Gore.js"></script>
+  <script src="js/game/DeadBody.js"></script>
+  <script src="js/game/Blood.js"></script>
+
+  <!-- Peeps -->
+  <script src="js/peeps/NormalPeep.js"></script>
+  <script src="js/peeps/CrazyPeep.js"></script>
+  <script src="js/peeps/NervousPeep.js"></script>
+  <script src="js/peeps/SnobbyPeep.js"></script>
+  <script src="js/peeps/AngryPeep.js"></script>
+  <script src="js/peeps/HatPeep.js"></script>
+  <script src="js/peeps/LoverPeep.js"></script>
+  <script src="js/peeps/ProtestAnim.js"></script>
+  <script src="js/peeps/HelpingAnim.js"></script>
+  <script src="js/peeps/HappyWeirdoPeep.js"></script>
+  <script src="js/peeps/EvilHatPeep.js"></script>
+  <script src="js/peeps/PanicPeep.js"></script>
+  <script src="js/peeps/MurderPeep.js"></script>
+
+  <!-- Misc -->
+  <script src="js/misc/Candlelight.js"></script>
+  <script src="js/misc/LoversWatching.js"></script>
+  <script src="js/misc/Cricket.js"></script>
+  <script src="js/misc/Cursor.js"></script>
+
+  <!-- Scenes: intentionally unchanged content/assets. -->
+  <script src="js/scenes/Scene_Preloader.js"></script>
+  <script src="js/scenes/Scene_Quote.js"></script>
+  <script src="js/scenes/Scene_Game.js"></script>
+  <script src="js/scenes/Scene_Credits.js"></script>
+  <script src="js/scenes/Scene_Post_Credits.js"></script>
+  <script src="js/scenes/Scene_Post_Post_Credits.js"></script>
+  <script src="js/scenes/Scene_EndPrototype.js"></script>
+  <script src="js/scenes/Act_I.js"></script>
+  <script src="js/scenes/Act_II.js"></script>
+  <script src="js/scenes/Act_III.js"></script>
+  <script src="js/scenes/Scene_Meta.js"></script>
+
+  <script>
+    Game.stats = false;
+    window.onload = function () {
+      if (window.WBWWBTweenUnavailable) return;
+      Game.init().catch(function (error) {
+        console.error(error);
+        document.getElementById("warning").style.display = "block";
+      });
+    };
+    window.SHARE_TEXT = "I just played We Become What We Behold";
+    window.SHARE_URL = "";
+  </script>
+</body>
 </html>
-
-<!-- External Libraries -->
-<script src="js/lib/pixi.min.js"></script>
-<script src="js/lib/howler.js"></script>
-<script src="js/lib/stats.min.js"></script>
-<script>var createjs = window;</script>
-<script src="js/lib/tweenjs-0.6.2.min.js"></script>
-<script>Ticker.framerate=60; Ticker.paused=true;</script>
-<script src="js/lib/helpers.js"></script>
-
-<!-- Text Strings -->
-<script src="js/textStrings.js"></script>
-
-<!-- Core Engine Code -->
-<script src="js/core/Game.js"></script>
-<script src="js/core/SceneManager.js"></script>
-<script src="js/core/Scene.js"></script>
-
-<!-- Main Game Scene Code -->
-<script src="js/game/World.js"></script>
-<script src="js/game/Camera.js"></script>
-<script src="js/game/Director.js"></script>
-<script src="js/game/Peep.js"></script>
-<script src="js/game/TV.js"></script>
-<script src="js/game/AnimationProp.js"></script>
-<script src="js/game/ScreenShake.js"></script>
-<script src="js/game/ScreenZoomOut.js"></script>
-<script src="js/game/Gore.js"></script>
-<script src="js/game/DeadBody.js"></script>
-<script src="js/game/Blood.js"></script>
-
-<!-- Peeps -->
-<script src="js/peeps/NormalPeep.js"></script>
-<script src="js/peeps/CrazyPeep.js"></script>
-<script src="js/peeps/NervousPeep.js"></script>
-<script src="js/peeps/SnobbyPeep.js"></script>
-<script src="js/peeps/AngryPeep.js"></script>
-<script src="js/peeps/HatPeep.js"></script>
-<script src="js/peeps/LoverPeep.js"></script>
-<script src="js/peeps/ProtestAnim.js"></script>
-<script src="js/peeps/HelpingAnim.js"></script>
-<script src="js/peeps/HappyWeirdoPeep.js"></script>
-<script src="js/peeps/EvilHatPeep.js"></script>
-<script src="js/peeps/PanicPeep.js"></script>
-<script src="js/peeps/MurderPeep.js"></script>
-
-<!-- Misc Crap -->
-<script src="js/misc/Candlelight.js"></script>
-<script src="js/misc/LoversWatching.js"></script>
-<script src="js/misc/Cricket.js"></script>
-<script src="js/misc/Cursor.js"></script>
-
-<!-- Scenes -->
-<script src="js/scenes/Scene_Preloader.js"></script>
-<script src="js/scenes/Scene_Quote.js"></script>
-<script src="js/scenes/Scene_Game.js"></script>
-<script src="js/scenes/Scene_Credits.js"></script>
-<script src="js/scenes/Scene_Post_Credits.js"></script>
-<script src="js/scenes/Scene_Post_Post_Credits.js"></script>
-<script src="js/scenes/Scene_EndPrototype.js"></script>
-<script src="js/scenes/Act_I.js"></script>
-<script src="js/scenes/Act_II.js"></script>
-<script src="js/scenes/Act_III.js"></script>
-<script src="js/scenes/Scene_Meta.js"></script>
-
-<!-- Game Scripts -->
-<script>
-Game.stats = false;
-window.onload = function(){
-	try{
-		Game.init();
-		//Game.init("Game");
-	}catch(e){
-		document.getElementById("warning").style.display = "block";
-	}
-};
-window.SHARE_TEXT = 'همین الان یه بازی خیلی خفن رو بازی کردم'
-window.SHARE_URL = "";
-</script>

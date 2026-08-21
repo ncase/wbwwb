@@ -1,46 +1,56 @@
-/**************
-RANDOM CRAP TO MAKE MY LIFE EASIER
+/***************
+RUNTIME HELPERS
 ***************/
 
-Math.TAU = Math.PI*2;
+Math.TAU = Math.PI * 2;
 
-// ANIMATION CRAP
+// Animation helpers.
 var BEAT = 1;
-var Tween_get = function(target, props){
-	props = {} || props;
-	props.useTicks = true;
-	return Tween.get(target, props);
-}
-var _s = function(seconds){
-	return Math.ceil(Ticker.framerate*seconds); // converts seconds to ticks
+
+var Tween_get = function (target, props) {
+  // Runtime helper: preserve caller options instead of discarding them.
+  props = props || {};
+  props.useTicks = true;
+  return Tween.get(target, props);
 };
 
-// IMAGE CRAP
-var MakeSprite = function(textureName){
-	return new PIXI.Sprite(PIXI.loader.resources[textureName].texture);
-}
+var _s = function (seconds) {
+  return Math.ceil(Ticker.framerate * seconds);
+};
 
-// MovieClips!
-var MakeMovieClip = function(resourceName){
+// Image helpers.
+var MakeSprite = function (textureName) {
+  var resource = PIXI.loader.resources[textureName];
+  if (!resource || !resource.texture) {
+    throw new Error("Missing image resource: " + textureName);
+  }
+  return new PIXI.Sprite(resource.texture);
+};
 
-	// Make it!
-	var resources = PIXI.loader.resources;
-	var resource = resources[resourceName];	
-	var numFrames = Object.keys(resource.data.frames).length;
-	var frames = [];
-	for(var i=0; i<numFrames; i++){
-		var str = "0000" + i; // FOUR leading zeroes
-		str = str.substr(str.length-4);
-		frames.push(PIXI.Texture.fromFrame(resourceName+str));
-	}
-	var mc = new PIXI.extras.MovieClip(frames);
+// Movie clips are backed by PixiJS v8 AnimatedSprite. The original
+// spritesheet naming/order is retained, so this is a technical migration,
+// not a content/animation change.
+var MakeMovieClip = function (resourceName) {
+  var resource = PIXI.loader.resources[resourceName];
+  if (!resource || !resource.spritesheet) {
+    throw new Error("Missing spritesheet resource: " + resourceName);
+  }
 
-	// Shtuff
-	mc.gotoAndStop(0);
-	mc.anchor.x = 0.5;
-	mc.anchor.y = 1.0;
+  var textures = resource.spritesheet.textures;
+  var frameNames = Object.keys(textures).sort(function (a, b) {
+    var na = parseInt((a.match(/(\d+)(?:\.[^.]+)?$/) || ["", "0"])[1], 10);
+    var nb = parseInt((b.match(/(\d+)(?:\.[^.]+)?$/) || ["", "0"])[1], 10);
+    return na - nb || a.localeCompare(b);
+  });
 
-	// Return
-	return mc;
+  var frames = frameNames.map(function (name) {
+    return textures[name];
+  });
 
+  var mc = new PIXI.AnimatedSprite(frames);
+  mc.gotoAndStop(0);
+  mc.anchor.x = 0.5;
+  mc.anchor.y = 1.0;
+
+  return mc;
 };

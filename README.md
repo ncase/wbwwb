@@ -1,36 +1,66 @@
-# DEAR ASPIRING TRANSLATORS, PLEASE CHECK THE MAIN PAGE DESCRIPTION FIRST TO SEE IF YOUR TRANSLATION ALREADY EXISTS: https://ncase.itch.io/wbwwb (also check the Issues to see if your translation is already being worked on - collaborate with them if they're stuck!)
+# We Become What We Behold — Modernized
 
-*a game about news cycles, vicious cycles, infinite cycles*
+A technical modernization of the open-source `ncase/wbwwb` codebase.
 
-**[PLAY](https://ncase.itch.io/wbwwb)**
+**[Play the original](https://ncase.itch.io/wbwwb)**
 
----
+## What changed
 
-### Made with open culture, for open culture!
+- PixiJS 4.x runtime replaced with pinned PixiJS 8.19.0.
+- Howler upgraded to 2.2.4.
+- Legacy Pixi loader/rendering/interaction calls are bridged in `js/lib/pixi-compat.js`.
+- Renderer initialization and asset loading are modernized without rewriting scene content.
+- English is the canonical locale.
+- Automatic language detection supports English, German, Spanish, Turkish, Portuguese and Persian.
+- Unsupported languages and missing translation keys safely fall back to English.
+- `?lang=tr` / `?locale=tr` and `localStorage["wbwwb.locale"]` can select a locale.
+- The former Chinese fork localization is removed from runtime data.
+- HTML structure and repository hygiene are fixed.
+- A localization consistency audit is included.
 
-I'm releasing all my code and art to the public domain, under the [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/) un-license. Which means if you wanna remix this to make your own way-too-meta game, or use it in a presentation or classroom or whatever, you already have my permission!
+## Scene/content preservation
 
-However, not *all* the code/art is mine. Credit's due where credit's due, so...
+The modernization deliberately leaves `js/scenes/*`, game assets, sprites, sounds and story/content data unchanged. Compatibility code is isolated to the runtime/helper layer wherever possible.
 
-**CODE:**    
-- [PIXI.js](https://github.com/pixijs/pixi.js), for rendering the graphics (MIT License)    
-- [Howler.js](https://github.com/goldfire/howler.js), for playing the sounds (MIT License)
+## Run locally
 
-**SOUNDS:**    
-- [squeak!](https://www.freesound.org/people/ermfilm/sounds/130011/) (CC BY)    
-- [park ambience](https://www.freesound.org/people/Mafon2/sounds/274175/) (CC Zero)    
-- [camera shutter](https://www.freesound.org/people/uEffects/sounds/207865/) (CC Zero)    
-- [single cricket](https://www.freesound.org/people/cs272/sounds/77034/) (CC-BY)    
-- [multiple crickets](https://www.freesound.org/people/alienistcog/sounds/124583/) (CC Zero)    
-- [news jingle](https://www.freesound.org/people/Tuben/sounds/272044/) (CC Zero)    
-- [scream #1](https://www.freesound.org/people/GreatNate98/sounds/353086/) (CC Zero)    
-- [scream #2](https://www.freesound.org/people/mariallinas/sounds/222649/) (CC Zero)    
-- [gunshot](https://www.freesound.org/people/mitchelk/sounds/136766/) (CC Zero)    
-- [gun cocked](https://www.freesound.org/people/martian/sounds/182229/) (CC Zero)    
-- [shotgun](https://www.freesound.org/people/lensflare8642/sounds/145209/) (CC Zero)        
-- [bloody impact](https://www.freesound.org/people/Hybrid_V/sounds/319590/) (CC BY)        
-- [creepy warp sound](https://www.freesound.org/people/Andromadax24/sounds/184476/) (CC BY)        
-- [crowd screaming](https://www.freesound.org/people/MultiMax2121/sounds/156860/) (CC Zero)        
+Serve the repository over HTTP(S):
 
-**ART:**    
-- For the ending, I modified [this photo of a laptop](https://unsplash.com/photos/XyNi3rUEReE). (CC Zero)
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/`.
+
+Do not use `file://`; WebGL and asset loading are browser-origin sensitive.
+
+## Locale examples
+
+```text
+/?lang=en
+/?lang=tr
+/?lang=de
+/?lang=es
+/?lang=pt
+/?lang=fa
+```
+
+## Audit
+
+```bash
+npm install
+npm run audit:locales
+```
+
+A real browser/WebGL session is still required for final visual regression testing.
+
+## Licensing and third-party code
+
+The original project is released under CC0. Third-party libraries remain under their own licenses:
+
+- PixiJS — MIT
+- Howler.js — MIT
+- CreateJS TweenJS 0.6.2 — retained for compatibility
+- stats.js — optional developer diagnostic
+
+See `LICENSE` for the repository's CC0 text and `docs/MODERNIZATION.md` for the technical audit scope.

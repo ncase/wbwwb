@@ -1,0 +1,15 @@
+{
+  "name": "wbwwb-modernized",
+  "private": true,
+  "version": "1.0.0",
+  "description": "We Become What We Behold - modernized runtime with multilingual fallback.",
+  "scripts": {
+    "audit:locales": "node tools/audit-locales.js",
+    "check": "node tools/audit-locales.js"
+  },
+  "dependencies": {
+    "pixi.js": "8.19.0",
+    "howler": "2.2.4"
+  },
+  "devDependencies": {}
+}
