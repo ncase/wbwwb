@@ -28,8 +28,8 @@ function HappyWeirdoPeep(scene){
 
     // MODE o' ANIMATION
     var MODE = -1;
-    MODE_SMILE = 1;
-    MODE_FROWN = 2;
+    var MODE_SMILE = 1;
+    var MODE_FROWN = 2;
     self.smile = function(){
         MODE = MODE_SMILE;
     };

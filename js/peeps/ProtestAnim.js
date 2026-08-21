@@ -29,8 +29,8 @@ function ProtestAnim(scene){
 
     // ANIMATION CODE
     var MODE = 0;
-    MODE_PROTEST = 0;
-    MODE_SHOCK = 1;
+    var MODE_PROTEST = 0;
+    var MODE_SHOCK = 1;
     self.triples = 0;
 	self.updateAnimation = function(){
 

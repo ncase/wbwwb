@@ -311,7 +311,8 @@ var textStrings_FA = {
 	// (quote0004.png)
 	"misatrributed": "(!با مقداری تغییر)",
 };
-// Brazilian Portuguese translation.
+// Default to English strings for runtime use
+var textStrings = textStrings_EN;
 // by Filipe Daineze https://github.com/fddaineze
 var textStrings_PT = {
 	// Act 1

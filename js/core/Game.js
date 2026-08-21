@@ -25,7 +25,7 @@ Game.init = function(HACK){
 	Game.stage = new PIXI.Container();
 	Game.stage.interactive = true;
 
-	// Mr Doob Stats
+	// Mr Doob Stats (debug utility - disable in production with Game.stats = false)
 	if(Game.stats){
 		Game.stats = new Stats();
 		Game.stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom

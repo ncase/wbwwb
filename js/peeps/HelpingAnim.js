@@ -36,7 +36,7 @@ function HelpingAnim(scene){
 
     // ANIMATION CODE
     var MODE = 0;
-    MODE_HELPING = 0;
+    var MODE_HELPING = 0;
     self.triples = 0;
     var gracePeriod = _s(Director.ZOOM_OUT_2_TIME*0.8);
     var frame2 = 0;
