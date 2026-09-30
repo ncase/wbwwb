@@ -1,7 +1,7 @@
 Game.addToManifest({
-	bg_preload: "sprites/bg_preload.png",
+	bg_preload: localeAsset("sprites/bg_preload.png"),
 	bg_preload_2: "sprites/bg_preload_2.png",
-	preload_play: "sprites/misc/preload_play.json"
+	preload_play: localeAsset("sprites/misc/preload_play.json")
 }, true);
 
 function Scene_Preloader(){

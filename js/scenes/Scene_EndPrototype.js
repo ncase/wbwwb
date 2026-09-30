@@ -1,5 +1,5 @@
 /*Game.addToManifest({
-	end_prototype: "sprites/quote/end_prototype.png",
+	end_prototype: localeAsset("sprites/quote/end_prototype.png"),
 	gunshot: "sounds/gunshot.mp3"
 });
 

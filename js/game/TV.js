@@ -7,9 +7,9 @@ Is a prop you can add a photo to.
 
 Game.addToManifest({
 	tv: "sprites/tv.png",
-	chyron: "sprites/chyron.png",
-	chyron2: "sprites/chyron2.png",
-	chyron3: "sprites/chyron3.png"
+	chyron: localeAsset("sprites/chyron.png"),
+	chyron2: localeAsset("sprites/chyron2.png"),
+	chyron3: localeAsset("sprites/chyron3.png")
 });
 
 function TV(scene){
@@ -65,6 +65,7 @@ function TV(scene){
 		// OPTIONS
 		var photoTexture = options.photo;
 		var text = options.text || "";
+		var config = localeTextConfig[currentLocale] || localeTextConfig.EN;
 
 		// Clear screen
 		photoContainer.removeChildren();
@@ -76,7 +77,7 @@ function TV(scene){
 		// Chryon container
 		var chyron = new PIXI.Container();
 		chyron.alpha = 0;
-		chyron.x = +15;
+		chyron.x = config.chyronX;
 		Tween_get(chyron).to({alpha:1}, _s(0.5), Ease.quadInOut);
 		Tween_get(chyron).to({x:0}, _s(0.8), Ease.quadInOut);
 		photoContainer.addChild(chyron);
@@ -92,17 +93,18 @@ function TV(scene){
 
 		// Chyron Text
 		if(!options.nothing){
-			var fontsize=50; //, max=14;
-			//if(text.length>max){ // more than [max] chars...
-			//	fontsize = Math.floor(max*fontsize/text.length);
-			//}
-		    var text = new PIXI.Text(text + "\n", {font:"bold "+fontsize+"px Cairo", align:"right", fill:"#FFF"});  // \n hack. needed when the text field cuts some of the string font's bottom
-		    text.scale.x = text.scale.y = 0.2;
-		    text.anchor.x = 0;
-		    text.anchor.y = 0.5;
-		    text.x = 30;
-		    text.y = 120;
-		    chyron.addChild(text);
+			var fontsize = config.fontsize;
+			if(config.maxChars && text.length>config.maxChars){ // more than [maxChars] chars...
+				fontsize = Math.floor(config.maxChars*fontsize/text.length);
+			}
+			var displayText = text + (config.newlineHack ? "\n" : "");
+		    var textGraphic = new PIXI.Text(displayText, {font:"bold "+fontsize+"px "+config.font, align:config.align, fill:"#FFF"});
+		    textGraphic.scale.x = textGraphic.scale.y = 0.2;
+		    textGraphic.anchor.x = 0;
+		    textGraphic.anchor.y = 0.5;
+		    textGraphic.x = config.x;
+		    textGraphic.y = config.y;
+		    chyron.addChild(textGraphic);
 		}
 
 	}
@@ -110,4 +112,28 @@ function TV(scene){
 	// Update!
 	self.update();
 
+
+		// Per-locale chyron text styling (fonts must be preloaded via CSS @font-face, e.g. Cairo for FA)
+	var localeTextConfig = {
+		EN: {
+			font: "Poppins",
+			align: "left",
+			chyronX: -15,
+			fontsize: 100,
+			maxChars: 14, // shrink fontsize if text is longer than this
+			x: 45,
+			y: 115,
+			newlineHack: false
+		},
+		FA: {
+			font: "Cairo",
+			align: "right",
+			chyronX: 15,
+			fontsize: 50,
+			maxChars: null,
+			x: 30,
+			y: 120,
+			newlineHack: true // needed when the text field cuts some of the string font's bottom
+		}
+	};
 }

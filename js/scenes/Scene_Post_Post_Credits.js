@@ -1,6 +1,6 @@
 ﻿Game.addToManifest({
 	
-	logo: "sprites/postcredits/logo.png",
+	logo: localeAsset("sprites/postcredits/logo.png"),
 	
 	facebook: "sprites/postcredits/facebook.png",
 	twitter: "sprites/postcredits/twitter.png",

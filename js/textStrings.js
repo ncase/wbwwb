@@ -822,3 +822,46 @@ var textStrings_TR = {
 	// (quote0004.png)
 	"misatrributed": "(yanlış bir şekilde ona atfedilir)",
 };
+
+// All available language packs, keyed by locale code.
+var textStringsByLocale = {
+	"EN": textStrings_EN,
+	"DE": textStrings_DE,
+	"FA": textStrings_FA,
+	"PT": textStrings_PT,
+	"PT_BR": textStrings_PT_BR,
+	"ES": textStrings_ES,
+	"ZH_TW": textStrings_ZH_TW,
+	"TR": textStrings_TR
+};
+
+// Language is picked via the "?lang=XX" URL query param (e.g. "?lang=DE"), falling back to "EN".
+// Also picks localized baked-text image assets (see localeAsset()).
+function getLocaleFromURL(){
+	var match = window.location.search.match(/[?&]lang=([^&]+)/i);
+	if(!match) return "EN";
+	var locale = decodeURIComponent(match[1]).toUpperCase();
+	return textStringsByLocale[locale] ? locale : "EN";
+}
+var currentLocale = getLocaleFromURL();
+
+var textStrings = textStringsByLocale[currentLocale] || textStrings_EN;
+
+// Some UI graphics have text baked into the image itself (e.g. the PLAY button).
+// If a "<name>_<currentLocale>.<ext>" file exists next to the default asset, use it instead.
+var localizedAssets = {
+	"sprites/bg_preload.png": ["FA"],
+	"sprites/cam/cam-instructions.png": ["FA"],
+	"sprites/chyron.png": ["FA"],
+	"sprites/chyron2.png": ["FA"],
+	"sprites/chyron3.png": ["FA"],
+	"sprites/misc/preload_play.json": ["FA"],
+	"sprites/postcredits/logo.png": ["FA"],
+	"sprites/quote/end_prototype.png": ["FA"]
+};
+
+function localeAsset(path){
+	var variants = localizedAssets[path];
+	if(!variants || variants.indexOf(currentLocale)===-1) return path;
+	return path.replace(/(\.[^.\/]+)$/, "_"+currentLocale+"$1");
+}

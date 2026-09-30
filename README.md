@@ -6,6 +6,19 @@
 
 ---
 
+### Running it locally
+
+This game loads assets via `fetch`/XHR, so opening `index.html` directly by double-clicking it won't work (browsers block local file requests due to CORS). You need to serve the folder over HTTP instead:
+
+- **[Servez](https://greggman.github.io/servez/)** (or a similar static file server) - point it at this folder, then open the URL it gives you (e.g. `http://localhost:8080`) in your browser.
+- Alternatively, if you have Node.js installed, run `npx serve .` (or `python -m http.server`) from this folder and open the printed URL.
+
+### Changing the language
+
+The game picks its language from the URL. Add `?lang=XX` to the address, where `XX` is one of the available locale codes (`EN`, `DE`, `FA`, `PT`, `PT_BR`, `ES`, `ZH_TW`, `TR`). For example: `http://localhost:8080/index.html?lang=DE`. If no `lang` param is given (or it doesn't match a known locale), it defaults to `EN`.
+
+---
+
 ### Made with open culture, for open culture!
 
 I'm releasing all my code and art to the public domain, under the [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/) un-license. Which means if you wanna remix this to make your own way-too-meta game, or use it in a presentation or classroom or whatever, you already have my permission!
