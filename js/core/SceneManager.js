@@ -13,6 +13,10 @@ function SceneManager(){
 
 		// Old scene
 		Game.stage.removeChildren();
+		// Discard references to scene-owned adaptive layout helpers.
+		Game._baseLayouts = [];
+		Game._viewportFills = [];
+		Game._baseAnchors = [];
 		var oldScene = Game.scene;
 		if(oldScene) oldScene.kill();
 

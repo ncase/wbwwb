@@ -17,14 +17,11 @@ function ProtestAnim(scene){
     self._CLASS_ = "ProtestAnim";
 
 	// INIT
-    self.init(650, 200, "peace");
+    var position = Game.baseToWorldPosition(650, 200);
+    self.init(position.x, position.y, "peace");
 
     // AVOID SPOT
-    var spot = {
-        x: 640,
-        y: 150,
-        radius: 150
-    };
+    var spot = Game.anchorBasePosition({ radius: 150 }, 640, 150);
     scene.avoidSpots.push(spot);
 
     // ANIMATION CODE

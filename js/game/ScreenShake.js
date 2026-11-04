@@ -22,9 +22,11 @@ function ScreenShake(scene){
 		// Make snowscreen for the first time
 		if(!self.snow){
 			self.snow = MakeSprite("snow");
+			self.snow.anchor.x = self.snow.anchor.y = 0.5;
+			self.snow.scale.x = Game.width/Game.baseWidth;
+			self.snow.scale.y = Game.height/Game.baseHeight;
 			self.snow.x = Game.width/2;
 			self.snow.y = Game.height/2;
-			self.snow.anchor.x = self.snow.anchor.y = 0.5;
 			scene.graphics.addChild(self.snow);
 		}else{
 			self.snow.alpha = self.baseAlpha+0.35;
@@ -33,13 +35,20 @@ function ScreenShake(scene){
 	}
 
 	self.baseAlpha = 0.15;
+	self.onViewportResize = function(){
+		if(!self.snow) return;
+		self.snow.scale.x = Game.width/Game.baseWidth;
+		self.snow.scale.y = Game.height/Game.baseHeight;
+		self.snow.x = Game.width/2 - scene.offX;
+		self.snow.y = Game.height/2 - scene.offY;
+	};
 	self.update = function(){
 
 		// Fuzz that snowscreen
 		if(self.snow){
 			self.snow.alpha = self.snow.alpha*0.95 + self.baseAlpha*0.05;
-			self.snow.scale.x = 1 + Math.random()*0.2;
-			self.snow.scale.y = 1 + Math.random()*0.2;
+			self.snow.scale.x = (Game.width/Game.baseWidth) * (1 + Math.random()*0.2);
+			self.snow.scale.y = (Game.height/Game.baseHeight) * (1 + Math.random()*0.2);
 			if(Math.random()<0.5) self.snow.scale.x*=-1;
 			if(Math.random()<0.5) self.snow.scale.y*=-1;
 		}

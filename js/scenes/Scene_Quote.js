@@ -12,6 +12,11 @@ function Scene_Quote(){
 	var self = this;
 	Scene.call(self);
 
+	// Fixed original composition, centered within the expanded viewport.
+	Game.stage.addChild(Game.createViewportFill(0x000000));
+	var layout = Game.createBaseLayout();
+	Game.stage.addChild(layout);
+
 	// Layers, yo.
 	var q1 = MakeSprite("blackout");
 	var q2 = new PIXI.Container();
@@ -25,8 +30,8 @@ function Scene_Quote(){
     var q2TitleText = new PIXI.Text(textStrings["WBWWB"] + "\n", {font:"65px Cairo", fill:"#FFFFFF", align:"center"});
     q2TitleText.anchor.x = 0.5;
     q2TitleText.anchor.y = 0.5;
-    q2TitleText.x = Game.width / 2 + 6;
-    q2TitleText.y = Game.height / 2 - 40;
+    q2TitleText.x = Game.baseWidth / 2 + 6;
+    q2TitleText.y = Game.baseHeight / 2 - 40;
     q2.addChild(q2TitleText);
     
     // dynamic fontsize for quote
@@ -39,8 +44,8 @@ function Scene_Quote(){
     var q2QuoteText = new PIXI.Text(textStrings["WSOTATOTSU"] + "\n", {font:fontsize+"px Cairo", fill:"#FFFFFF", align:"center"});
     q2QuoteText.anchor.x = 0.5;
     q2QuoteText.anchor.y = 0.5;
-    q2QuoteText.x = Game.width / 2 + 6;
-    q2QuoteText.y = Game.height / 2 + 20;
+    q2QuoteText.x = Game.baseWidth / 2 + 6;
+    q2QuoteText.y = Game.baseHeight / 2 + 20;
     q2.addChild(q2QuoteText);
     
     var q3Sprite = MakeSprite("quote0003");
@@ -49,8 +54,8 @@ function Scene_Quote(){
     var q3Name = new PIXI.Text(textStrings["MarshallMcLuhan"], {font:"33px Cairo", fill:"#FFFFFF", align:"center"});
     q3Name.anchor.x = 0.5;
     q3Name.anchor.y = 0.5;
-    q3Name.x = Game.width / 2 + 4;
-    q3Name.y = Game.height / 2 + 76;
+    q3Name.x = Game.baseWidth / 2 + 4;
+    q3Name.y = Game.baseHeight / 2 + 76;
     q3.addChild(q3Name);
     
     var q4Sprite = MakeSprite("quote0004");
@@ -59,15 +64,15 @@ function Scene_Quote(){
     var q4Text = new PIXI.Text(textStrings["misatrributed"] + "\n", {font:"33px Cairo", fill:"#FFFFFF", align:"center"});
     q4Text.anchor.x = 0.5;
     q4Text.anchor.y = 0.5;
-    q4Text.x = Game.width / 2 + 4;
-    q4Text.y = Game.height / 2 + 135;
+    q4Text.x = Game.baseWidth / 2 + 4;
+    q4Text.y = Game.baseHeight / 2 + 135;
     q4.addChild(q4Text);
     
 	// Add 'em in.
 	q2.alpha = q3.alpha = q4.alpha = 0;
-	Game.stage.addChild(q1);
+	layout.addChild(q1);
 	var text = new PIXI.Container();
-	Game.stage.addChild(text);
+	layout.addChild(text);
 	text.addChild(q2);
 	text.addChild(q3);
 	text.addChild(q4);

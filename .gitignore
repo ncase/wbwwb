@@ -1,0 +1,12 @@
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Local development artifacts
+*.log
+*.tmp
+*.bak
+
+# Editor metadata
+.vscode/
+.idea/

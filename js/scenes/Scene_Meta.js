@@ -24,14 +24,18 @@ function Scene_Meta(){
     self.world = new World(self);
     self.tv = new TV(self);
     self.tv.y += 32;
+    self.tv.viewportYOffset += 32;
     self.world.addProp(self.tv);
 
     // RECURSIVE SCREEN
 	var renderTexturePoolIndex = 0;
-	var renderTexturePool = [
-		new PIXI.RenderTexture(Game.renderer, Game.width, Game.height),
-		new PIXI.RenderTexture(Game.renderer, Game.width, Game.height)
-	];
+	var makeRenderTexturePool = function(){
+		return [
+			PIXI.RenderTexture.create(Game.width, Game.height),
+			PIXI.RenderTexture.create(Game.width, Game.height)
+		];
+	};
+	var renderTexturePool = makeRenderTexturePool();
 	self.stream = new PIXI.Sprite();
 	self.stream.x = Game.width/2;
 	self.stream.y = Game.height/2;
@@ -69,6 +73,14 @@ function Scene_Meta(){
 
     self.scale = 1;
 
+    self.onViewportResize = function(previousMetrics, metrics){
+        self.stream.x = Game.width/2;
+        self.stream.y = Game.height/2;
+        // The recursive render target must follow the new logical viewport.
+        renderTexturePool = makeRenderTexturePool();
+        renderTexturePoolIndex = 0;
+    };
+
     // UPDATE
     self.update = function(){
 
@@ -82,7 +94,7 @@ function Scene_Meta(){
 	    //matrix.translate(-sx,-sy);
 
 		var renderTexture = renderTexturePool[renderTexturePoolIndex];
-	    renderTexture.render(self.graphics, matrix);
+	    Game.renderToTexture(self.graphics, renderTexture, matrix);
 	    renderTexturePoolIndex = (renderTexturePoolIndex+1)%renderTexturePool.length;
 	    self.stream.texture = renderTexture;
 

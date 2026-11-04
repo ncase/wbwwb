@@ -28,9 +28,10 @@ function EvilHatPeep(scene){
 
     // Position.
     self.loop = false;
-    self.x = -300;
-    //self.x = 300; // HAAAACK
-    self.y = 470;
+    var startPosition = Game.baseToWorldPosition(-300, 470);
+    self.x = startPosition.x;
+    //self.x = Game.baseToWorldPosition(300, 470).x; // HAAAACK
+    self.y = startPosition.y;
     self.direction = 0;
 
     // WHO TO KILL
@@ -46,7 +47,7 @@ function EvilHatPeep(scene){
     self.goThroughSpots = true;
     self.callbacks.update = function(){
 
-        if(self.x>420 && !self.isMurdering){
+        if(self.x>Game.baseToWorldPosition(420, 0).x && !self.isMurdering){
             self.itsMurderTime();
         }
 

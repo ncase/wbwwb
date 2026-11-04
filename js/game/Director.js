@@ -297,14 +297,9 @@ function Director(scene){
 
 		var cam = scene.camera;
 
-		// Pan: Center
-		Tween_get(cam.graphics)
-			.to({ x:Game.width/2, y:Game.height/2 }, _s(BEAT), Ease.circInOut);
-
-		// Scale: fullscreen
-		var scale = Game.width/cam.width;
-		Tween_get(cam.graphics.scale)
-			.to({ x:scale, y:scale }, _s(BEAT), Ease.circInOut);
+		// Pan and scale to the current viewport. Camera owns this tween so it
+		// can be retargeted if the browser resizes mid-transition.
+		cam.moveToViewportCenter(_s(BEAT), Ease.circInOut);
 
 		// CALLBACK
 		self.callback("movePhoto");
@@ -383,12 +378,12 @@ function Director(scene){
 
 		// Zoom out to see viewer(s)
 		var tv = self.tv;
-		var x = (tv.x*3 + Game.width/2)/4;
-		var y = tv.y + tv.offset.y*3/4;
-		self.tweenViewportTo({
-			x: x,
-			y: y,
-			scale: 2.5
+		self.tweenViewportTo(function(){
+			return {
+				x: (tv.x*3 + Game.width/2)/4,
+				y: tv.y + tv.offset.y*3/4,
+				scale: 2.5
+			};
 		}, _s(BEAT*2), Ease.cubicInOut);
 
 		// CALLBACK - HACK. WHATEVER.
@@ -405,10 +400,12 @@ function Director(scene){
 		self.isWatchingTV = false;
 
 		// Zoom out to the whole game
-		self.tweenViewportTo({
-			x: Game.width/2,
-			y: Game.height/2,
-			scale: 1
+		self.tweenViewportTo(function(){
+			return {
+				x: Game.width/2,
+				y: Game.height/2,
+				scale: 1
+			};
 		}, _s(BEAT*2), Ease.cubicInOut);
 
 		// CALLBACK
@@ -439,64 +436,77 @@ function Director(scene){
 		g.pivot.y = view.y;
 		g.scale.x = g.scale.y = view.scale;
 	};
-	self.tweenViewportTo = function(view, time, easing){
-
-		var sl, st, sr, sb; // (S)tarting left, top, right, bottom
-		var el, et, er, eb; // (E)nding left, top, right, bottom
-
-		// Get the starting numbers
+	// Retarget an in-progress viewport transition when the browser dimensions
+	// change. The tween keeps its remaining time but starts from the exact
+	// current camera view, avoiding jumps and stale 16:9 target coordinates.
+	self._viewportTweenState = null;
+	self.onViewportResize = function(previousMetrics, metrics){
+		var state = self._viewportTweenState;
+		if(!state) return;
 		var g = scene.world.graphics;
-		sl = g.pivot.x - ((Game.width/2)/g.scale.x);
-		sr = g.pivot.x + ((Game.width/2)/g.scale.x);
-		st = g.pivot.y - ((Game.height/2)/g.scale.y);
-		sb = g.pivot.y + ((Game.height/2)/g.scale.y);
-
-		// Get the destination numbers
-		el = view.x - ((Game.width/2)/view.scale);
-		er = view.x + ((Game.width/2)/view.scale);
-		et = view.y - ((Game.height/2)/view.scale);
-		eb = view.y + ((Game.height/2)/view.scale);
-
-		// TWEEN PARAMETRIC
+		state.startView = {
+			x: g.pivot.x,
+			y: g.pivot.y,
+			scale: g.scale.x
+		};
+		state.progressAtRebase = state.tween.t;
+	};
+	self.tweenViewportTo = function(view, time, easing){
+		var resolveView = (typeof view === "function") ? view : function(){ return view; };
+		var g = scene.world.graphics;
 		var tween = {t:0};
+		var state = {
+			tween: tween,
+			startView: { x:g.pivot.x, y:g.pivot.y, scale:g.scale.x },
+			progressAtRebase: 0
+		};
+		self._viewportTweenState = state;
+
 		Tween_get(tween)
 			.to({t:1}, time, easing)
 			.call(function(){
-				self.update = function(){};
+				if(self._viewportTweenState === state){
+					self._viewportTweenState = null;
+					self.update = function(){};
+				}
 			});
 
-		// MANUAL TWEEN
+		// Interpolate the visible world rectangle, as the original Director did,
+		// but resolve the destination against the current viewport every frame.
 		self.update = function(){
+			var target = resolveView();
+			if(!target || !isFinite(target.x) || !isFinite(target.y) || !isFinite(target.scale) || target.scale <= 0){
+				return;
+			}
 
-			// Parametric
-			var t = tween.t;
-			t = t*t; // coz geometric
+			var progress = tween.t;
+			var remaining = 1 - state.progressAtRebase;
+			var t = remaining <= 0 ? 1 : (progress - state.progressAtRebase) / remaining;
+			t = Math.max(0, Math.min(1, t));
+			t = t*t; // preserve the original geometric interpolation curve
 
-			// (D)eltas of left, top, right, bottom
-			var dl = el-sl;
-			var dt = et-st;
-			var dr = er-sr;
-			var db = eb-sb;
+			var start = state.startView;
+			var sl = start.x - ((Game.width/2)/start.scale);
+			var sr = start.x + ((Game.width/2)/start.scale);
+			var st = start.y - ((Game.height/2)/start.scale);
+			var sb = start.y + ((Game.height/2)/start.scale);
+			var el = target.x - ((Game.width/2)/target.scale);
+			var er = target.x + ((Game.width/2)/target.scale);
+			var et = target.y - ((Game.height/2)/target.scale);
+			var eb = target.y + ((Game.height/2)/target.scale);
 
-			// (P)arametric left, top, right, bottom
-			var pl = sl + dl*t;
-			var pt = st + dt*t;
-			var pr = sr + dr*t;
-			var pb = sb + db*t;
+			var left = sl + (el-sl)*t;
+			var right = sr + (er-sr)*t;
+			var top = st + (et-st)*t;
+			var bottom = sb + (eb-sb)*t;
+			var x = (left+right)/2;
+			var y = (top+bottom)/2;
+			var scale = Game.width/(right-left);
 
-			// Convert to pivot & scale
-			var x = (pl + pr)/2; // middle of left & right
-			var y = (pt + pb)/2; // middle of top & bottom
-			var s = Game.width/(pr-pl); // Game.width % current width
-
-			// Container
-			var g = scene.world.graphics;
-			g.scale.x = g.scale.y = s;
-    		g.pivot.x = x;
-    		g.pivot.y = y;
-
+			g.scale.x = g.scale.y = scale;
+			g.pivot.x = x;
+			g.pivot.y = y;
 		};
-
 	};
 	
 	// Goof.

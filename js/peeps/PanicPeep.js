@@ -26,12 +26,14 @@ function PanicPeep(scene){
     self.setLover = function(type){
 
         if(type=="circle"){
-            self.x = 635;
-            self.y = 200;
+            var circlePosition = Game.baseToWorldPosition(635, 200);
+            self.x = circlePosition.x;
+            self.y = circlePosition.y;
             self.direction = Math.TAU*-0.12;
         }else{
-            self.x = 665;
-            self.y = 200;
+            var squarePosition = Game.baseToWorldPosition(665, 200);
+            self.x = squarePosition.x;
+            self.y = squarePosition.y;
             self.direction = Math.TAU*-0.10;
         }
 

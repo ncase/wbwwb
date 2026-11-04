@@ -20,14 +20,11 @@ function HelpingAnim(scene){
     self._CLASS_ = "HelpingAnim";
 
 	// INIT
-    self.init(180, 170, "helping");
+    var position = Game.baseToWorldPosition(180, 170);
+    self.init(position.x, position.y, "helping");
 
-    // AVOID SPOT
-    var spot = {
-        x: self.x,
-        y: self.y-40,
-        radius: 170
-    };
+    // AVOID SPOT — anchored to the original composition.
+    var spot = Game.anchorBasePosition({ radius: 170 }, 180, 130);
     scene.avoidSpots.push(spot);
     scene.noYellingYet = true;
 
@@ -97,8 +94,9 @@ function HelpingAnim(scene){
 
         // Put in lovers #2, they just run off screen.
         var lover1 = new LoverPeep(self.scene);
-        lover1.x = 188;
-        lover1.y = 165;
+        var lover1Position = Game.baseToWorldPosition(188, 165);
+        lover1.x = lover1Position.x;
+        lover1.y = lover1Position.y;
         lover1.setType("circle");
         lover1.startWalking();
         lover1.hatMC.visible = false;
@@ -108,8 +106,9 @@ function HelpingAnim(scene){
 
         var lover2 = new LoverPeep(self.scene);
         lover2.follow(lover1);
-        lover2.x = 235;
-        lover2.y = 165;
+        var lover2Position = Game.baseToWorldPosition(235, 165);
+        lover2.x = lover2Position.x;
+        lover2.y = lover2Position.y;
         lover2.setType("square");
         lover2.startWalking();
         lover2.faceMC.gotoAndStop(6);
@@ -121,6 +120,7 @@ function HelpingAnim(scene){
 
         // Remove spot
         scene.avoidSpots.splice(scene.avoidSpots.indexOf(spot),1);
+        Game.unanchorBasePosition(spot);
         scene.noYellingYet = false;
 
     };

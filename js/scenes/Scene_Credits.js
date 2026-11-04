@@ -16,8 +16,8 @@ function Scene_Credits(){
 	var self = this;
 	Scene.call(self);
 
-	// Layers, yo.
-	var cont = new PIXI.Container();
+	// Credits art is authored at 960x540; center that unchanged composition.
+	var cont = Game.createBaseLayout();
 	Game.stage.addChild(cont);
 	var c = {};
 	for(var i=1; i<=8; i++){
@@ -31,22 +31,22 @@ function Scene_Credits(){
     var createdByText = new PIXI.Text(textStrings["createdBy"] + "\n", {font: "46px Cairo", fill:"#FFFFFF", align: "left"});
     createdByText.anchor.x = 0.0;
     createdByText.anchor.y = 0.5;
-    createdByText.x = Game.width / 2 - 240;
-    createdByText.y = Game.height / 2 - 41;
+    createdByText.x = Game.baseWidth / 2 - 240;
+    createdByText.y = Game.baseHeight / 2 - 41;
     c[1].addChild(createdByText);
     
     var authorText = new PIXI.Text(textStrings["NickyCase"], {font: "86px Cairo", fill:"#FFFFFF", align: "left"});
     authorText.anchor.x = 0.0;
     authorText.anchor.y = 0.5;
-    authorText.x = Game.width / 2 - 240;
-    authorText.y = Game.height / 2 + 29;
+    authorText.x = Game.baseWidth / 2 - 240;
+    authorText.y = Game.baseHeight / 2 + 29;
     c[1].addChild(authorText);
     
     var playtestersText = new PIXI.Text(textStrings["manyThanks"] + "\n", {font: "44px Cairo", fill:"#FFFFFF", align: "right"});
     playtestersText.anchor.x = 1.0;
     playtestersText.anchor.y = 0.5;
-    playtestersText.x = Game.width / 2 + 262;
-    playtestersText.y = Game.height / 2 - 140;
+    playtestersText.x = Game.baseWidth / 2 + 262;
+    playtestersText.y = Game.baseHeight / 2 - 140;
     c[2].addChild(playtestersText);
     
     // @TODO: Yes, I feel physical pain hacking this in the way I did in the following lines,
@@ -81,15 +81,15 @@ function Scene_Credits(){
     var thankYouText = new PIXI.Text(textStrings["thankYouForPlaying"] + "\n   ", {font: "55px Cairo", fill:"#FFFFFF", align: "center"});
     thankYouText.anchor.x = 0.5;
     thankYouText.anchor.y = 0.5;
-    thankYouText.x = Game.width / 2 + 10;
-    thankYouText.y = Game.height / 2 + 25;
+    thankYouText.x = Game.baseWidth / 2 + 10;
+    thankYouText.y = Game.baseHeight / 2 + 25;
     c[8].addChild(thankYouText);
     
     var finallyText = new PIXI.Text(textStrings["lastButNotLeast"] + "\n", {font: "37px Cairo", fill:"#FFFFFF", align: "left"});
     finallyText.anchor.x = 0.0;
     finallyText.anchor.y = 0.5;
     finallyText.x = thankYouText.getBounds().x + thankYouText.width - finallyText.width;
-    finallyText.y = Game.height / 2 - 45;
+    finallyText.y = Game.baseHeight / 2 - 45;
     c[7].addChild(finallyText);
     
 	// TWEEN ANIM

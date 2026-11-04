@@ -129,12 +129,9 @@ function Stage_Panic(self){
     self.shaker.shake(100);
 
     // ONLY ONE AVOIDSPOT
+    self.avoidSpots.forEach(function(spot){ Game.unanchorBasePosition(spot); });
     self.avoidSpots.splice(0, self.avoidSpots.length);
-    self.avoidSpots.push({
-        x: 530,
-        y: 430,
-        radius: 150
-    });
+    self.avoidSpots.push(Game.anchorBasePosition({ radius: 150 }, 530, 430));
 
     // Replace EVERYONE with a PANIC
     var peeps = self.world.peeps;
@@ -229,6 +226,7 @@ function Stage_Panic(self){
             if(murderer){
                 murderer.kill();
                 // AND NO AVOIDSPOTS ANYMORE
+                self.avoidSpots.forEach(function(spot){ Game.unanchorBasePosition(spot); });
                 self.avoidSpots.splice(0, self.avoidSpots.length);
             }
 

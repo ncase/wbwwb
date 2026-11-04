@@ -1,4 +1,4 @@
-﻿Game.addToManifest({
+Game.addToManifest({
 	
 	logo: "sprites/postcredits/logo.png",
 	
@@ -16,10 +16,12 @@ function Scene_Post_Post_Credits(){
 
 	self.UNPAUSEABLE = true; // HACK.
 
-	// Layers, yo.
-	Game.stage.addChild(MakeSprite("blackout"));
+	// End card stays in its original 960x540 composition.
+	Game.stage.addChild(Game.createViewportFill(0x000000));
+	var layout = Game.createBaseLayout();
+	Game.stage.addChild(layout);
 	var cont = new PIXI.Container();
-	Game.stage.addChild(cont);
+	layout.addChild(cont);
 	cont.visible = false;
 	cont.addChild(MakeSprite("logo"));
 
@@ -98,23 +100,23 @@ function Scene_Post_Post_Credits(){
 	};
 	var text = encodeURIComponent(window.SHARE_TEXT);
 	var url = encodeURIComponent(window.SHARE_URL);
-	_addSocialButton(Game.width/2 - 38, "facebook", function(){
+	_addSocialButton(Game.baseWidth/2 - 38, "facebook", function(){
 		var href = "https://www.facebook.com/sharer/sharer.php?u="+url+"&t="+text;
 		window.open(href);
 	});
-	_addSocialButton(Game.width/2 + 13, "twitter", function(){
+	_addSocialButton(Game.baseWidth/2 + 13, "twitter", function(){
 		var href = "https://twitter.com/intent/tweet?text="+text+"%0a"+url;
 		//var href = "https://twitter.com/intent/tweet?text="+text+"%20"+url+"&via=ncasenmare";
 		window.open(href);
 	});
 
 	// CURSOR
-    var cursor = new Cursor(self);
+    var cursor = new Cursor(self, {baseLayout:true});
     var g = cursor.graphics;
     cont.addChild(g);
     g.scale.x = g.scale.y = 0.5;
-    g.x = Game.width/2;
-    g.y = Game.height/2;
+    g.x = Game.baseWidth/2;
+    g.y = Game.baseHeight/2;
 
 	// TWEEN ANIM
 	Tween_get(cont)

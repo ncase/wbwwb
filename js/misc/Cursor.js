@@ -2,7 +2,9 @@ Game.addToManifest({
 	cursor: "sprites/misc/cursor.json"
 }, true);
 
-function Cursor(scene){
+function Cursor(scene, options){
+
+	options = options || {};
 
 	var self = this;
 	var mc = MakeMovieClip("cursor");
@@ -13,7 +15,7 @@ function Cursor(scene){
 
 	self.click = false;
 	Game.stage.mousemove = function(mouseData){
-	    var pos = mouseData.data.global;
+	    var pos = options.baseLayout ? Game.toBasePosition(mouseData.data.global) : Game.toWorldPosition(mouseData.data.global);
 	    mc.x = pos.x+1;
 	    mc.y = pos.y+1;
 	};
