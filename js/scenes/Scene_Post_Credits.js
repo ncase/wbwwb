@@ -40,7 +40,11 @@ function Scene_Post_Credits(){
     self.world = new World(self,{
         bg: "bg_dark"
     });
-    self.world.layers.bg.addChild(MakeSprite("bg_shade"));
+    var shade = MakeSprite("bg_shade");
+    var baseOffset = Game.getBaseOffset();
+    shade.x = baseOffset.x;
+    shade.y = baseOffset.y;
+    self.world.layers.bg.addChild(shade);
     self.camera = new Camera(self,{
         noIntro: true,
         streaming: true,
@@ -56,11 +60,38 @@ function Scene_Post_Credits(){
 
     // Put a SPRITE RIGHT IN THE BG
     self.stream = new PIXI.Sprite();
-    self.stream.width = Game.width/8;
-    self.stream.height = Game.height/8;
+    self.stream.width = Game.baseWidth/8;
+    self.stream.height = Game.baseHeight/8;
     self.stream.x = Game.width/2 - self.stream.width/2 - 2; // hack
     self.stream.y = Game.height/2 - self.stream.height/2 + 2; // hack
     self.world.layers.bg.addChild(self.stream);
+
+    self.onViewportResize = function(previousMetrics, metrics){
+        var offset = Game.getBaseOffset();
+        shade.x = offset.x;
+        shade.y = offset.y;
+        self.stream.width = Game.baseWidth/8;
+        self.stream.height = Game.baseHeight/8;
+        self.stream.x = Game.width/2 - self.stream.width/2 - 2;
+        self.stream.y = Game.height/2 - self.stream.height/2 + 2;
+        // Static post-credit props retain their original relationship to the TV.
+        if(previousMetrics){
+            var dx = offset.x - previousMetrics.extraLeft;
+            var dy = offset.y - previousMetrics.extraTop;
+            fixedProps.forEach(function(prop){
+                // Crickets are World props and are already translated by
+                // World.onViewportResize; only background props and graphics-
+                // only decorations need this scene-level adjustment.
+                if(prop.prop) return;
+                prop.x += dx;
+                prop.y += dy;
+                if(prop.graphics){
+                    prop.graphics.x = prop.x;
+                    prop.graphics.y = prop.y;
+                }
+            });
+        }
+    };
 
     // UPDATE
     self.update = function(){
@@ -77,7 +108,9 @@ function Scene_Post_Credits(){
     // EVEN MORE SET UP //
     //////////////////////
 
-    // Candlelights
+    // Candlelights and other set dressing were authored in the original
+    // 960x540 coordinate space; move them with the centered base composition.
+    var fixedProps = [];
     var candlePositions =[
         [468.6,276.6],
         [535.7,281.6],
@@ -99,14 +132,24 @@ function Scene_Post_Credits(){
         [294.3,350.3]
     ];
     for(var i=0;i<candlePositions.length;i++){
-        var pos = candlePositions[i];
-        var candle = new Candlelight(pos);
+        var pos = Game.baseToWorldPosition(candlePositions[i][0], candlePositions[i][1]);
+        var candle = new Candlelight([pos.x, pos.y]);
+        fixedProps.push({ x: pos.x - 100, y: pos.y - 100, graphics: candle.graphics });
         self.world.addBG(candle);
     }
 
     // The lovers
-    self.world.addProp(new LoversWatching("circle"));
-    self.world.addProp(new LoversWatching("square"));
+    var circleLover = new LoversWatching("circle");
+    var squareLover = new LoversWatching("square");
+    var baseOffsetForLovers = Game.getBaseOffset();
+    circleLover.graphics.x += baseOffsetForLovers.x;
+    circleLover.graphics.y += baseOffsetForLovers.y;
+    squareLover.graphics.x += baseOffsetForLovers.x;
+    squareLover.graphics.y += baseOffsetForLovers.y;
+    fixedProps.push({ x: circleLover.graphics.x, y: circleLover.graphics.y, graphics: circleLover.graphics });
+    fixedProps.push({ x: squareLover.graphics.x, y: squareLover.graphics.y, graphics: squareLover.graphics });
+    self.world.addProp(circleLover);
+    self.world.addProp(squareLover);
 
     // The 3 crickets
     var cricketPositions = [
@@ -115,10 +158,11 @@ function Scene_Post_Credits(){
         [450, 380]
     ];
     for(var i=0;i<cricketPositions.length;i++){
-        var pos = cricketPositions[i];
+        var pos = Game.baseToWorldPosition(cricketPositions[i][0], cricketPositions[i][1]);
         var cricket = new Cricket(self);
-        cricket.x = pos[0];
-        cricket.y = pos[1];
+        cricket.x = pos.x;
+        cricket.y = pos.y;
+        fixedProps.push({ x: cricket.x, y: cricket.y, prop: cricket, graphics: cricket.graphics });
         cricket.mc.gotoAndStop(1);
         self.world.addProp(cricket);
     }
@@ -127,7 +171,7 @@ function Scene_Post_Credits(){
     // FADE IN //
     /////////////
 
-    var blackout = MakeSprite("blackout");
+    var blackout = Game.createViewportFill(0x000000);
     Game.stage.addChild(blackout);
     Tween_get(blackout).to({alpha:0}, _s(BEAT), Ease.quadInOut).call(function(){
         Game.stage.removeChild(blackout);

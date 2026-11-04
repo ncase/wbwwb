@@ -29,9 +29,16 @@ function World(scene, options){
 	// LAYER: BG
 	self.layers.bg = new PIXI.Container();
 	g.addChild(self.layers.bg);
+	// The original background artwork is 1160x740 and was composed around
+	// the 960x540 game area. Extend its edge colour behind it, then keep the
+	// artwork centered as the adaptive viewport grows in either direction.
+	self.backgroundFill = Game.createViewportFill(options.bg ? 0x363636 : 0xd8d8d8);
+	self.layers.bg.addChild(self.backgroundFill);
 	var bg = MakeSprite(options.bg ? options.bg : "bg");
-	bg.position.x = -100;
-    bg.position.y = -100;
+	self.bgSprite = bg;
+	var bgOffset = Game.getBaseOffset();
+	bg.position.x = -100 + bgOffset.x;
+    bg.position.y = -100 + bgOffset.y;
     self.layers.bg.addChild(bg);
     self.bg = [];
     self.addBG = function(bg){
@@ -113,8 +120,42 @@ function World(scene, options){
 
 	};
 
-    // Update
-    self.update = function(){
+	self.onViewportResize = function(previousMetrics, metrics){
+		var offset = Game.getBaseOffset();
+		var dx = previousMetrics ? offset.x - previousMetrics.extraLeft : 0;
+		var dy = previousMetrics ? offset.y - previousMetrics.extraTop : 0;
+		self.bgSprite.position.x = -100 + offset.x;
+		self.bgSprite.position.y = -100 + offset.y;
+
+		// Preserve the existing scene layout relative to the original 960x540
+		// composition. New space is exposed around it instead of leaving actors
+		// stranded at their pre-resize screen coordinates.
+		if(dx || dy){
+			self.props.forEach(function(prop){
+				if(typeof prop.x === "number") prop.x += dx;
+				if(typeof prop.y === "number") prop.y += dy;
+			});
+		}
+
+		// Keep the world origin aligned with the expanded viewport. Preserve
+		// an in-progress Director zoom pivot; reset only at normal scale.
+		g.x = Game.width/2;
+		g.y = Game.height/2;
+		if(Math.abs(g.scale.x - 1) < 0.0001 && Math.abs(g.scale.y - 1) < 0.0001){
+			g.pivot.x = Game.width/2;
+			g.pivot.y = Game.height/2;
+		}else{
+			// Existing props move by the same delta above, so move the active
+			// world-view pivot with them to preserve the current framing.
+			g.pivot.x += dx;
+			g.pivot.y += dy;
+		}
+		self.props.forEach(function(prop){
+			if(prop.onViewportResize) prop.onViewportResize(previousMetrics, metrics);
+		});
+	};
+
+	self.update = function(){
 
     	// BGs: Update all
     	for(var i=0; i<self.bg.length; i++){

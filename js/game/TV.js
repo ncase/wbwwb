@@ -20,7 +20,8 @@ function TV(scene){
 	// Properties
 	self.scene = scene;
 	self.x = Game.width/2;
-	self.y = Game.height/2 + 80;
+	self.viewportYOffset = 80;
+	self.y = Game.height/2 + self.viewportYOffset;
 	self.width = 150;
 	self.height = 180;
 
@@ -56,6 +57,11 @@ function TV(scene){
 	self.updateGraphics = function(){
 		g.x = self.x;
     	g.y = self.y;
+	};
+	self.onViewportResize = function(){
+		self.x = Game.width/2;
+		self.y = Game.height/2 + self.viewportYOffset;
+		self.updateGraphics();
 	};
 
 	// PHOTO

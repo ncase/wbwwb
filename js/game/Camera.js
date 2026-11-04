@@ -15,8 +15,8 @@ Game.addToManifest({
 
 });
 
-Camera.WIDTH = Game.width/4;
-Camera.HEIGHT = Game.height/4;
+Camera.WIDTH = Game.baseWidth/4;
+Camera.HEIGHT = Game.baseHeight/4;
 
 function Camera(scene, options){
 
@@ -80,7 +80,7 @@ function Camera(scene, options){
     // Controls!
     self.frozen = false;
     Game.stage.mousemove = Game.stage.touchstart = Game.stage.touchmove = function(mouseData){
-	    var pos = mouseData.data.global;
+	    var pos = Game.toWorldPosition(mouseData.data.global);
 	    self.x = pos.x;
 	    self.y = pos.y;
 	};
@@ -154,8 +154,8 @@ function Camera(scene, options){
 	// Get texture!
 	var renderTexturePoolIndex = 0;
 	var renderTexturePool = [
-		new PIXI.RenderTexture(Game.renderer, self.width, self.height),
-		new PIXI.RenderTexture(Game.renderer, self.width, self.height)
+		PIXI.RenderTexture.create(self.width, self.height),
+		PIXI.RenderTexture.create(self.width, self.height)
 	];
 	self.getTexture = function(){
 
@@ -171,7 +171,7 @@ function Camera(scene, options){
 	    matrix.translate(-sx,-sy);
 
 	    var renderTexture = renderTexturePool[renderTexturePoolIndex];
-	    renderTexture.render(scene.world.graphics, matrix); // TO DO: higher rez
+	    Game.renderToTexture(scene.world.graphics, renderTexture, matrix); // TO DO: higher rez
 	    renderTexturePoolIndex = (renderTexturePoolIndex+1)%renderTexturePool.length;
 
 	    // Return texture!
@@ -188,10 +188,34 @@ function Camera(scene, options){
 	// Reset Camera
 	self.reset = function(){
 		var g = self.graphics;
+		self._moveToCenterState = null;
 		g.scale.x = g.scale.y = 1;
 		g.visible = true;
 		self.frozen = false;
 		self.updatePosition();
+	};
+
+	// Move the captured frame to the viewport center using a resize-aware
+	// tween. Camera photos themselves remain the original 240x135 texture.
+	self._moveToCenterState = null;
+	self.moveToViewportCenter = function(duration, easing){
+		var g = self.graphics;
+		var tween = { t: 0 };
+		var state = {
+			tween: tween,
+			start: { x:g.x, y:g.y, scale:g.scale.x },
+			progressAtRebase: 0
+		};
+		self._moveToCenterState = state;
+		Tween_get(tween).to({t:1}, duration, easing).call(function(){
+			if(self._moveToCenterState === state){
+				g.x = Game.width/2;
+				g.y = Game.height/2;
+				var scale = Math.max(Game.width/self.width, Game.height/self.height);
+				g.scale.x = g.scale.y = scale;
+				self._moveToCenterState = null;
+			}
+		});
 	};
 
 
@@ -215,7 +239,51 @@ function Camera(scene, options){
 		self.graphics.y = self.y;
 
 	};
+	self.onViewportResize = function(previousMetrics, metrics){
+		var dx = previousMetrics ? metrics.extraLeft - previousMetrics.extraLeft : 0;
+		var dy = previousMetrics ? metrics.extraTop - previousMetrics.extraTop : 0;
+		var moveState = self._moveToCenterState;
+		if(moveState){
+			// The game world and captured subject are translated together on resize.
+			self.graphics.x += dx;
+			self.graphics.y += dy;
+			self.x += dx;
+			self.y += dy;
+			moveState.start = {
+				x: self.graphics.x,
+				y: self.graphics.y,
+				scale: self.graphics.scale.x
+			};
+			moveState.progressAtRebase = moveState.tween.t;
+			return;
+		}
+
+		// The ordinary gameplay camera recenters while idle. A frozen capture or
+		// streaming post-credits camera retains its composition-relative position.
+		if(!self.frozen && !options.streaming){
+			self.x = Game.width/2;
+			self.y = Game.height/2;
+		}else{
+			self.x += dx;
+			self.y += dy;
+		}
+		self.updatePosition();
+	};
 	self.update = function(){
+		var state = self._moveToCenterState;
+		if(state){
+			var progress = state.tween.t;
+			var remaining = 1 - state.progressAtRebase;
+			var t = remaining <= 0 ? 1 : (progress-state.progressAtRebase)/remaining;
+			t = Math.max(0, Math.min(1, t));
+			var targetScale = Math.max(Game.width/self.width, Game.height/self.height);
+			var start = state.start;
+			self.graphics.x = start.x + (Game.width/2-start.x)*t;
+			self.graphics.y = start.y + (Game.height/2-start.y)*t;
+			var scale = start.scale + (targetScale-start.scale)*t;
+			self.graphics.scale.x = self.graphics.scale.y = scale;
+			return;
+		}
 		if(!self.frozen) self.updatePosition();
 	};
 

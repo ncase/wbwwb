@@ -19,6 +19,7 @@ function ScreenZoomOut(scene){
 
 	var offsetX = 816;
 	var offsetY = 459;
+	var baseOffset = Game.getBaseOffset();
 
 	self.init = function(){
 
@@ -27,8 +28,9 @@ function ScreenZoomOut(scene){
 
 		// Put it on!
 		self.laptop = MakeSprite("laptop");
-		self.laptop.x = -offsetX;
-		self.laptop.y = -offsetY;
+		baseOffset = Game.getBaseOffset();
+		self.laptop.x = -offsetX + baseOffset.x;
+		self.laptop.y = -offsetY + baseOffset.y;
     	scene.graphics.addChild(self.laptop);
 
     	self.update();
@@ -37,8 +39,13 @@ function ScreenZoomOut(scene){
 
 	self.fixLaptop = function(){
 		if(!self.started) return;
-        self.laptop.x = -offsetX - scene.offX/scene.scale;
-        self.laptop.y = -offsetY - scene.offY/scene.scale;
+		baseOffset = Game.getBaseOffset();
+        self.laptop.x = -offsetX + baseOffset.x - scene.offX/scene.scale;
+        self.laptop.y = -offsetY + baseOffset.y - scene.offY/scene.scale;
+	};
+	self.onViewportResize = function(){
+		if(!self.started) return;
+		self.fixLaptop();
 	};
 
 	self.onComplete = null;

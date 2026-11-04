@@ -8,20 +8,27 @@
 html, body{
 	width: 100%;
 	height: 100%;
+	margin: 0;
+	overflow: hidden;
 }
 body{
 	font-family: 'Cairo';
-	margin: 0;
-	background: #222;
-	position:relative;
+	background: #000;
+	position: relative;
 }
 #stage{
 	background: #000;
-	width:960px; height:540px;
-	position:absolute;
-	margin:auto;
-	top:0; left:0; right:0; bottom:0;
+	position: fixed;
+	inset: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 	cursor: none;
+}
+#stage canvas{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 .overlay{
 
@@ -31,11 +38,13 @@ body{
 	color: #fff;
 	letter-spacing: 1px;
 
-	width:500px; height:170px;
+	width: min(500px, calc(100vw - 32px));
+	min-height: 170px;
 
-	position:absolute;
-	margin:auto;
-	top:0; left:0; right:0; bottom:0;
+	position: fixed;
+	margin: 0;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
 
 }
 .overlay > div:nth-child(1){
@@ -48,10 +57,10 @@ body{
 #modal_shade{
 	display: none;
 	background: rgba(0,0,0,0.8);
-	width:960px; height:540px;
-	position:absolute;
-	margin:auto;
-	top:0; left:0; right:0; bottom:0;
+	position: fixed;
+	inset: 0;
+	width: 100vw;
+	height: 100vh;
 	cursor: pointer;
 }
 #paused{

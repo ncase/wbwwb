@@ -77,7 +77,7 @@ function Scene_Game(){
     // FADE IN //
     /////////////
 
-    var blackout = MakeSprite("blackout");
+    var blackout = Game.createViewportFill(0x000000);
     Game.stage.addChild(blackout);
     Tween_get(blackout).to({alpha:0}, _s(BEAT), Ease.quadInOut).call(function(){
         Game.stage.removeChild(blackout);

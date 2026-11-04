@@ -822,3 +822,8 @@ var textStrings_TR = {
 	// (quote0004.png)
 	"misatrributed": "(yanlış bir şekilde ona atfedilir)",
 };
+
+// Standalone source builds need an active dictionary. The original repository
+// includes the translations above but does not select one; default to English.
+// Other translations remain available as textStrings_DE, textStrings_FA, etc.
+var textStrings = textStrings_EN;

@@ -32,8 +32,9 @@ function LoverPeep(scene){
     };
 
     // STARTING POS
-    self.x = 1000;
-    self.y = 580;
+    var startPosition = Game.baseToWorldPosition(1000, 580);
+    self.x = startPosition.x;
+    self.y = startPosition.y;
 
     // Follow?
     self.follows = null;
@@ -81,7 +82,7 @@ function LoverPeep(scene){
 
         }
 
-        if(self.follows && self.isEmbarrassed && self.x>1100){
+        if(self.follows && self.isEmbarrassed && self.x>Game.width+140){
             self.follows.kill();
             self.kill();
         }
