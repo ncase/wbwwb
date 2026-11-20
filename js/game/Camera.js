@@ -60,11 +60,10 @@ function Camera(scene, options){
     self.graphics.addChild(self.frame);
 
 	if(!options.noIntro){
-	    self.instructions = new PIXI.Sprite(resources.cam_instructions.texture);
-		self.instructions.scale.x = self.instructions.scale.y = 0.5;
+	    self.instructions = new PIXI.Text(textStrings["pointAndClick"] + "\n", {font:"bold 30px Cairo", fill:"#FFFFFF", align:"center", stroke:"#333333", strokeThickness:6});
 	    self.instructions.anchor.x = 0.5;
 	    self.instructions.anchor.y = 0;
-	    self.instructions.y = 67.5;
+	    self.instructions.y = 70;
 	    self.graphics.addChild(self.instructions);
 	    self.instructions.alpha = 0;
 	    Tween_get(self.instructions)

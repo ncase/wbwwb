@@ -822,3 +822,96 @@ var textStrings_TR = {
 	// (quote0004.png)
 	"misatrributed": "(yanlış bir şekilde ona atfedilir)",
 };
+
+
+///////////////////////////////////
+///// SOCIAL MEDIA REMIX //////////
+///////////////////////////////////
+
+var textStrings_SOCIAL = {
+	// Act 1
+	"niceHat": "#HATCHALLENGE IS TRENDING",
+	"outtaHere": "ok bye, nobody asked",
+	"getARoom": "CRINGE COUPLE ALERT #getaroom",
+	"notCoolAnymore": "hats are SO last week. unfollow.",
+	"tvOnTv": "a feed... IN A FEED?!",
+	"cricky": "lil' cricky <3 #nofilter",
+	"tooManyCrickets": "ok that's too many crickets",
+	"normalPeep": "just a normal peep. zero vibes.",
+	"normalPeeps": "just some normal peeps. scroll on.",
+	"wowNothing": "wow. it's literally nothing.",
+
+	// Act 2
+	"crazySquareAttacks": "UNHINGED SQUARE GOES OFF (VIDEO)",
+	"justMissed": "ugh, missed it. no clip, no views.",
+	"somethingInteresting": "(gotta catch 'em doing something *clickable*...)",
+	"whoIsScreaming": "(gotta catch *who's* yelling at 'em)",
+	"circleFearsSquares": "CIRCLES TERRIFIED OF SQUARES? a thread 1/9",
+	"whoScaresThem": "(gotta catch *who* they're scared of)",
+	"areTheyScared": "(gotta catch 'em *being* scared by a square)",
+	"squaresSnubCircles": "SQUARES SNUB CIRCLES. RATIO'D.",
+	"areTheySnubbed": "(gotta catch 'em *while* snubbing a circle)",
+	"everyoneHates": "EVERYONE HATES EVERYONE!!1! #trending",
+	"almostEveryoneHates": "ALMOST EVERYONE HATES EVERYONE...",
+	"squaresHateCircles": "SQUARES HATE CIRCLES. repost if you agree",
+	"circlesHateSquares": "CIRCLES HATE SQUARES. repost if you agree",
+	"areTheyYelling": "(gotta catch 'em *yelling* at others)",
+	"nerdsNow": "what are these nerds doing now. cringe.",
+	"schockedPeep": "peep SHOCKED by... what?? (link in bio)",
+	"whatever": "whatever. keep scrolling.",
+
+	// Act 3
+	"ellipsis": ". . .",
+	"coolNoMore": "hats are cancelled. didn't you see the thread?",
+	"beScared": "BE SCARED. BE ANGRY. KEEP SCROLLING.",
+
+	// MANIFESTO
+	"manifesto": [
+		"who double-taps *people getting along?*",
+		"peace gets scrolled past. rage gets shared.",
+		"and the algorithm feeds on engagement, so...",
+		"GIVE THE FEED WHAT IT WANTS."
+	],
+
+	// Feed UI
+	"likes": "likes",
+	"shares": "shares",
+	"title": "WE BECOME\nWHAT WE SCROLL",
+
+	// Preload screen
+	"playingTime": "playing time: 5 minutes",
+	"warning": "warning: the following feed\ncontains scenes of trolling,\npile-ons & mass violence.\nviewer discretion is advised.",
+
+	// Camera Instructions
+	"pointAndClick": "POINT & POST",
+
+	"chyronNothing": "wow. it's *nothing*. 0 likes.",
+
+	// Credits
+	"createdBy": "original game by",
+	"NickyCase": "Nicky Case",
+	"manyThanks": "many thanks to the original playtesters:",
+	"patreonSupporters": "and to Nicky's patreon supporters:",
+	"lastButNotLeast": "and last but not least,",
+	"thankYouForPlaying": "thank YOU for scrolling!",
+
+	"playButton": "PLAY",
+
+	// Post Credits
+	"otherWorkButton": "see the original",
+	"buyCoffeeButton": "buy nicky a coffee",
+	"replayButton": "scroll again",
+	"logoWBWWB": "SHARE THE PAIN:",
+
+	"endOfPrototype": "END OF PROTOTYPE",
+	"toBeContinued": "(to be continued!)",
+
+	// Quote
+	"WBWWB": "We become what we scroll.",
+	"WSOTATOTSU": "We shape our feeds, and then our feeds shape us.",
+	"MarshallMcLuhan": "(remixed from) Marshall McLuhan",
+	"misatrributed": "(misattributed, then reposted)",
+};
+
+// Active language
+var textStrings = textStrings_SOCIAL;

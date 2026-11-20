@@ -12,6 +12,19 @@ function Scene_Preloader(){
 	// Background!
 	Game.stage.addChild(MakeSprite("bg_preload"));
 
+	// SOCIAL REMIX: cover the baked-in title & write ours
+	var titleCover = new PIXI.Graphics();
+	titleCover.beginFill(0x9C9C9C);
+	titleCover.drawRect(60, 30, 440, 180);
+	titleCover.endFill();
+	Game.stage.addChild(titleCover);
+	var titleText = new PIXI.Text(textStrings["title"] + "\n", {font:"bold 58px Cairo", fill:"#FFFFFF", align:"center"});
+	titleText.anchor.x = 0.5;
+	titleText.anchor.y = 0.5;
+	titleText.x = 278;
+	titleText.y = 125;
+	Game.stage.addChild(titleText);
+
 	// RECURSIVE SCREEN
 	var renderTexturePoolIndex = 0;
 	var renderTexturePool = [
