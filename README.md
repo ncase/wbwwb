@@ -1,3 +1,22 @@
+# We Become What We Scroll
+
+*a tiny game about feeds, likes, and vicious cycles* - a social media remix of Nicky Case's **We Become What We Behold**.
+
+Instead of a news camera and a TV, you hold a phone. Point it at the peeps in the park and click to **post**. Whatever you post shows up on the giant phone-on-a-stand, with a caption, a TRENDING tag and a like counter. The peeps who see the post copy it, fear it, or get angry about it... and the feed only rewards conflict.
+
+**Play locally:** serve the folder with any static server (e.g. `npx serve .` or `python -m http.server`) and open `index.html`. WebGL is required.
+
+**What changed from the original:**
+- `js/game/TV.js` - the TV is now a phone on a stand; chyrons became social posts (handle, TRENDING tag, caption, animated likes & shares)
+- `js/game/Director.js` - likes are calculated from how many peeps the post reaches
+- `js/textStrings.js` - new `textStrings_SOCIAL` language with social-media captions and ending; set as the active language
+- `js/game/Camera.js` - "POINT & POST" instructions
+- `js/scenes/Scene_Preloader.js` - new title, "WE BECOME WHAT WE SCROLL"
+
+All characters, art, sounds and engine code come from the original game, which Nicky Case released to the public domain (CC0). Original credits below.
+
+---
+
 # DEAR ASPIRING TRANSLATORS, PLEASE CHECK THE MAIN PAGE DESCRIPTION FIRST TO SEE IF YOUR TRANSLATION ALREADY EXISTS: https://ncase.itch.io/wbwwb (also check the Issues to see if your translation is already being worked on - collaborate with them if they're stuck!)
 
 *a game about news cycles, vicious cycles, infinite cycles*

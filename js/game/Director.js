@@ -356,11 +356,20 @@ function Director(scene){
 		// Add photo texture to the TV
 		var text = self.chyron;
 		var tv = self.tv;
+		var reach = data.audience || 0;
+		if(data.HIJACK) reach = (data.audienceCircles||0) + (data.audienceSquares||0);
+		var likes = 0;
+		if(!fail){
+			if(reach>0) likes = Math.floor(reach*(2500 + Math.random()*4000));
+			else if(data.forceChyron) likes = 2 + Math.floor(Math.random()*5); // cringe post, pity likes
+		}
 		tv.placePhoto({
 			photo: self.photoTexture,
 			text: text,
 			fail: fail,
-			nothing: nothing
+			nothing: nothing,
+			likes: likes,
+			trending: (reach>0)
 		});
 
 		// Where to cut viewport to
